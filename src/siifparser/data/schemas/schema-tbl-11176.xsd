@@ -1,0 +1,2898 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://dd.eionet.europa.eu/namespaces/820" xmlns:ddattrs="http://dd.eionet.europa.eu/namespaces/3" xmlns:isoattrs="http://dd.eionet.europa.eu/namespaces/2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://dd.eionet.europa.eu/namespaces/820" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema  http://www.w3.org/2001/XMLSchema.xsd">
+    <xs:element name="Agglomerations">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>Agglomerations</isoattrs:Name>
+                <ddattrs:ShortDescription>Information on agglomerations</ddattrs:ShortDescription>
+                <isoattrs:Definition>Table contains information on agglomerations with generated load ≥ 2000 p.e. (or even smaller), including names, coordinates, generated load and information whether the load generated is collected through collecting system or addressed via Individual Appropriate Systems (IAS) or not collected not addressed via IAS.</isoattrs:Definition>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" minOccurs="0" name="Row">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="aggState"/>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="repCode"/>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="aggCode"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="aggName"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="aggNUTS"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="aggLatitude"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="aggLongitude"/>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="aggGenerated"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="bigCityID"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="aggCalculation"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="aggChanges"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="aggChangesComment"/>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="aggPeriodOver"/>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="aggDateArt3"/>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="aggDateArt4"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="aggDateArt5"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="aggC1"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="aggMethodC1"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="aggC2"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="aggMethodC2"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="aggPercWithoutTreatment"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="aggMethodWithoutTreatment"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="aggPercPrimTreatment"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="aggPercSecTreatment"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="aggPercStringentTreatment"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="aggHaveRegistrationSystem"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="aggExistMaintenancePlan"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="aggPressureTest"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="aggVideoInspections"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="aggOtherMeasures"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="aggExplanationOther"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="aggSewageNetwork"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="aggBestTechnicalKnowledge"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="aggDilutionRates"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="aggCapacity"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="aggAccOverflows"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="aggAccOverflowNumber"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="aggSewerOverflows_m3"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="aggSewerOverflows_pe"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="aggForecast"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="aggBeginLife"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="aggEndLife"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="aggHyperlink"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="aggRemarks"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="aggState">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>aggState</isoattrs:Name>
+                <isoattrs:Definition>Status of the Agglomeration </isoattrs:Definition>
+                <ddattrs:Methodology>This value is required.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="repCode">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+                <ddattrs:Owner>4037322</ddattrs:Owner>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Methodology>This value is required.&#13;
+First 2 characters must be the 2-alpha character ISO country code (use 'EL' for Greece and 'UK' for the United Kingdom).</ddattrs:Methodology>
+                <isoattrs:Definition>Report ID, as specified by country</isoattrs:Definition>
+                <isoattrs:Name>repCode</isoattrs:Name>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="1"/>
+                <xs:maxLength value="16"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="aggCode">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>aggCode</isoattrs:Name>
+                <isoattrs:Definition>ID of the Agglomeration, as specified by country.</isoattrs:Definition>
+                <ddattrs:Methodology>This value is required.&#13;
+&#13;
+aggCode must be unique in the table.&#13;
+&#13;
+All aggCodes reported active in the last report must be reported in the current dataset, or an explanation should be provided. &#13;
+First 2 characters must be the 2-alpha character ISO country code (use 'EL' for Greece and 'UK' for the United Kingdom).&#13;
+Do not use characters with accents and other diacritical marks (national characters). Do not use spaces or other spatial characters. The hyphen '-' and the underscore '_' characters are allowed.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="1"/>
+                <xs:maxLength value="32"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="aggName">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+                <ddattrs:Owner>4037322</ddattrs:Owner>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Methodology>This value is required.</ddattrs:Methodology>
+                <isoattrs:Definition>Name of the Agglomeration</isoattrs:Definition>
+                <isoattrs:Name>aggName</isoattrs:Name>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="1"/>
+                <xs:maxLength value="255"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="aggNUTS">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>aggNUTS</isoattrs:Name>
+                <isoattrs:Definition>Code of Territorial units (NUTS), as specified in the codelist</isoattrs:Definition>
+                <ddattrs:Methodology>Value of NUTS3 is required for all active agglomerations.&#13;
+&#13;
+Codelist sources:&#13;
+EU-countries: &#13;
+NUTS (Nomenclature of Territorial Units for Statistics), by country, version 2016 (NUTS 2016) &#13;
+http://ec.europa.eu/eurostat/ramon/nomenclatures/index.cfm?TargetUrl=LST_CLS_DLD&amp;StrNom=NUTS_2016&amp;StrLanguageCode=EN&amp;StrLayoutCode=HIERARCHIC&#13;
+non-EU countries:&#13;
+Statistical Regions for Candidate countries and EFTA countries, by country (SR) &#13;
+http://ec.europa.eu/eurostat/ramon/nomenclatures/index.cfm?TargetUrl=LST_CLS_DLD&amp;StrNom=SR_22&amp;StrLanguageCode=EN&amp;StrLayoutCode=HIERARCHIC&#13;
+Exception: &#13;
+Italy: Definition of the ITC20 corrected from "Valle d'Aosta/Vallée d'Aoste" to "Aosta" according to the country instruction.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="AL01"/>
+                <xs:enumeration value="AL02"/>
+                <xs:enumeration value="AL03"/>
+                <xs:enumeration value="AT111"/>
+                <xs:enumeration value="AT112"/>
+                <xs:enumeration value="AT113"/>
+                <xs:enumeration value="AT121"/>
+                <xs:enumeration value="AT122"/>
+                <xs:enumeration value="AT123"/>
+                <xs:enumeration value="AT124"/>
+                <xs:enumeration value="AT125"/>
+                <xs:enumeration value="AT126"/>
+                <xs:enumeration value="AT127"/>
+                <xs:enumeration value="AT130"/>
+                <xs:enumeration value="AT211"/>
+                <xs:enumeration value="AT212"/>
+                <xs:enumeration value="AT213"/>
+                <xs:enumeration value="AT221"/>
+                <xs:enumeration value="AT222"/>
+                <xs:enumeration value="AT223"/>
+                <xs:enumeration value="AT224"/>
+                <xs:enumeration value="AT225"/>
+                <xs:enumeration value="AT226"/>
+                <xs:enumeration value="AT311"/>
+                <xs:enumeration value="AT312"/>
+                <xs:enumeration value="AT313"/>
+                <xs:enumeration value="AT314"/>
+                <xs:enumeration value="AT315"/>
+                <xs:enumeration value="AT321"/>
+                <xs:enumeration value="AT322"/>
+                <xs:enumeration value="AT323"/>
+                <xs:enumeration value="AT331"/>
+                <xs:enumeration value="AT332"/>
+                <xs:enumeration value="AT333"/>
+                <xs:enumeration value="AT334"/>
+                <xs:enumeration value="AT335"/>
+                <xs:enumeration value="AT341"/>
+                <xs:enumeration value="AT342"/>
+                <xs:enumeration value="ATZZZ"/>
+                <xs:enumeration value="BE100"/>
+                <xs:enumeration value="BE211"/>
+                <xs:enumeration value="BE212"/>
+                <xs:enumeration value="BE213"/>
+                <xs:enumeration value="BE221"/>
+                <xs:enumeration value="BE222"/>
+                <xs:enumeration value="BE223"/>
+                <xs:enumeration value="BE231"/>
+                <xs:enumeration value="BE232"/>
+                <xs:enumeration value="BE233"/>
+                <xs:enumeration value="BE234"/>
+                <xs:enumeration value="BE235"/>
+                <xs:enumeration value="BE236"/>
+                <xs:enumeration value="BE241"/>
+                <xs:enumeration value="BE242"/>
+                <xs:enumeration value="BE251"/>
+                <xs:enumeration value="BE252"/>
+                <xs:enumeration value="BE253"/>
+                <xs:enumeration value="BE254"/>
+                <xs:enumeration value="BE255"/>
+                <xs:enumeration value="BE256"/>
+                <xs:enumeration value="BE257"/>
+                <xs:enumeration value="BE258"/>
+                <xs:enumeration value="BE310"/>
+                <xs:enumeration value="BE321"/>
+                <xs:enumeration value="BE322"/>
+                <xs:enumeration value="BE323"/>
+                <xs:enumeration value="BE324"/>
+                <xs:enumeration value="BE325"/>
+                <xs:enumeration value="BE326"/>
+                <xs:enumeration value="BE327"/>
+                <xs:enumeration value="BE331"/>
+                <xs:enumeration value="BE332"/>
+                <xs:enumeration value="BE334"/>
+                <xs:enumeration value="BE335"/>
+                <xs:enumeration value="BE336"/>
+                <xs:enumeration value="BE341"/>
+                <xs:enumeration value="BE342"/>
+                <xs:enumeration value="BE343"/>
+                <xs:enumeration value="BE344"/>
+                <xs:enumeration value="BE345"/>
+                <xs:enumeration value="BE351"/>
+                <xs:enumeration value="BE352"/>
+                <xs:enumeration value="BE353"/>
+                <xs:enumeration value="BEZZZ"/>
+                <xs:enumeration value="BG311"/>
+                <xs:enumeration value="BG312"/>
+                <xs:enumeration value="BG313"/>
+                <xs:enumeration value="BG314"/>
+                <xs:enumeration value="BG315"/>
+                <xs:enumeration value="BG321"/>
+                <xs:enumeration value="BG322"/>
+                <xs:enumeration value="BG323"/>
+                <xs:enumeration value="BG324"/>
+                <xs:enumeration value="BG325"/>
+                <xs:enumeration value="BG331"/>
+                <xs:enumeration value="BG332"/>
+                <xs:enumeration value="BG333"/>
+                <xs:enumeration value="BG334"/>
+                <xs:enumeration value="BG341"/>
+                <xs:enumeration value="BG342"/>
+                <xs:enumeration value="BG343"/>
+                <xs:enumeration value="BG344"/>
+                <xs:enumeration value="BG411"/>
+                <xs:enumeration value="BG412"/>
+                <xs:enumeration value="BG413"/>
+                <xs:enumeration value="BG414"/>
+                <xs:enumeration value="BG415"/>
+                <xs:enumeration value="BG421"/>
+                <xs:enumeration value="BG422"/>
+                <xs:enumeration value="BG423"/>
+                <xs:enumeration value="BG424"/>
+                <xs:enumeration value="BG425"/>
+                <xs:enumeration value="BGZZZ"/>
+                <xs:enumeration value="CH01"/>
+                <xs:enumeration value="CH02"/>
+                <xs:enumeration value="CH03"/>
+                <xs:enumeration value="CH04"/>
+                <xs:enumeration value="CH05"/>
+                <xs:enumeration value="CH06"/>
+                <xs:enumeration value="CH07"/>
+                <xs:enumeration value="CY000"/>
+                <xs:enumeration value="CYZZZ"/>
+                <xs:enumeration value="CZ010"/>
+                <xs:enumeration value="CZ020"/>
+                <xs:enumeration value="CZ031"/>
+                <xs:enumeration value="CZ032"/>
+                <xs:enumeration value="CZ041"/>
+                <xs:enumeration value="CZ042"/>
+                <xs:enumeration value="CZ051"/>
+                <xs:enumeration value="CZ052"/>
+                <xs:enumeration value="CZ053"/>
+                <xs:enumeration value="CZ063"/>
+                <xs:enumeration value="CZ064"/>
+                <xs:enumeration value="CZ071"/>
+                <xs:enumeration value="CZ072"/>
+                <xs:enumeration value="CZ080"/>
+                <xs:enumeration value="CZZZZ"/>
+                <xs:enumeration value="DE111"/>
+                <xs:enumeration value="DE112"/>
+                <xs:enumeration value="DE113"/>
+                <xs:enumeration value="DE114"/>
+                <xs:enumeration value="DE115"/>
+                <xs:enumeration value="DE116"/>
+                <xs:enumeration value="DE117"/>
+                <xs:enumeration value="DE118"/>
+                <xs:enumeration value="DE119"/>
+                <xs:enumeration value="DE11A"/>
+                <xs:enumeration value="DE11B"/>
+                <xs:enumeration value="DE11C"/>
+                <xs:enumeration value="DE11D"/>
+                <xs:enumeration value="DE121"/>
+                <xs:enumeration value="DE122"/>
+                <xs:enumeration value="DE123"/>
+                <xs:enumeration value="DE124"/>
+                <xs:enumeration value="DE125"/>
+                <xs:enumeration value="DE126"/>
+                <xs:enumeration value="DE127"/>
+                <xs:enumeration value="DE128"/>
+                <xs:enumeration value="DE129"/>
+                <xs:enumeration value="DE12A"/>
+                <xs:enumeration value="DE12B"/>
+                <xs:enumeration value="DE12C"/>
+                <xs:enumeration value="DE131"/>
+                <xs:enumeration value="DE132"/>
+                <xs:enumeration value="DE133"/>
+                <xs:enumeration value="DE134"/>
+                <xs:enumeration value="DE135"/>
+                <xs:enumeration value="DE136"/>
+                <xs:enumeration value="DE137"/>
+                <xs:enumeration value="DE138"/>
+                <xs:enumeration value="DE139"/>
+                <xs:enumeration value="DE13A"/>
+                <xs:enumeration value="DE141"/>
+                <xs:enumeration value="DE142"/>
+                <xs:enumeration value="DE143"/>
+                <xs:enumeration value="DE144"/>
+                <xs:enumeration value="DE145"/>
+                <xs:enumeration value="DE146"/>
+                <xs:enumeration value="DE147"/>
+                <xs:enumeration value="DE148"/>
+                <xs:enumeration value="DE149"/>
+                <xs:enumeration value="DE211"/>
+                <xs:enumeration value="DE212"/>
+                <xs:enumeration value="DE213"/>
+                <xs:enumeration value="DE214"/>
+                <xs:enumeration value="DE215"/>
+                <xs:enumeration value="DE216"/>
+                <xs:enumeration value="DE217"/>
+                <xs:enumeration value="DE218"/>
+                <xs:enumeration value="DE219"/>
+                <xs:enumeration value="DE21A"/>
+                <xs:enumeration value="DE21B"/>
+                <xs:enumeration value="DE21C"/>
+                <xs:enumeration value="DE21D"/>
+                <xs:enumeration value="DE21E"/>
+                <xs:enumeration value="DE21F"/>
+                <xs:enumeration value="DE21G"/>
+                <xs:enumeration value="DE21H"/>
+                <xs:enumeration value="DE21I"/>
+                <xs:enumeration value="DE21J"/>
+                <xs:enumeration value="DE21K"/>
+                <xs:enumeration value="DE21L"/>
+                <xs:enumeration value="DE21M"/>
+                <xs:enumeration value="DE21N"/>
+                <xs:enumeration value="DE221"/>
+                <xs:enumeration value="DE222"/>
+                <xs:enumeration value="DE223"/>
+                <xs:enumeration value="DE224"/>
+                <xs:enumeration value="DE225"/>
+                <xs:enumeration value="DE226"/>
+                <xs:enumeration value="DE227"/>
+                <xs:enumeration value="DE228"/>
+                <xs:enumeration value="DE229"/>
+                <xs:enumeration value="DE22A"/>
+                <xs:enumeration value="DE22B"/>
+                <xs:enumeration value="DE22C"/>
+                <xs:enumeration value="DE231"/>
+                <xs:enumeration value="DE232"/>
+                <xs:enumeration value="DE233"/>
+                <xs:enumeration value="DE234"/>
+                <xs:enumeration value="DE235"/>
+                <xs:enumeration value="DE236"/>
+                <xs:enumeration value="DE237"/>
+                <xs:enumeration value="DE238"/>
+                <xs:enumeration value="DE239"/>
+                <xs:enumeration value="DE23A"/>
+                <xs:enumeration value="DE241"/>
+                <xs:enumeration value="DE242"/>
+                <xs:enumeration value="DE243"/>
+                <xs:enumeration value="DE244"/>
+                <xs:enumeration value="DE245"/>
+                <xs:enumeration value="DE246"/>
+                <xs:enumeration value="DE247"/>
+                <xs:enumeration value="DE248"/>
+                <xs:enumeration value="DE249"/>
+                <xs:enumeration value="DE24A"/>
+                <xs:enumeration value="DE24B"/>
+                <xs:enumeration value="DE24C"/>
+                <xs:enumeration value="DE24D"/>
+                <xs:enumeration value="DE251"/>
+                <xs:enumeration value="DE252"/>
+                <xs:enumeration value="DE253"/>
+                <xs:enumeration value="DE254"/>
+                <xs:enumeration value="DE255"/>
+                <xs:enumeration value="DE256"/>
+                <xs:enumeration value="DE257"/>
+                <xs:enumeration value="DE258"/>
+                <xs:enumeration value="DE259"/>
+                <xs:enumeration value="DE25A"/>
+                <xs:enumeration value="DE25B"/>
+                <xs:enumeration value="DE25C"/>
+                <xs:enumeration value="DE261"/>
+                <xs:enumeration value="DE262"/>
+                <xs:enumeration value="DE263"/>
+                <xs:enumeration value="DE264"/>
+                <xs:enumeration value="DE265"/>
+                <xs:enumeration value="DE266"/>
+                <xs:enumeration value="DE267"/>
+                <xs:enumeration value="DE268"/>
+                <xs:enumeration value="DE269"/>
+                <xs:enumeration value="DE26A"/>
+                <xs:enumeration value="DE26B"/>
+                <xs:enumeration value="DE26C"/>
+                <xs:enumeration value="DE271"/>
+                <xs:enumeration value="DE272"/>
+                <xs:enumeration value="DE273"/>
+                <xs:enumeration value="DE274"/>
+                <xs:enumeration value="DE275"/>
+                <xs:enumeration value="DE276"/>
+                <xs:enumeration value="DE277"/>
+                <xs:enumeration value="DE278"/>
+                <xs:enumeration value="DE279"/>
+                <xs:enumeration value="DE27A"/>
+                <xs:enumeration value="DE27B"/>
+                <xs:enumeration value="DE27C"/>
+                <xs:enumeration value="DE27D"/>
+                <xs:enumeration value="DE27E"/>
+                <xs:enumeration value="DE300"/>
+                <xs:enumeration value="DE401"/>
+                <xs:enumeration value="DE402"/>
+                <xs:enumeration value="DE403"/>
+                <xs:enumeration value="DE404"/>
+                <xs:enumeration value="DE405"/>
+                <xs:enumeration value="DE406"/>
+                <xs:enumeration value="DE407"/>
+                <xs:enumeration value="DE408"/>
+                <xs:enumeration value="DE409"/>
+                <xs:enumeration value="DE40A"/>
+                <xs:enumeration value="DE40B"/>
+                <xs:enumeration value="DE40C"/>
+                <xs:enumeration value="DE40D"/>
+                <xs:enumeration value="DE40E"/>
+                <xs:enumeration value="DE40F"/>
+                <xs:enumeration value="DE40G"/>
+                <xs:enumeration value="DE40H"/>
+                <xs:enumeration value="DE40I"/>
+                <xs:enumeration value="DE501"/>
+                <xs:enumeration value="DE502"/>
+                <xs:enumeration value="DE600"/>
+                <xs:enumeration value="DE711"/>
+                <xs:enumeration value="DE712"/>
+                <xs:enumeration value="DE713"/>
+                <xs:enumeration value="DE714"/>
+                <xs:enumeration value="DE715"/>
+                <xs:enumeration value="DE716"/>
+                <xs:enumeration value="DE717"/>
+                <xs:enumeration value="DE718"/>
+                <xs:enumeration value="DE719"/>
+                <xs:enumeration value="DE71A"/>
+                <xs:enumeration value="DE71B"/>
+                <xs:enumeration value="DE71C"/>
+                <xs:enumeration value="DE71D"/>
+                <xs:enumeration value="DE71E"/>
+                <xs:enumeration value="DE721"/>
+                <xs:enumeration value="DE722"/>
+                <xs:enumeration value="DE723"/>
+                <xs:enumeration value="DE724"/>
+                <xs:enumeration value="DE725"/>
+                <xs:enumeration value="DE731"/>
+                <xs:enumeration value="DE732"/>
+                <xs:enumeration value="DE733"/>
+                <xs:enumeration value="DE734"/>
+                <xs:enumeration value="DE735"/>
+                <xs:enumeration value="DE736"/>
+                <xs:enumeration value="DE737"/>
+                <xs:enumeration value="DE803"/>
+                <xs:enumeration value="DE804"/>
+                <xs:enumeration value="DE80J"/>
+                <xs:enumeration value="DE80K"/>
+                <xs:enumeration value="DE80L"/>
+                <xs:enumeration value="DE80M"/>
+                <xs:enumeration value="DE80N"/>
+                <xs:enumeration value="DE80O"/>
+                <xs:enumeration value="DE911"/>
+                <xs:enumeration value="DE912"/>
+                <xs:enumeration value="DE913"/>
+                <xs:enumeration value="DE914"/>
+                <xs:enumeration value="DE916"/>
+                <xs:enumeration value="DE917"/>
+                <xs:enumeration value="DE918"/>
+                <xs:enumeration value="DE91A"/>
+                <xs:enumeration value="DE91B"/>
+                <xs:enumeration value="DE91C"/>
+                <xs:enumeration value="DE922"/>
+                <xs:enumeration value="DE923"/>
+                <xs:enumeration value="DE925"/>
+                <xs:enumeration value="DE926"/>
+                <xs:enumeration value="DE927"/>
+                <xs:enumeration value="DE928"/>
+                <xs:enumeration value="DE929"/>
+                <xs:enumeration value="DE931"/>
+                <xs:enumeration value="DE932"/>
+                <xs:enumeration value="DE933"/>
+                <xs:enumeration value="DE934"/>
+                <xs:enumeration value="DE935"/>
+                <xs:enumeration value="DE936"/>
+                <xs:enumeration value="DE937"/>
+                <xs:enumeration value="DE938"/>
+                <xs:enumeration value="DE939"/>
+                <xs:enumeration value="DE93A"/>
+                <xs:enumeration value="DE93B"/>
+                <xs:enumeration value="DE941"/>
+                <xs:enumeration value="DE942"/>
+                <xs:enumeration value="DE943"/>
+                <xs:enumeration value="DE944"/>
+                <xs:enumeration value="DE945"/>
+                <xs:enumeration value="DE946"/>
+                <xs:enumeration value="DE947"/>
+                <xs:enumeration value="DE948"/>
+                <xs:enumeration value="DE949"/>
+                <xs:enumeration value="DE94A"/>
+                <xs:enumeration value="DE94B"/>
+                <xs:enumeration value="DE94C"/>
+                <xs:enumeration value="DE94D"/>
+                <xs:enumeration value="DE94E"/>
+                <xs:enumeration value="DE94F"/>
+                <xs:enumeration value="DE94G"/>
+                <xs:enumeration value="DE94H"/>
+                <xs:enumeration value="DEA11"/>
+                <xs:enumeration value="DEA12"/>
+                <xs:enumeration value="DEA13"/>
+                <xs:enumeration value="DEA14"/>
+                <xs:enumeration value="DEA15"/>
+                <xs:enumeration value="DEA16"/>
+                <xs:enumeration value="DEA17"/>
+                <xs:enumeration value="DEA18"/>
+                <xs:enumeration value="DEA19"/>
+                <xs:enumeration value="DEA1A"/>
+                <xs:enumeration value="DEA1B"/>
+                <xs:enumeration value="DEA1C"/>
+                <xs:enumeration value="DEA1D"/>
+                <xs:enumeration value="DEA1E"/>
+                <xs:enumeration value="DEA1F"/>
+                <xs:enumeration value="DEA22"/>
+                <xs:enumeration value="DEA23"/>
+                <xs:enumeration value="DEA24"/>
+                <xs:enumeration value="DEA26"/>
+                <xs:enumeration value="DEA27"/>
+                <xs:enumeration value="DEA28"/>
+                <xs:enumeration value="DEA29"/>
+                <xs:enumeration value="DEA2A"/>
+                <xs:enumeration value="DEA2B"/>
+                <xs:enumeration value="DEA2C"/>
+                <xs:enumeration value="DEA2D"/>
+                <xs:enumeration value="DEA31"/>
+                <xs:enumeration value="DEA32"/>
+                <xs:enumeration value="DEA33"/>
+                <xs:enumeration value="DEA34"/>
+                <xs:enumeration value="DEA35"/>
+                <xs:enumeration value="DEA36"/>
+                <xs:enumeration value="DEA37"/>
+                <xs:enumeration value="DEA38"/>
+                <xs:enumeration value="DEA41"/>
+                <xs:enumeration value="DEA42"/>
+                <xs:enumeration value="DEA43"/>
+                <xs:enumeration value="DEA44"/>
+                <xs:enumeration value="DEA45"/>
+                <xs:enumeration value="DEA46"/>
+                <xs:enumeration value="DEA47"/>
+                <xs:enumeration value="DEA51"/>
+                <xs:enumeration value="DEA52"/>
+                <xs:enumeration value="DEA53"/>
+                <xs:enumeration value="DEA54"/>
+                <xs:enumeration value="DEA55"/>
+                <xs:enumeration value="DEA56"/>
+                <xs:enumeration value="DEA57"/>
+                <xs:enumeration value="DEA58"/>
+                <xs:enumeration value="DEA59"/>
+                <xs:enumeration value="DEA5A"/>
+                <xs:enumeration value="DEA5B"/>
+                <xs:enumeration value="DEA5C"/>
+                <xs:enumeration value="DEB11"/>
+                <xs:enumeration value="DEB12"/>
+                <xs:enumeration value="DEB13"/>
+                <xs:enumeration value="DEB14"/>
+                <xs:enumeration value="DEB15"/>
+                <xs:enumeration value="DEB17"/>
+                <xs:enumeration value="DEB18"/>
+                <xs:enumeration value="DEB1A"/>
+                <xs:enumeration value="DEB1B"/>
+                <xs:enumeration value="DEB1C"/>
+                <xs:enumeration value="DEB1D"/>
+                <xs:enumeration value="DEB21"/>
+                <xs:enumeration value="DEB22"/>
+                <xs:enumeration value="DEB23"/>
+                <xs:enumeration value="DEB24"/>
+                <xs:enumeration value="DEB25"/>
+                <xs:enumeration value="DEB31"/>
+                <xs:enumeration value="DEB32"/>
+                <xs:enumeration value="DEB33"/>
+                <xs:enumeration value="DEB34"/>
+                <xs:enumeration value="DEB35"/>
+                <xs:enumeration value="DEB36"/>
+                <xs:enumeration value="DEB37"/>
+                <xs:enumeration value="DEB38"/>
+                <xs:enumeration value="DEB39"/>
+                <xs:enumeration value="DEB3A"/>
+                <xs:enumeration value="DEB3B"/>
+                <xs:enumeration value="DEB3C"/>
+                <xs:enumeration value="DEB3D"/>
+                <xs:enumeration value="DEB3E"/>
+                <xs:enumeration value="DEB3F"/>
+                <xs:enumeration value="DEB3G"/>
+                <xs:enumeration value="DEB3H"/>
+                <xs:enumeration value="DEB3I"/>
+                <xs:enumeration value="DEB3J"/>
+                <xs:enumeration value="DEB3K"/>
+                <xs:enumeration value="DEC01"/>
+                <xs:enumeration value="DEC02"/>
+                <xs:enumeration value="DEC03"/>
+                <xs:enumeration value="DEC04"/>
+                <xs:enumeration value="DEC05"/>
+                <xs:enumeration value="DEC06"/>
+                <xs:enumeration value="DED21"/>
+                <xs:enumeration value="DED2C"/>
+                <xs:enumeration value="DED2D"/>
+                <xs:enumeration value="DED2E"/>
+                <xs:enumeration value="DED2F"/>
+                <xs:enumeration value="DED41"/>
+                <xs:enumeration value="DED42"/>
+                <xs:enumeration value="DED43"/>
+                <xs:enumeration value="DED44"/>
+                <xs:enumeration value="DED45"/>
+                <xs:enumeration value="DED51"/>
+                <xs:enumeration value="DED52"/>
+                <xs:enumeration value="DED53"/>
+                <xs:enumeration value="DEE01"/>
+                <xs:enumeration value="DEE02"/>
+                <xs:enumeration value="DEE03"/>
+                <xs:enumeration value="DEE04"/>
+                <xs:enumeration value="DEE05"/>
+                <xs:enumeration value="DEE06"/>
+                <xs:enumeration value="DEE07"/>
+                <xs:enumeration value="DEE08"/>
+                <xs:enumeration value="DEE09"/>
+                <xs:enumeration value="DEE0A"/>
+                <xs:enumeration value="DEE0B"/>
+                <xs:enumeration value="DEE0C"/>
+                <xs:enumeration value="DEE0D"/>
+                <xs:enumeration value="DEE0E"/>
+                <xs:enumeration value="DEF01"/>
+                <xs:enumeration value="DEF02"/>
+                <xs:enumeration value="DEF03"/>
+                <xs:enumeration value="DEF04"/>
+                <xs:enumeration value="DEF05"/>
+                <xs:enumeration value="DEF06"/>
+                <xs:enumeration value="DEF07"/>
+                <xs:enumeration value="DEF08"/>
+                <xs:enumeration value="DEF09"/>
+                <xs:enumeration value="DEF0A"/>
+                <xs:enumeration value="DEF0B"/>
+                <xs:enumeration value="DEF0C"/>
+                <xs:enumeration value="DEF0D"/>
+                <xs:enumeration value="DEF0E"/>
+                <xs:enumeration value="DEF0F"/>
+                <xs:enumeration value="DEG01"/>
+                <xs:enumeration value="DEG02"/>
+                <xs:enumeration value="DEG03"/>
+                <xs:enumeration value="DEG04"/>
+                <xs:enumeration value="DEG05"/>
+                <xs:enumeration value="DEG06"/>
+                <xs:enumeration value="DEG07"/>
+                <xs:enumeration value="DEG09"/>
+                <xs:enumeration value="DEG0A"/>
+                <xs:enumeration value="DEG0B"/>
+                <xs:enumeration value="DEG0C"/>
+                <xs:enumeration value="DEG0D"/>
+                <xs:enumeration value="DEG0E"/>
+                <xs:enumeration value="DEG0F"/>
+                <xs:enumeration value="DEG0G"/>
+                <xs:enumeration value="DEG0H"/>
+                <xs:enumeration value="DEG0I"/>
+                <xs:enumeration value="DEG0J"/>
+                <xs:enumeration value="DEG0K"/>
+                <xs:enumeration value="DEG0L"/>
+                <xs:enumeration value="DEG0M"/>
+                <xs:enumeration value="DEG0N"/>
+                <xs:enumeration value="DEG0P"/>
+                <xs:enumeration value="DEZZZ"/>
+                <xs:enumeration value="DK011"/>
+                <xs:enumeration value="DK012"/>
+                <xs:enumeration value="DK013"/>
+                <xs:enumeration value="DK014"/>
+                <xs:enumeration value="DK021"/>
+                <xs:enumeration value="DK022"/>
+                <xs:enumeration value="DK031"/>
+                <xs:enumeration value="DK032"/>
+                <xs:enumeration value="DK041"/>
+                <xs:enumeration value="DK042"/>
+                <xs:enumeration value="DK050"/>
+                <xs:enumeration value="DKZZZ"/>
+                <xs:enumeration value="EE001"/>
+                <xs:enumeration value="EE004"/>
+                <xs:enumeration value="EE006"/>
+                <xs:enumeration value="EE007"/>
+                <xs:enumeration value="EE008"/>
+                <xs:enumeration value="EEZZZ"/>
+                <xs:enumeration value="EL301"/>
+                <xs:enumeration value="EL302"/>
+                <xs:enumeration value="EL303"/>
+                <xs:enumeration value="EL304"/>
+                <xs:enumeration value="EL305"/>
+                <xs:enumeration value="EL306"/>
+                <xs:enumeration value="EL307"/>
+                <xs:enumeration value="EL411"/>
+                <xs:enumeration value="EL412"/>
+                <xs:enumeration value="EL413"/>
+                <xs:enumeration value="EL421"/>
+                <xs:enumeration value="EL422"/>
+                <xs:enumeration value="EL431"/>
+                <xs:enumeration value="EL432"/>
+                <xs:enumeration value="EL433"/>
+                <xs:enumeration value="EL434"/>
+                <xs:enumeration value="EL511"/>
+                <xs:enumeration value="EL512"/>
+                <xs:enumeration value="EL513"/>
+                <xs:enumeration value="EL514"/>
+                <xs:enumeration value="EL515"/>
+                <xs:enumeration value="EL521"/>
+                <xs:enumeration value="EL522"/>
+                <xs:enumeration value="EL523"/>
+                <xs:enumeration value="EL524"/>
+                <xs:enumeration value="EL525"/>
+                <xs:enumeration value="EL526"/>
+                <xs:enumeration value="EL527"/>
+                <xs:enumeration value="EL531"/>
+                <xs:enumeration value="EL532"/>
+                <xs:enumeration value="EL533"/>
+                <xs:enumeration value="EL541"/>
+                <xs:enumeration value="EL542"/>
+                <xs:enumeration value="EL543"/>
+                <xs:enumeration value="EL611"/>
+                <xs:enumeration value="EL612"/>
+                <xs:enumeration value="EL613"/>
+                <xs:enumeration value="EL621"/>
+                <xs:enumeration value="EL622"/>
+                <xs:enumeration value="EL623"/>
+                <xs:enumeration value="EL624"/>
+                <xs:enumeration value="EL631"/>
+                <xs:enumeration value="EL632"/>
+                <xs:enumeration value="EL633"/>
+                <xs:enumeration value="EL641"/>
+                <xs:enumeration value="EL642"/>
+                <xs:enumeration value="EL643"/>
+                <xs:enumeration value="EL644"/>
+                <xs:enumeration value="EL645"/>
+                <xs:enumeration value="EL651"/>
+                <xs:enumeration value="EL652"/>
+                <xs:enumeration value="EL653"/>
+                <xs:enumeration value="ELZZZ"/>
+                <xs:enumeration value="ES111"/>
+                <xs:enumeration value="ES112"/>
+                <xs:enumeration value="ES113"/>
+                <xs:enumeration value="ES114"/>
+                <xs:enumeration value="ES120"/>
+                <xs:enumeration value="ES130"/>
+                <xs:enumeration value="ES211"/>
+                <xs:enumeration value="ES212"/>
+                <xs:enumeration value="ES213"/>
+                <xs:enumeration value="ES220"/>
+                <xs:enumeration value="ES230"/>
+                <xs:enumeration value="ES241"/>
+                <xs:enumeration value="ES242"/>
+                <xs:enumeration value="ES243"/>
+                <xs:enumeration value="ES300"/>
+                <xs:enumeration value="ES411"/>
+                <xs:enumeration value="ES412"/>
+                <xs:enumeration value="ES413"/>
+                <xs:enumeration value="ES414"/>
+                <xs:enumeration value="ES415"/>
+                <xs:enumeration value="ES416"/>
+                <xs:enumeration value="ES417"/>
+                <xs:enumeration value="ES418"/>
+                <xs:enumeration value="ES419"/>
+                <xs:enumeration value="ES421"/>
+                <xs:enumeration value="ES422"/>
+                <xs:enumeration value="ES423"/>
+                <xs:enumeration value="ES424"/>
+                <xs:enumeration value="ES425"/>
+                <xs:enumeration value="ES431"/>
+                <xs:enumeration value="ES432"/>
+                <xs:enumeration value="ES511"/>
+                <xs:enumeration value="ES512"/>
+                <xs:enumeration value="ES513"/>
+                <xs:enumeration value="ES514"/>
+                <xs:enumeration value="ES521"/>
+                <xs:enumeration value="ES522"/>
+                <xs:enumeration value="ES523"/>
+                <xs:enumeration value="ES531"/>
+                <xs:enumeration value="ES532"/>
+                <xs:enumeration value="ES533"/>
+                <xs:enumeration value="ES611"/>
+                <xs:enumeration value="ES612"/>
+                <xs:enumeration value="ES613"/>
+                <xs:enumeration value="ES614"/>
+                <xs:enumeration value="ES615"/>
+                <xs:enumeration value="ES616"/>
+                <xs:enumeration value="ES617"/>
+                <xs:enumeration value="ES618"/>
+                <xs:enumeration value="ES620"/>
+                <xs:enumeration value="ES630"/>
+                <xs:enumeration value="ES640"/>
+                <xs:enumeration value="ES703"/>
+                <xs:enumeration value="ES704"/>
+                <xs:enumeration value="ES705"/>
+                <xs:enumeration value="ES706"/>
+                <xs:enumeration value="ES707"/>
+                <xs:enumeration value="ES708"/>
+                <xs:enumeration value="ES709"/>
+                <xs:enumeration value="ESZZZ"/>
+                <xs:enumeration value="FI193"/>
+                <xs:enumeration value="FI194"/>
+                <xs:enumeration value="FI195"/>
+                <xs:enumeration value="FI196"/>
+                <xs:enumeration value="FI197"/>
+                <xs:enumeration value="FI1B1"/>
+                <xs:enumeration value="FI1C1"/>
+                <xs:enumeration value="FI1C2"/>
+                <xs:enumeration value="FI1C3"/>
+                <xs:enumeration value="FI1C4"/>
+                <xs:enumeration value="FI1C5"/>
+                <xs:enumeration value="FI1D1"/>
+                <xs:enumeration value="FI1D2"/>
+                <xs:enumeration value="FI1D3"/>
+                <xs:enumeration value="FI1D5"/>
+                <xs:enumeration value="FI1D7"/>
+                <xs:enumeration value="FI1D8"/>
+                <xs:enumeration value="FI1D9"/>
+                <xs:enumeration value="FI200"/>
+                <xs:enumeration value="FIZZZ"/>
+                <xs:enumeration value="FR101"/>
+                <xs:enumeration value="FR102"/>
+                <xs:enumeration value="FR103"/>
+                <xs:enumeration value="FR104"/>
+                <xs:enumeration value="FR105"/>
+                <xs:enumeration value="FR106"/>
+                <xs:enumeration value="FR107"/>
+                <xs:enumeration value="FR108"/>
+                <xs:enumeration value="FRB01"/>
+                <xs:enumeration value="FRB02"/>
+                <xs:enumeration value="FRB03"/>
+                <xs:enumeration value="FRB04"/>
+                <xs:enumeration value="FRB05"/>
+                <xs:enumeration value="FRB06"/>
+                <xs:enumeration value="FRC11"/>
+                <xs:enumeration value="FRC12"/>
+                <xs:enumeration value="FRC13"/>
+                <xs:enumeration value="FRC14"/>
+                <xs:enumeration value="FRC21"/>
+                <xs:enumeration value="FRC22"/>
+                <xs:enumeration value="FRC23"/>
+                <xs:enumeration value="FRC24"/>
+                <xs:enumeration value="FRD11"/>
+                <xs:enumeration value="FRD12"/>
+                <xs:enumeration value="FRD13"/>
+                <xs:enumeration value="FRD21"/>
+                <xs:enumeration value="FRD22"/>
+                <xs:enumeration value="FRE11"/>
+                <xs:enumeration value="FRE12"/>
+                <xs:enumeration value="FRE21"/>
+                <xs:enumeration value="FRE22"/>
+                <xs:enumeration value="FRE23"/>
+                <xs:enumeration value="FRF11"/>
+                <xs:enumeration value="FRF12"/>
+                <xs:enumeration value="FRF21"/>
+                <xs:enumeration value="FRF22"/>
+                <xs:enumeration value="FRF23"/>
+                <xs:enumeration value="FRF24"/>
+                <xs:enumeration value="FRF31"/>
+                <xs:enumeration value="FRF32"/>
+                <xs:enumeration value="FRF33"/>
+                <xs:enumeration value="FRF34"/>
+                <xs:enumeration value="FRG01"/>
+                <xs:enumeration value="FRG02"/>
+                <xs:enumeration value="FRG03"/>
+                <xs:enumeration value="FRG04"/>
+                <xs:enumeration value="FRG05"/>
+                <xs:enumeration value="FRH01"/>
+                <xs:enumeration value="FRH02"/>
+                <xs:enumeration value="FRH03"/>
+                <xs:enumeration value="FRH04"/>
+                <xs:enumeration value="FRI11"/>
+                <xs:enumeration value="FRI12"/>
+                <xs:enumeration value="FRI13"/>
+                <xs:enumeration value="FRI14"/>
+                <xs:enumeration value="FRI15"/>
+                <xs:enumeration value="FRI21"/>
+                <xs:enumeration value="FRI22"/>
+                <xs:enumeration value="FRI23"/>
+                <xs:enumeration value="FRI31"/>
+                <xs:enumeration value="FRI32"/>
+                <xs:enumeration value="FRI33"/>
+                <xs:enumeration value="FRI34"/>
+                <xs:enumeration value="FRJ11"/>
+                <xs:enumeration value="FRJ12"/>
+                <xs:enumeration value="FRJ13"/>
+                <xs:enumeration value="FRJ14"/>
+                <xs:enumeration value="FRJ15"/>
+                <xs:enumeration value="FRJ21"/>
+                <xs:enumeration value="FRJ22"/>
+                <xs:enumeration value="FRJ23"/>
+                <xs:enumeration value="FRJ24"/>
+                <xs:enumeration value="FRJ25"/>
+                <xs:enumeration value="FRJ26"/>
+                <xs:enumeration value="FRJ27"/>
+                <xs:enumeration value="FRJ28"/>
+                <xs:enumeration value="FRK11"/>
+                <xs:enumeration value="FRK12"/>
+                <xs:enumeration value="FRK13"/>
+                <xs:enumeration value="FRK14"/>
+                <xs:enumeration value="FRK21"/>
+                <xs:enumeration value="FRK22"/>
+                <xs:enumeration value="FRK23"/>
+                <xs:enumeration value="FRK24"/>
+                <xs:enumeration value="FRK25"/>
+                <xs:enumeration value="FRK26"/>
+                <xs:enumeration value="FRK27"/>
+                <xs:enumeration value="FRK28"/>
+                <xs:enumeration value="FRL01"/>
+                <xs:enumeration value="FRL02"/>
+                <xs:enumeration value="FRL03"/>
+                <xs:enumeration value="FRL04"/>
+                <xs:enumeration value="FRL05"/>
+                <xs:enumeration value="FRL06"/>
+                <xs:enumeration value="FRM01"/>
+                <xs:enumeration value="FRM02"/>
+                <xs:enumeration value="FRY10"/>
+                <xs:enumeration value="FRY20"/>
+                <xs:enumeration value="FRY30"/>
+                <xs:enumeration value="FRY40"/>
+                <xs:enumeration value="FRY50"/>
+                <xs:enumeration value="FRZZZ"/>
+                <xs:enumeration value="HR031"/>
+                <xs:enumeration value="HR032"/>
+                <xs:enumeration value="HR033"/>
+                <xs:enumeration value="HR034"/>
+                <xs:enumeration value="HR035"/>
+                <xs:enumeration value="HR036"/>
+                <xs:enumeration value="HR037"/>
+                <xs:enumeration value="HR041"/>
+                <xs:enumeration value="HR042"/>
+                <xs:enumeration value="HR043"/>
+                <xs:enumeration value="HR044"/>
+                <xs:enumeration value="HR045"/>
+                <xs:enumeration value="HR046"/>
+                <xs:enumeration value="HR047"/>
+                <xs:enumeration value="HR048"/>
+                <xs:enumeration value="HR049"/>
+                <xs:enumeration value="HR04A"/>
+                <xs:enumeration value="HR04B"/>
+                <xs:enumeration value="HR04C"/>
+                <xs:enumeration value="HR04D"/>
+                <xs:enumeration value="HR04E"/>
+                <xs:enumeration value="HRZZZ"/>
+                <xs:enumeration value="HU110"/>
+                <xs:enumeration value="HU120"/>
+                <xs:enumeration value="HU211"/>
+                <xs:enumeration value="HU212"/>
+                <xs:enumeration value="HU213"/>
+                <xs:enumeration value="HU221"/>
+                <xs:enumeration value="HU222"/>
+                <xs:enumeration value="HU223"/>
+                <xs:enumeration value="HU231"/>
+                <xs:enumeration value="HU232"/>
+                <xs:enumeration value="HU233"/>
+                <xs:enumeration value="HU311"/>
+                <xs:enumeration value="HU312"/>
+                <xs:enumeration value="HU313"/>
+                <xs:enumeration value="HU321"/>
+                <xs:enumeration value="HU322"/>
+                <xs:enumeration value="HU323"/>
+                <xs:enumeration value="HU331"/>
+                <xs:enumeration value="HU332"/>
+                <xs:enumeration value="HU333"/>
+                <xs:enumeration value="HUZZZ"/>
+                <xs:enumeration value="IE041"/>
+                <xs:enumeration value="IE042"/>
+                <xs:enumeration value="IE051"/>
+                <xs:enumeration value="IE052"/>
+                <xs:enumeration value="IE053"/>
+                <xs:enumeration value="IE061"/>
+                <xs:enumeration value="IE062"/>
+                <xs:enumeration value="IE063"/>
+                <xs:enumeration value="IEZZZ"/>
+                <xs:enumeration value="IS00"/>
+                <xs:enumeration value="ITC11"/>
+                <xs:enumeration value="ITC12"/>
+                <xs:enumeration value="ITC13"/>
+                <xs:enumeration value="ITC14"/>
+                <xs:enumeration value="ITC15"/>
+                <xs:enumeration value="ITC16"/>
+                <xs:enumeration value="ITC17"/>
+                <xs:enumeration value="ITC18"/>
+                <xs:enumeration value="ITC20"/>
+                <xs:enumeration value="ITC31"/>
+                <xs:enumeration value="ITC32"/>
+                <xs:enumeration value="ITC33"/>
+                <xs:enumeration value="ITC34"/>
+                <xs:enumeration value="ITC41"/>
+                <xs:enumeration value="ITC42"/>
+                <xs:enumeration value="ITC43"/>
+                <xs:enumeration value="ITC44"/>
+                <xs:enumeration value="ITC46"/>
+                <xs:enumeration value="ITC47"/>
+                <xs:enumeration value="ITC48"/>
+                <xs:enumeration value="ITC49"/>
+                <xs:enumeration value="ITC4A"/>
+                <xs:enumeration value="ITC4B"/>
+                <xs:enumeration value="ITC4C"/>
+                <xs:enumeration value="ITC4D"/>
+                <xs:enumeration value="ITF11"/>
+                <xs:enumeration value="ITF12"/>
+                <xs:enumeration value="ITF13"/>
+                <xs:enumeration value="ITF14"/>
+                <xs:enumeration value="ITF21"/>
+                <xs:enumeration value="ITF22"/>
+                <xs:enumeration value="ITF31"/>
+                <xs:enumeration value="ITF32"/>
+                <xs:enumeration value="ITF33"/>
+                <xs:enumeration value="ITF34"/>
+                <xs:enumeration value="ITF35"/>
+                <xs:enumeration value="ITF43"/>
+                <xs:enumeration value="ITF44"/>
+                <xs:enumeration value="ITF45"/>
+                <xs:enumeration value="ITF46"/>
+                <xs:enumeration value="ITF47"/>
+                <xs:enumeration value="ITF48"/>
+                <xs:enumeration value="ITF51"/>
+                <xs:enumeration value="ITF52"/>
+                <xs:enumeration value="ITF61"/>
+                <xs:enumeration value="ITF62"/>
+                <xs:enumeration value="ITF63"/>
+                <xs:enumeration value="ITF64"/>
+                <xs:enumeration value="ITF65"/>
+                <xs:enumeration value="ITG11"/>
+                <xs:enumeration value="ITG12"/>
+                <xs:enumeration value="ITG13"/>
+                <xs:enumeration value="ITG14"/>
+                <xs:enumeration value="ITG15"/>
+                <xs:enumeration value="ITG16"/>
+                <xs:enumeration value="ITG17"/>
+                <xs:enumeration value="ITG18"/>
+                <xs:enumeration value="ITG19"/>
+                <xs:enumeration value="ITG25"/>
+                <xs:enumeration value="ITG26"/>
+                <xs:enumeration value="ITG27"/>
+                <xs:enumeration value="ITG28"/>
+                <xs:enumeration value="ITG29"/>
+                <xs:enumeration value="ITG2A"/>
+                <xs:enumeration value="ITG2B"/>
+                <xs:enumeration value="ITG2C"/>
+                <xs:enumeration value="ITH10"/>
+                <xs:enumeration value="ITH20"/>
+                <xs:enumeration value="ITH31"/>
+                <xs:enumeration value="ITH32"/>
+                <xs:enumeration value="ITH33"/>
+                <xs:enumeration value="ITH34"/>
+                <xs:enumeration value="ITH35"/>
+                <xs:enumeration value="ITH36"/>
+                <xs:enumeration value="ITH37"/>
+                <xs:enumeration value="ITH41"/>
+                <xs:enumeration value="ITH42"/>
+                <xs:enumeration value="ITH43"/>
+                <xs:enumeration value="ITH44"/>
+                <xs:enumeration value="ITH51"/>
+                <xs:enumeration value="ITH52"/>
+                <xs:enumeration value="ITH53"/>
+                <xs:enumeration value="ITH54"/>
+                <xs:enumeration value="ITH55"/>
+                <xs:enumeration value="ITH56"/>
+                <xs:enumeration value="ITH57"/>
+                <xs:enumeration value="ITH58"/>
+                <xs:enumeration value="ITH59"/>
+                <xs:enumeration value="ITI11"/>
+                <xs:enumeration value="ITI12"/>
+                <xs:enumeration value="ITI13"/>
+                <xs:enumeration value="ITI14"/>
+                <xs:enumeration value="ITI15"/>
+                <xs:enumeration value="ITI16"/>
+                <xs:enumeration value="ITI17"/>
+                <xs:enumeration value="ITI18"/>
+                <xs:enumeration value="ITI19"/>
+                <xs:enumeration value="ITI1A"/>
+                <xs:enumeration value="ITI21"/>
+                <xs:enumeration value="ITI22"/>
+                <xs:enumeration value="ITI31"/>
+                <xs:enumeration value="ITI32"/>
+                <xs:enumeration value="ITI33"/>
+                <xs:enumeration value="ITI34"/>
+                <xs:enumeration value="ITI35"/>
+                <xs:enumeration value="ITI41"/>
+                <xs:enumeration value="ITI42"/>
+                <xs:enumeration value="ITI43"/>
+                <xs:enumeration value="ITI44"/>
+                <xs:enumeration value="ITI45"/>
+                <xs:enumeration value="ITZZZ"/>
+                <xs:enumeration value="LI00"/>
+                <xs:enumeration value="LT011"/>
+                <xs:enumeration value="LT021"/>
+                <xs:enumeration value="LT022"/>
+                <xs:enumeration value="LT023"/>
+                <xs:enumeration value="LT024"/>
+                <xs:enumeration value="LT025"/>
+                <xs:enumeration value="LT026"/>
+                <xs:enumeration value="LT027"/>
+                <xs:enumeration value="LT028"/>
+                <xs:enumeration value="LT029"/>
+                <xs:enumeration value="LTZZZ"/>
+                <xs:enumeration value="LU000"/>
+                <xs:enumeration value="LUZZZ"/>
+                <xs:enumeration value="LV003"/>
+                <xs:enumeration value="LV005"/>
+                <xs:enumeration value="LV006"/>
+                <xs:enumeration value="LV007"/>
+                <xs:enumeration value="LV008"/>
+                <xs:enumeration value="LV009"/>
+                <xs:enumeration value="LVZZZ"/>
+                <xs:enumeration value="ME00"/>
+                <xs:enumeration value="MK00"/>
+                <xs:enumeration value="MT001"/>
+                <xs:enumeration value="MT002"/>
+                <xs:enumeration value="MTZZZ"/>
+                <xs:enumeration value="NL111"/>
+                <xs:enumeration value="NL112"/>
+                <xs:enumeration value="NL113"/>
+                <xs:enumeration value="NL124"/>
+                <xs:enumeration value="NL125"/>
+                <xs:enumeration value="NL126"/>
+                <xs:enumeration value="NL131"/>
+                <xs:enumeration value="NL132"/>
+                <xs:enumeration value="NL133"/>
+                <xs:enumeration value="NL211"/>
+                <xs:enumeration value="NL212"/>
+                <xs:enumeration value="NL213"/>
+                <xs:enumeration value="NL221"/>
+                <xs:enumeration value="NL224"/>
+                <xs:enumeration value="NL225"/>
+                <xs:enumeration value="NL226"/>
+                <xs:enumeration value="NL230"/>
+                <xs:enumeration value="NL310"/>
+                <xs:enumeration value="NL321"/>
+                <xs:enumeration value="NL323"/>
+                <xs:enumeration value="NL324"/>
+                <xs:enumeration value="NL325"/>
+                <xs:enumeration value="NL327"/>
+                <xs:enumeration value="NL328"/>
+                <xs:enumeration value="NL329"/>
+                <xs:enumeration value="NL332"/>
+                <xs:enumeration value="NL333"/>
+                <xs:enumeration value="NL337"/>
+                <xs:enumeration value="NL33A"/>
+                <xs:enumeration value="NL33B"/>
+                <xs:enumeration value="NL33C"/>
+                <xs:enumeration value="NL341"/>
+                <xs:enumeration value="NL342"/>
+                <xs:enumeration value="NL411"/>
+                <xs:enumeration value="NL412"/>
+                <xs:enumeration value="NL413"/>
+                <xs:enumeration value="NL414"/>
+                <xs:enumeration value="NL421"/>
+                <xs:enumeration value="NL422"/>
+                <xs:enumeration value="NL423"/>
+                <xs:enumeration value="NLZZZ"/>
+                <xs:enumeration value="NO01"/>
+                <xs:enumeration value="NO02"/>
+                <xs:enumeration value="NO03"/>
+                <xs:enumeration value="NO04"/>
+                <xs:enumeration value="NO05"/>
+                <xs:enumeration value="NO06"/>
+                <xs:enumeration value="NO07"/>
+                <xs:enumeration value="PL213"/>
+                <xs:enumeration value="PL214"/>
+                <xs:enumeration value="PL217"/>
+                <xs:enumeration value="PL218"/>
+                <xs:enumeration value="PL219"/>
+                <xs:enumeration value="PL21A"/>
+                <xs:enumeration value="PL224"/>
+                <xs:enumeration value="PL225"/>
+                <xs:enumeration value="PL227"/>
+                <xs:enumeration value="PL228"/>
+                <xs:enumeration value="PL229"/>
+                <xs:enumeration value="PL22A"/>
+                <xs:enumeration value="PL22B"/>
+                <xs:enumeration value="PL22C"/>
+                <xs:enumeration value="PL411"/>
+                <xs:enumeration value="PL414"/>
+                <xs:enumeration value="PL415"/>
+                <xs:enumeration value="PL416"/>
+                <xs:enumeration value="PL417"/>
+                <xs:enumeration value="PL418"/>
+                <xs:enumeration value="PL424"/>
+                <xs:enumeration value="PL426"/>
+                <xs:enumeration value="PL427"/>
+                <xs:enumeration value="PL428"/>
+                <xs:enumeration value="PL431"/>
+                <xs:enumeration value="PL432"/>
+                <xs:enumeration value="PL514"/>
+                <xs:enumeration value="PL515"/>
+                <xs:enumeration value="PL516"/>
+                <xs:enumeration value="PL517"/>
+                <xs:enumeration value="PL518"/>
+                <xs:enumeration value="PL523"/>
+                <xs:enumeration value="PL524"/>
+                <xs:enumeration value="PL613"/>
+                <xs:enumeration value="PL616"/>
+                <xs:enumeration value="PL617"/>
+                <xs:enumeration value="PL618"/>
+                <xs:enumeration value="PL619"/>
+                <xs:enumeration value="PL621"/>
+                <xs:enumeration value="PL622"/>
+                <xs:enumeration value="PL623"/>
+                <xs:enumeration value="PL633"/>
+                <xs:enumeration value="PL634"/>
+                <xs:enumeration value="PL636"/>
+                <xs:enumeration value="PL637"/>
+                <xs:enumeration value="PL638"/>
+                <xs:enumeration value="PL711"/>
+                <xs:enumeration value="PL712"/>
+                <xs:enumeration value="PL713"/>
+                <xs:enumeration value="PL714"/>
+                <xs:enumeration value="PL715"/>
+                <xs:enumeration value="PL721"/>
+                <xs:enumeration value="PL722"/>
+                <xs:enumeration value="PL811"/>
+                <xs:enumeration value="PL812"/>
+                <xs:enumeration value="PL814"/>
+                <xs:enumeration value="PL815"/>
+                <xs:enumeration value="PL821"/>
+                <xs:enumeration value="PL822"/>
+                <xs:enumeration value="PL823"/>
+                <xs:enumeration value="PL824"/>
+                <xs:enumeration value="PL841"/>
+                <xs:enumeration value="PL842"/>
+                <xs:enumeration value="PL843"/>
+                <xs:enumeration value="PL911"/>
+                <xs:enumeration value="PL912"/>
+                <xs:enumeration value="PL913"/>
+                <xs:enumeration value="PL921"/>
+                <xs:enumeration value="PL922"/>
+                <xs:enumeration value="PL923"/>
+                <xs:enumeration value="PL924"/>
+                <xs:enumeration value="PL925"/>
+                <xs:enumeration value="PL926"/>
+                <xs:enumeration value="PLZZZ"/>
+                <xs:enumeration value="PT111"/>
+                <xs:enumeration value="PT112"/>
+                <xs:enumeration value="PT119"/>
+                <xs:enumeration value="PT11A"/>
+                <xs:enumeration value="PT11B"/>
+                <xs:enumeration value="PT11C"/>
+                <xs:enumeration value="PT11D"/>
+                <xs:enumeration value="PT11E"/>
+                <xs:enumeration value="PT150"/>
+                <xs:enumeration value="PT16B"/>
+                <xs:enumeration value="PT16D"/>
+                <xs:enumeration value="PT16E"/>
+                <xs:enumeration value="PT16F"/>
+                <xs:enumeration value="PT16G"/>
+                <xs:enumeration value="PT16H"/>
+                <xs:enumeration value="PT16I"/>
+                <xs:enumeration value="PT16J"/>
+                <xs:enumeration value="PT170"/>
+                <xs:enumeration value="PT181"/>
+                <xs:enumeration value="PT184"/>
+                <xs:enumeration value="PT185"/>
+                <xs:enumeration value="PT186"/>
+                <xs:enumeration value="PT187"/>
+                <xs:enumeration value="PT200"/>
+                <xs:enumeration value="PT300"/>
+                <xs:enumeration value="PTZZZ"/>
+                <xs:enumeration value="RO111"/>
+                <xs:enumeration value="RO112"/>
+                <xs:enumeration value="RO113"/>
+                <xs:enumeration value="RO114"/>
+                <xs:enumeration value="RO115"/>
+                <xs:enumeration value="RO116"/>
+                <xs:enumeration value="RO121"/>
+                <xs:enumeration value="RO122"/>
+                <xs:enumeration value="RO123"/>
+                <xs:enumeration value="RO124"/>
+                <xs:enumeration value="RO125"/>
+                <xs:enumeration value="RO126"/>
+                <xs:enumeration value="RO211"/>
+                <xs:enumeration value="RO212"/>
+                <xs:enumeration value="RO213"/>
+                <xs:enumeration value="RO214"/>
+                <xs:enumeration value="RO215"/>
+                <xs:enumeration value="RO216"/>
+                <xs:enumeration value="RO221"/>
+                <xs:enumeration value="RO222"/>
+                <xs:enumeration value="RO223"/>
+                <xs:enumeration value="RO224"/>
+                <xs:enumeration value="RO225"/>
+                <xs:enumeration value="RO226"/>
+                <xs:enumeration value="RO311"/>
+                <xs:enumeration value="RO312"/>
+                <xs:enumeration value="RO313"/>
+                <xs:enumeration value="RO314"/>
+                <xs:enumeration value="RO315"/>
+                <xs:enumeration value="RO316"/>
+                <xs:enumeration value="RO317"/>
+                <xs:enumeration value="RO321"/>
+                <xs:enumeration value="RO322"/>
+                <xs:enumeration value="RO411"/>
+                <xs:enumeration value="RO412"/>
+                <xs:enumeration value="RO413"/>
+                <xs:enumeration value="RO414"/>
+                <xs:enumeration value="RO415"/>
+                <xs:enumeration value="RO421"/>
+                <xs:enumeration value="RO422"/>
+                <xs:enumeration value="RO423"/>
+                <xs:enumeration value="RO424"/>
+                <xs:enumeration value="ROZZZ"/>
+                <xs:enumeration value="RS00"/>
+                <xs:enumeration value="SE110"/>
+                <xs:enumeration value="SE121"/>
+                <xs:enumeration value="SE122"/>
+                <xs:enumeration value="SE123"/>
+                <xs:enumeration value="SE124"/>
+                <xs:enumeration value="SE125"/>
+                <xs:enumeration value="SE211"/>
+                <xs:enumeration value="SE212"/>
+                <xs:enumeration value="SE213"/>
+                <xs:enumeration value="SE214"/>
+                <xs:enumeration value="SE221"/>
+                <xs:enumeration value="SE224"/>
+                <xs:enumeration value="SE231"/>
+                <xs:enumeration value="SE232"/>
+                <xs:enumeration value="SE311"/>
+                <xs:enumeration value="SE312"/>
+                <xs:enumeration value="SE313"/>
+                <xs:enumeration value="SE321"/>
+                <xs:enumeration value="SE322"/>
+                <xs:enumeration value="SE331"/>
+                <xs:enumeration value="SE332"/>
+                <xs:enumeration value="SEZZZ"/>
+                <xs:enumeration value="SI031"/>
+                <xs:enumeration value="SI032"/>
+                <xs:enumeration value="SI033"/>
+                <xs:enumeration value="SI034"/>
+                <xs:enumeration value="SI035"/>
+                <xs:enumeration value="SI036"/>
+                <xs:enumeration value="SI037"/>
+                <xs:enumeration value="SI038"/>
+                <xs:enumeration value="SI041"/>
+                <xs:enumeration value="SI042"/>
+                <xs:enumeration value="SI043"/>
+                <xs:enumeration value="SI044"/>
+                <xs:enumeration value="SIZZZ"/>
+                <xs:enumeration value="SK010"/>
+                <xs:enumeration value="SK021"/>
+                <xs:enumeration value="SK022"/>
+                <xs:enumeration value="SK023"/>
+                <xs:enumeration value="SK031"/>
+                <xs:enumeration value="SK032"/>
+                <xs:enumeration value="SK041"/>
+                <xs:enumeration value="SK042"/>
+                <xs:enumeration value="SKZZZ"/>
+                <xs:enumeration value="TR10"/>
+                <xs:enumeration value="TR21"/>
+                <xs:enumeration value="TR22"/>
+                <xs:enumeration value="TR31"/>
+                <xs:enumeration value="TR32"/>
+                <xs:enumeration value="TR33"/>
+                <xs:enumeration value="TR41"/>
+                <xs:enumeration value="TR42"/>
+                <xs:enumeration value="TR51"/>
+                <xs:enumeration value="TR52"/>
+                <xs:enumeration value="TR61"/>
+                <xs:enumeration value="TR62"/>
+                <xs:enumeration value="TR63"/>
+                <xs:enumeration value="TR71"/>
+                <xs:enumeration value="TR72"/>
+                <xs:enumeration value="TR81"/>
+                <xs:enumeration value="TR82"/>
+                <xs:enumeration value="TR83"/>
+                <xs:enumeration value="TR90"/>
+                <xs:enumeration value="TRA1"/>
+                <xs:enumeration value="TRA2"/>
+                <xs:enumeration value="TRB1"/>
+                <xs:enumeration value="TRB2"/>
+                <xs:enumeration value="TRC1"/>
+                <xs:enumeration value="TRC2"/>
+                <xs:enumeration value="TRC3"/>
+                <xs:enumeration value="UKC11"/>
+                <xs:enumeration value="UKC12"/>
+                <xs:enumeration value="UKC13"/>
+                <xs:enumeration value="UKC14"/>
+                <xs:enumeration value="UKC21"/>
+                <xs:enumeration value="UKC22"/>
+                <xs:enumeration value="UKC23"/>
+                <xs:enumeration value="UKD11"/>
+                <xs:enumeration value="UKD12"/>
+                <xs:enumeration value="UKD33"/>
+                <xs:enumeration value="UKD34"/>
+                <xs:enumeration value="UKD35"/>
+                <xs:enumeration value="UKD36"/>
+                <xs:enumeration value="UKD37"/>
+                <xs:enumeration value="UKD41"/>
+                <xs:enumeration value="UKD42"/>
+                <xs:enumeration value="UKD44"/>
+                <xs:enumeration value="UKD45"/>
+                <xs:enumeration value="UKD46"/>
+                <xs:enumeration value="UKD47"/>
+                <xs:enumeration value="UKD61"/>
+                <xs:enumeration value="UKD62"/>
+                <xs:enumeration value="UKD63"/>
+                <xs:enumeration value="UKD71"/>
+                <xs:enumeration value="UKD72"/>
+                <xs:enumeration value="UKD73"/>
+                <xs:enumeration value="UKD74"/>
+                <xs:enumeration value="UKE11"/>
+                <xs:enumeration value="UKE12"/>
+                <xs:enumeration value="UKE13"/>
+                <xs:enumeration value="UKE21"/>
+                <xs:enumeration value="UKE22"/>
+                <xs:enumeration value="UKE31"/>
+                <xs:enumeration value="UKE32"/>
+                <xs:enumeration value="UKE41"/>
+                <xs:enumeration value="UKE42"/>
+                <xs:enumeration value="UKE44"/>
+                <xs:enumeration value="UKE45"/>
+                <xs:enumeration value="UKF11"/>
+                <xs:enumeration value="UKF12"/>
+                <xs:enumeration value="UKF13"/>
+                <xs:enumeration value="UKF14"/>
+                <xs:enumeration value="UKF15"/>
+                <xs:enumeration value="UKF16"/>
+                <xs:enumeration value="UKF21"/>
+                <xs:enumeration value="UKF22"/>
+                <xs:enumeration value="UKF24"/>
+                <xs:enumeration value="UKF25"/>
+                <xs:enumeration value="UKF30"/>
+                <xs:enumeration value="UKG11"/>
+                <xs:enumeration value="UKG12"/>
+                <xs:enumeration value="UKG13"/>
+                <xs:enumeration value="UKG21"/>
+                <xs:enumeration value="UKG22"/>
+                <xs:enumeration value="UKG23"/>
+                <xs:enumeration value="UKG24"/>
+                <xs:enumeration value="UKG31"/>
+                <xs:enumeration value="UKG32"/>
+                <xs:enumeration value="UKG33"/>
+                <xs:enumeration value="UKG36"/>
+                <xs:enumeration value="UKG37"/>
+                <xs:enumeration value="UKG38"/>
+                <xs:enumeration value="UKG39"/>
+                <xs:enumeration value="UKH11"/>
+                <xs:enumeration value="UKH12"/>
+                <xs:enumeration value="UKH14"/>
+                <xs:enumeration value="UKH15"/>
+                <xs:enumeration value="UKH16"/>
+                <xs:enumeration value="UKH17"/>
+                <xs:enumeration value="UKH21"/>
+                <xs:enumeration value="UKH23"/>
+                <xs:enumeration value="UKH24"/>
+                <xs:enumeration value="UKH25"/>
+                <xs:enumeration value="UKH31"/>
+                <xs:enumeration value="UKH32"/>
+                <xs:enumeration value="UKH34"/>
+                <xs:enumeration value="UKH35"/>
+                <xs:enumeration value="UKH36"/>
+                <xs:enumeration value="UKH37"/>
+                <xs:enumeration value="UKI31"/>
+                <xs:enumeration value="UKI32"/>
+                <xs:enumeration value="UKI33"/>
+                <xs:enumeration value="UKI34"/>
+                <xs:enumeration value="UKI41"/>
+                <xs:enumeration value="UKI42"/>
+                <xs:enumeration value="UKI43"/>
+                <xs:enumeration value="UKI44"/>
+                <xs:enumeration value="UKI45"/>
+                <xs:enumeration value="UKI51"/>
+                <xs:enumeration value="UKI52"/>
+                <xs:enumeration value="UKI53"/>
+                <xs:enumeration value="UKI54"/>
+                <xs:enumeration value="UKI61"/>
+                <xs:enumeration value="UKI62"/>
+                <xs:enumeration value="UKI63"/>
+                <xs:enumeration value="UKI71"/>
+                <xs:enumeration value="UKI72"/>
+                <xs:enumeration value="UKI73"/>
+                <xs:enumeration value="UKI74"/>
+                <xs:enumeration value="UKI75"/>
+                <xs:enumeration value="UKJ11"/>
+                <xs:enumeration value="UKJ12"/>
+                <xs:enumeration value="UKJ13"/>
+                <xs:enumeration value="UKJ14"/>
+                <xs:enumeration value="UKJ21"/>
+                <xs:enumeration value="UKJ22"/>
+                <xs:enumeration value="UKJ25"/>
+                <xs:enumeration value="UKJ26"/>
+                <xs:enumeration value="UKJ27"/>
+                <xs:enumeration value="UKJ28"/>
+                <xs:enumeration value="UKJ31"/>
+                <xs:enumeration value="UKJ32"/>
+                <xs:enumeration value="UKJ34"/>
+                <xs:enumeration value="UKJ35"/>
+                <xs:enumeration value="UKJ36"/>
+                <xs:enumeration value="UKJ37"/>
+                <xs:enumeration value="UKJ41"/>
+                <xs:enumeration value="UKJ43"/>
+                <xs:enumeration value="UKJ44"/>
+                <xs:enumeration value="UKJ45"/>
+                <xs:enumeration value="UKJ46"/>
+                <xs:enumeration value="UKK11"/>
+                <xs:enumeration value="UKK12"/>
+                <xs:enumeration value="UKK13"/>
+                <xs:enumeration value="UKK14"/>
+                <xs:enumeration value="UKK15"/>
+                <xs:enumeration value="UKK21"/>
+                <xs:enumeration value="UKK22"/>
+                <xs:enumeration value="UKK23"/>
+                <xs:enumeration value="UKK30"/>
+                <xs:enumeration value="UKK41"/>
+                <xs:enumeration value="UKK42"/>
+                <xs:enumeration value="UKK43"/>
+                <xs:enumeration value="UKL11"/>
+                <xs:enumeration value="UKL12"/>
+                <xs:enumeration value="UKL13"/>
+                <xs:enumeration value="UKL14"/>
+                <xs:enumeration value="UKL15"/>
+                <xs:enumeration value="UKL16"/>
+                <xs:enumeration value="UKL17"/>
+                <xs:enumeration value="UKL18"/>
+                <xs:enumeration value="UKL21"/>
+                <xs:enumeration value="UKL22"/>
+                <xs:enumeration value="UKL23"/>
+                <xs:enumeration value="UKL24"/>
+                <xs:enumeration value="UKM50"/>
+                <xs:enumeration value="UKM61"/>
+                <xs:enumeration value="UKM62"/>
+                <xs:enumeration value="UKM63"/>
+                <xs:enumeration value="UKM64"/>
+                <xs:enumeration value="UKM65"/>
+                <xs:enumeration value="UKM66"/>
+                <xs:enumeration value="UKM71"/>
+                <xs:enumeration value="UKM72"/>
+                <xs:enumeration value="UKM73"/>
+                <xs:enumeration value="UKM75"/>
+                <xs:enumeration value="UKM76"/>
+                <xs:enumeration value="UKM77"/>
+                <xs:enumeration value="UKM78"/>
+                <xs:enumeration value="UKM81"/>
+                <xs:enumeration value="UKM82"/>
+                <xs:enumeration value="UKM83"/>
+                <xs:enumeration value="UKM84"/>
+                <xs:enumeration value="UKM91"/>
+                <xs:enumeration value="UKM92"/>
+                <xs:enumeration value="UKM93"/>
+                <xs:enumeration value="UKM94"/>
+                <xs:enumeration value="UKM95"/>
+                <xs:enumeration value="UKN06"/>
+                <xs:enumeration value="UKN07"/>
+                <xs:enumeration value="UKN08"/>
+                <xs:enumeration value="UKN09"/>
+                <xs:enumeration value="UKN10"/>
+                <xs:enumeration value="UKN11"/>
+                <xs:enumeration value="UKN12"/>
+                <xs:enumeration value="UKN13"/>
+                <xs:enumeration value="UKN14"/>
+                <xs:enumeration value="UKN15"/>
+                <xs:enumeration value="UKN16"/>
+                <xs:enumeration value="UKZZZ"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="aggLatitude">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>aggLatitude</isoattrs:Name>
+                <isoattrs:Definition>Latitude (ETRS89 or WGS-84, decimal degrees)</isoattrs:Definition>
+                <ddattrs:Methodology>This value is required for all active agglomerations.&#13;
+&#13;
+In line with  the WISE GIS Guidance (version 6.0.6, 2019-04-29),  "coordinates should be provided  in geographic coordinates, decimal degrees, ETRS89 coordinate system. For the overseas areas (= areas out of the scope of ETRS89), coordinate system WGS-84 should be used"&#13;
+Coordinates should be reported with 3-5 decimal places.&#13;
+&#13;
+</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+                <xs:totalDigits value="18"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="aggLongitude">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>aggLongitude</isoattrs:Name>
+                <isoattrs:Definition>Longitude (ETRS89 or WGS-84, decimal degrees)</isoattrs:Definition>
+                <ddattrs:Methodology>This value is required for all active agglomerations.&#13;
+&#13;
+In line with  the WISE GIS Guidance (version 6.0.6, 2019-04-29),  "coordinates should be provided  in geographic coordinates, decimal degrees, ETRS89 coordinate system. For the overseas areas (= areas out of the scope of ETRS89), coordinate system WGS-84 should be used"&#13;
+Coordinates should be reported with 3-5 decimal places.&#13;
+</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+                <xs:totalDigits value="18"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="aggGenerated">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>aggGenerated</isoattrs:Name>
+                <isoattrs:Definition>Generated load (p.e.), size of the agglomeration</isoattrs:Definition>
+                <ddattrs:Methodology>This value is required.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:integer">
+                <xs:totalDigits value="9"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="bigCityID">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>bigCityID</isoattrs:Name>
+                <isoattrs:Definition>ID of the big city/ big discharger.&#13;
+&#13;
+First 2 characters must be the 2-alpha character ISO country code (use 'EL' for Greece and 'UK' for the United Kingdom).&#13;
+Do not use characters with accents and other diacritical marks (national characters). Do not use spaces or other spatial characters. The hyphen '-' and the underscore '_' characters are allowed.</isoattrs:Definition>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="AT006"/>
+                <xs:enumeration value="AT007"/>
+                <xs:enumeration value="AT014"/>
+                <xs:enumeration value="AT016"/>
+                <xs:enumeration value="AT022"/>
+                <xs:enumeration value="ATAG_2-K1931629"/>
+                <xs:enumeration value="ATAG_2-K1939997"/>
+                <xs:enumeration value="ATAG_3-11"/>
+                <xs:enumeration value="ATAG_3-119"/>
+                <xs:enumeration value="ATAG_3-449"/>
+                <xs:enumeration value="ATAG_3-47"/>
+                <xs:enumeration value="ATAG_4-41812001"/>
+                <xs:enumeration value="ATAG_7-7930111"/>
+                <xs:enumeration value="ATAG_8-Hofsteig"/>
+                <xs:enumeration value="ATAG_8-Hohenems"/>
+                <xs:enumeration value="ATAG_8-Meiningen"/>
+                <xs:enumeration value="BE004"/>
+                <xs:enumeration value="BE013"/>
+                <xs:enumeration value="BE014"/>
+                <xs:enumeration value="BE015"/>
+                <xs:enumeration value="BE022"/>
+                <xs:enumeration value="BE034"/>
+                <xs:enumeration value="BE044"/>
+                <xs:enumeration value="BE2"/>
+                <xs:enumeration value="BE310"/>
+                <xs:enumeration value="BE324"/>
+                <xs:enumeration value="BE325"/>
+                <xs:enumeration value="BG003"/>
+                <xs:enumeration value="BG013"/>
+                <xs:enumeration value="BG014"/>
+                <xs:enumeration value="BG016"/>
+                <xs:enumeration value="BG019"/>
+                <xs:enumeration value="BG020"/>
+                <xs:enumeration value="BG021"/>
+                <xs:enumeration value="BG022"/>
+                <xs:enumeration value="BG023"/>
+                <xs:enumeration value="CH_CITY_0230"/>
+                <xs:enumeration value="CH_CITY_0261"/>
+                <xs:enumeration value="CH_CITY_0351"/>
+                <xs:enumeration value="CH_CITY_2701"/>
+                <xs:enumeration value="CH_CITY_5586"/>
+                <xs:enumeration value="CH_CITY_6621"/>
+                <xs:enumeration value="CY001"/>
+                <xs:enumeration value="CY005"/>
+                <xs:enumeration value="CZ003"/>
+                <xs:enumeration value="CZ015"/>
+                <xs:enumeration value="CZ029"/>
+                <xs:enumeration value="CZ039"/>
+                <xs:enumeration value="CZ042"/>
+                <xs:enumeration value="CZ046"/>
+                <xs:enumeration value="CZ047"/>
+                <xs:enumeration value="DE001"/>
+                <xs:enumeration value="DE025"/>
+                <xs:enumeration value="DE055"/>
+                <xs:enumeration value="DE057"/>
+                <xs:enumeration value="DE059"/>
+                <xs:enumeration value="DE067"/>
+                <xs:enumeration value="DE068"/>
+                <xs:enumeration value="DE072"/>
+                <xs:enumeration value="DE076"/>
+                <xs:enumeration value="DE077"/>
+                <xs:enumeration value="DE078"/>
+                <xs:enumeration value="DE093"/>
+                <xs:enumeration value="DE098"/>
+                <xs:enumeration value="DE103"/>
+                <xs:enumeration value="DE109"/>
+                <xs:enumeration value="DE119"/>
+                <xs:enumeration value="DE121"/>
+                <xs:enumeration value="DE123"/>
+                <xs:enumeration value="DE126"/>
+                <xs:enumeration value="DE144"/>
+                <xs:enumeration value="DE147"/>
+                <xs:enumeration value="DE151"/>
+                <xs:enumeration value="DE163"/>
+                <xs:enumeration value="DE167"/>
+                <xs:enumeration value="DE187"/>
+                <xs:enumeration value="DE189"/>
+                <xs:enumeration value="DE204"/>
+                <xs:enumeration value="DE216"/>
+                <xs:enumeration value="DE219"/>
+                <xs:enumeration value="DE221"/>
+                <xs:enumeration value="DE223"/>
+                <xs:enumeration value="DE226"/>
+                <xs:enumeration value="DE230"/>
+                <xs:enumeration value="DE233"/>
+                <xs:enumeration value="DE244"/>
+                <xs:enumeration value="DE250"/>
+                <xs:enumeration value="DE267"/>
+                <xs:enumeration value="DE274"/>
+                <xs:enumeration value="DE275"/>
+                <xs:enumeration value="DE283"/>
+                <xs:enumeration value="DE287"/>
+                <xs:enumeration value="DE288"/>
+                <xs:enumeration value="DE295"/>
+                <xs:enumeration value="DE314"/>
+                <xs:enumeration value="DE319"/>
+                <xs:enumeration value="DE331"/>
+                <xs:enumeration value="DE336"/>
+                <xs:enumeration value="DE339"/>
+                <xs:enumeration value="DE341"/>
+                <xs:enumeration value="DE342"/>
+                <xs:enumeration value="DE361"/>
+                <xs:enumeration value="DE362"/>
+                <xs:enumeration value="DE369"/>
+                <xs:enumeration value="DE370"/>
+                <xs:enumeration value="DE372"/>
+                <xs:enumeration value="DE387"/>
+                <xs:enumeration value="DE400"/>
+                <xs:enumeration value="DE402"/>
+                <xs:enumeration value="DE407"/>
+                <xs:enumeration value="DE409"/>
+                <xs:enumeration value="DE412"/>
+                <xs:enumeration value="DE417"/>
+                <xs:enumeration value="DE423"/>
+                <xs:enumeration value="DE431"/>
+                <xs:enumeration value="DE443"/>
+                <xs:enumeration value="DE444"/>
+                <xs:enumeration value="DE447"/>
+                <xs:enumeration value="DE461"/>
+                <xs:enumeration value="DE468"/>
+                <xs:enumeration value="DE470"/>
+                <xs:enumeration value="DE490"/>
+                <xs:enumeration value="DE498"/>
+                <xs:enumeration value="DE503"/>
+                <xs:enumeration value="DE526"/>
+                <xs:enumeration value="DE538"/>
+                <xs:enumeration value="DE583"/>
+                <xs:enumeration value="DE591"/>
+                <xs:enumeration value="DE596"/>
+                <xs:enumeration value="DE600"/>
+                <xs:enumeration value="DE602"/>
+                <xs:enumeration value="DE607"/>
+                <xs:enumeration value="DEAG_BW1155100000016"/>
+                <xs:enumeration value="DEAG_BW1175100000062"/>
+                <xs:enumeration value="DEAG_BW2165100000007"/>
+                <xs:enumeration value="DEAG_BW2265100000005"/>
+                <xs:enumeration value="DEAG_BW2265100000007"/>
+                <xs:enumeration value="DEAG_BW3355100000005"/>
+                <xs:enumeration value="DEAG_BW3365100000001"/>
+                <xs:enumeration value="DEAG_BW4165100000066"/>
+                <xs:enumeration value="DEAG_BW4365100000025"/>
+                <xs:enumeration value="DEAG_BYAB-K0022"/>
+                <xs:enumeration value="DEAG_BYHO-K0002"/>
+                <xs:enumeration value="DEAG_BYHO-K0089"/>
+                <xs:enumeration value="DEAG_BYHO-K0180"/>
+                <xs:enumeration value="DEAG_BYIN-K0003"/>
+                <xs:enumeration value="DEAG_BYKC-K0001"/>
+                <xs:enumeration value="DEAG_BYKE-K0020"/>
+                <xs:enumeration value="DEAG_BYKG-K0001"/>
+                <xs:enumeration value="DEAG_BYM-K0121"/>
+                <xs:enumeration value="DEAG_BYN-K0003"/>
+                <xs:enumeration value="DEAG_BYRO-K0001"/>
+                <xs:enumeration value="DEAG_HE064350140131"/>
+                <xs:enumeration value="DEAG_HE065310050471"/>
+                <xs:enumeration value="DEAG_HE065340143511"/>
+                <xs:enumeration value="DEAG_HE066310091101"/>
+                <xs:enumeration value="DEAG_MV06.06.1 wbu1533"/>
+                <xs:enumeration value="DEAG_MV52.74.3 wbu2539"/>
+                <xs:enumeration value="DEAG_NI252006201"/>
+                <xs:enumeration value="DEAG_NI255023201"/>
+                <xs:enumeration value="DEAG_NI352011201"/>
+                <xs:enumeration value="DEAG_NI355022201"/>
+                <xs:enumeration value="DEAG_NI454032201"/>
+                <xs:enumeration value="DEAG_NI456015201"/>
+                <xs:enumeration value="DEAG_NW1913"/>
+                <xs:enumeration value="DEAG_NW2516"/>
+                <xs:enumeration value="DEAG_NW2529"/>
+                <xs:enumeration value="DEAG_NW2782"/>
+                <xs:enumeration value="DEAG_NW2797"/>
+                <xs:enumeration value="DEAG_NW3013"/>
+                <xs:enumeration value="DEAG_NW3061"/>
+                <xs:enumeration value="DEAG_NW316"/>
+                <xs:enumeration value="DEAG_NW329"/>
+                <xs:enumeration value="DEAG_NW35"/>
+                <xs:enumeration value="DEAG_NW905"/>
+                <xs:enumeration value="DEAG_RP100601008"/>
+                <xs:enumeration value="DEAG_RP102430091"/>
+                <xs:enumeration value="DEAG_SH56027"/>
+                <xs:enumeration value="DEAG_SH58044"/>
+                <xs:enumeration value="DEAG_ST151541000001"/>
+                <xs:enumeration value="DK001"/>
+                <xs:enumeration value="DK013"/>
+                <xs:enumeration value="DK017"/>
+                <xs:enumeration value="DK026"/>
+                <xs:enumeration value="DK278"/>
+                <xs:enumeration value="DK367"/>
+                <xs:enumeration value="DK378"/>
+                <xs:enumeration value="DK400"/>
+                <xs:enumeration value="DK429"/>
+                <xs:enumeration value="DK434"/>
+                <xs:enumeration value="DK437"/>
+                <xs:enumeration value="DK455"/>
+                <xs:enumeration value="EE002"/>
+                <xs:enumeration value="EE003"/>
+                <xs:enumeration value="EEIV0044"/>
+                <xs:enumeration value="EL005"/>
+                <xs:enumeration value="EL010"/>
+                <xs:enumeration value="EL023"/>
+                <xs:enumeration value="EL025"/>
+                <xs:enumeration value="EL031"/>
+                <xs:enumeration value="EL035"/>
+                <xs:enumeration value="ES003"/>
+                <xs:enumeration value="ES005"/>
+                <xs:enumeration value="ES014"/>
+                <xs:enumeration value="ES016"/>
+                <xs:enumeration value="ES019"/>
+                <xs:enumeration value="ES030"/>
+                <xs:enumeration value="ES033"/>
+                <xs:enumeration value="ES037"/>
+                <xs:enumeration value="ES039"/>
+                <xs:enumeration value="ES042"/>
+                <xs:enumeration value="ES052"/>
+                <xs:enumeration value="ES059"/>
+                <xs:enumeration value="ES068"/>
+                <xs:enumeration value="ES075"/>
+                <xs:enumeration value="ES081"/>
+                <xs:enumeration value="ES086"/>
+                <xs:enumeration value="ES087"/>
+                <xs:enumeration value="ES092"/>
+                <xs:enumeration value="ES099"/>
+                <xs:enumeration value="ES100"/>
+                <xs:enumeration value="ES10030310001022"/>
+                <xs:enumeration value="ES10030660001010"/>
+                <xs:enumeration value="ES10031330002060"/>
+                <xs:enumeration value="ES102"/>
+                <xs:enumeration value="ES10461100001010"/>
+                <xs:enumeration value="ES10461310002010"/>
+                <xs:enumeration value="ES10461990001010"/>
+                <xs:enumeration value="ES108"/>
+                <xs:enumeration value="ES110"/>
+                <xs:enumeration value="ES111"/>
+                <xs:enumeration value="ES114"/>
+                <xs:enumeration value="ES119"/>
+                <xs:enumeration value="ES121"/>
+                <xs:enumeration value="ES12150782911010"/>
+                <xs:enumeration value="ES127"/>
+                <xs:enumeration value="ES1290670005020"/>
+                <xs:enumeration value="ES1290690015010"/>
+                <xs:enumeration value="ES13280130002010"/>
+                <xs:enumeration value="ES13280140001010"/>
+                <xs:enumeration value="ES13280470001010"/>
+                <xs:enumeration value="ES13280960003010"/>
+                <xs:enumeration value="ES13281300002010"/>
+                <xs:enumeration value="ES13281480001010"/>
+                <xs:enumeration value="ES139"/>
+                <xs:enumeration value="ES1410700001010"/>
+                <xs:enumeration value="ES14300160001030"/>
+                <xs:enumeration value="ES14300161912010"/>
+                <xs:enumeration value="ES14300270011011"/>
+                <xs:enumeration value="ES146"/>
+                <xs:enumeration value="ES148"/>
+                <xs:enumeration value="ES149"/>
+                <xs:enumeration value="ES169"/>
+                <xs:enumeration value="ES171"/>
+                <xs:enumeration value="ES181"/>
+                <xs:enumeration value="ES183"/>
+                <xs:enumeration value="ES18510010000000"/>
+                <xs:enumeration value="ES188"/>
+                <xs:enumeration value="ES194"/>
+                <xs:enumeration value="ES206"/>
+                <xs:enumeration value="ES208"/>
+                <xs:enumeration value="ES211"/>
+                <xs:enumeration value="ES220"/>
+                <xs:enumeration value="ES225"/>
+                <xs:enumeration value="ES232"/>
+                <xs:enumeration value="ES259"/>
+                <xs:enumeration value="ES306"/>
+                <xs:enumeration value="ES332"/>
+                <xs:enumeration value="ES3330040101010"/>
+                <xs:enumeration value="ES3330441901011"/>
+                <xs:enumeration value="ES335"/>
+                <xs:enumeration value="ES345"/>
+                <xs:enumeration value="ES374"/>
+                <xs:enumeration value="ES424"/>
+                <xs:enumeration value="ES436"/>
+                <xs:enumeration value="ES5380010800010"/>
+                <xs:enumeration value="ES6390850005010"/>
+                <xs:enumeration value="ES7050190003010"/>
+                <xs:enumeration value="ES7241150021020"/>
+                <xs:enumeration value="ES7341200001010"/>
+                <xs:enumeration value="ES7401940006010"/>
+                <xs:enumeration value="ES8130050002010"/>
+                <xs:enumeration value="ES8130340002010"/>
+                <xs:enumeration value="ES8451650006010"/>
+                <xs:enumeration value="ES9080960001010"/>
+                <xs:enumeration value="ES9081050001010"/>
+                <xs:enumeration value="ES9081360001010"/>
+                <xs:enumeration value="ES9081630001040"/>
+                <xs:enumeration value="ES9081690001010"/>
+                <xs:enumeration value="ES9081840001010"/>
+                <xs:enumeration value="ES9082110001010"/>
+                <xs:enumeration value="ES9082980001010"/>
+                <xs:enumeration value="ES9083010001010"/>
+                <xs:enumeration value="ES9170790005010"/>
+                <xs:enumeration value="ES9431480013010"/>
+                <xs:enumeration value="FI003"/>
+                <xs:enumeration value="FI019"/>
+                <xs:enumeration value="FI023"/>
+                <xs:enumeration value="FI034"/>
+                <xs:enumeration value="FI036"/>
+                <xs:enumeration value="FIYKR05_T001477"/>
+                <xs:enumeration value="FR009"/>
+                <xs:enumeration value="FR010"/>
+                <xs:enumeration value="FR010000159220"/>
+                <xs:enumeration value="FR010000159512"/>
+                <xs:enumeration value="FR010000162041"/>
+                <xs:enumeration value="FR010000162160"/>
+                <xs:enumeration value="FR010000162351"/>
+                <xs:enumeration value="FR011"/>
+                <xs:enumeration value="FR012"/>
+                <xs:enumeration value="FR020000168066"/>
+                <xs:enumeration value="FR024"/>
+                <xs:enumeration value="FR028"/>
+                <xs:enumeration value="FR030000177243"/>
+                <xs:enumeration value="FR030000177284"/>
+                <xs:enumeration value="FR030000178646"/>
+                <xs:enumeration value="FR030000191228"/>
+                <xs:enumeration value="FR030000195127"/>
+                <xs:enumeration value="FR030000195585"/>
+                <xs:enumeration value="FR033"/>
+                <xs:enumeration value="FR034"/>
+                <xs:enumeration value="FR037"/>
+                <xs:enumeration value="FR040000129232"/>
+                <xs:enumeration value="FR040000153130"/>
+                <xs:enumeration value="FR042"/>
+                <xs:enumeration value="FR045"/>
+                <xs:enumeration value="FR047"/>
+                <xs:enumeration value="FR050000112202"/>
+                <xs:enumeration value="FR050000119031"/>
+                <xs:enumeration value="FR056"/>
+                <xs:enumeration value="FR060000171270"/>
+                <xs:enumeration value="FR060000183061"/>
+                <xs:enumeration value="FR064"/>
+                <xs:enumeration value="FR074"/>
+                <xs:enumeration value="FR076"/>
+                <xs:enumeration value="FR079"/>
+                <xs:enumeration value="FR095"/>
+                <xs:enumeration value="FR096"/>
+                <xs:enumeration value="FR098"/>
+                <xs:enumeration value="FR100000197414"/>
+                <xs:enumeration value="FR107"/>
+                <xs:enumeration value="FR112"/>
+                <xs:enumeration value="FR113"/>
+                <xs:enumeration value="FR115"/>
+                <xs:enumeration value="FR118"/>
+                <xs:enumeration value="FR119"/>
+                <xs:enumeration value="FR122"/>
+                <xs:enumeration value="FR124"/>
+                <xs:enumeration value="FR128"/>
+                <xs:enumeration value="FR130"/>
+                <xs:enumeration value="FR132"/>
+                <xs:enumeration value="FR134"/>
+                <xs:enumeration value="FR140"/>
+                <xs:enumeration value="FR145"/>
+                <xs:enumeration value="FR147"/>
+                <xs:enumeration value="FR148"/>
+                <xs:enumeration value="FR149"/>
+                <xs:enumeration value="FR152"/>
+                <xs:enumeration value="FR153"/>
+                <xs:enumeration value="FR156"/>
+                <xs:enumeration value="FR159"/>
+                <xs:enumeration value="FR160"/>
+                <xs:enumeration value="FR162"/>
+                <xs:enumeration value="FR165"/>
+                <xs:enumeration value="FR170"/>
+                <xs:enumeration value="FR171"/>
+                <xs:enumeration value="FR176"/>
+                <xs:enumeration value="FR181"/>
+                <xs:enumeration value="FR184"/>
+                <xs:enumeration value="FR197"/>
+                <xs:enumeration value="FR199"/>
+                <xs:enumeration value="FR201"/>
+                <xs:enumeration value="FR202"/>
+                <xs:enumeration value="FR203"/>
+                <xs:enumeration value="FR205"/>
+                <xs:enumeration value="FR208"/>
+                <xs:enumeration value="FR209"/>
+                <xs:enumeration value="HRBC_0001116"/>
+                <xs:enumeration value="HRBC_0001131"/>
+                <xs:enumeration value="HRBC_0004008"/>
+                <xs:enumeration value="HRBC_0007012"/>
+                <xs:enumeration value="HU006"/>
+                <xs:enumeration value="HU009"/>
+                <xs:enumeration value="HU018"/>
+                <xs:enumeration value="HU038"/>
+                <xs:enumeration value="HU049"/>
+                <xs:enumeration value="HU054"/>
+                <xs:enumeration value="HU055"/>
+                <xs:enumeration value="IE002"/>
+                <xs:enumeration value="IE006"/>
+                <xs:enumeration value="IE010"/>
+                <xs:enumeration value="IE011"/>
+                <xs:enumeration value="IS001"/>
+                <xs:enumeration value="IT009"/>
+                <xs:enumeration value="IT019"/>
+                <xs:enumeration value="IT035"/>
+                <xs:enumeration value="IT042"/>
+                <xs:enumeration value="IT048"/>
+                <xs:enumeration value="IT054"/>
+                <xs:enumeration value="IT058"/>
+                <xs:enumeration value="IT063"/>
+                <xs:enumeration value="IT084"/>
+                <xs:enumeration value="IT093"/>
+                <xs:enumeration value="IT123"/>
+                <xs:enumeration value="IT131"/>
+                <xs:enumeration value="IT152"/>
+                <xs:enumeration value="IT154"/>
+                <xs:enumeration value="IT155"/>
+                <xs:enumeration value="IT170"/>
+                <xs:enumeration value="IT174"/>
+                <xs:enumeration value="IT200"/>
+                <xs:enumeration value="IT213"/>
+                <xs:enumeration value="IT215"/>
+                <xs:enumeration value="IT231"/>
+                <xs:enumeration value="IT239"/>
+                <xs:enumeration value="IT240"/>
+                <xs:enumeration value="IT246"/>
+                <xs:enumeration value="IT267"/>
+                <xs:enumeration value="IT270"/>
+                <xs:enumeration value="IT293"/>
+                <xs:enumeration value="IT295"/>
+                <xs:enumeration value="IT298"/>
+                <xs:enumeration value="IT302"/>
+                <xs:enumeration value="IT304"/>
+                <xs:enumeration value="IT311"/>
+                <xs:enumeration value="IT312"/>
+                <xs:enumeration value="IT327"/>
+                <xs:enumeration value="IT335"/>
+                <xs:enumeration value="IT336"/>
+                <xs:enumeration value="IT342"/>
+                <xs:enumeration value="IT344"/>
+                <xs:enumeration value="IT353"/>
+                <xs:enumeration value="IT395"/>
+                <xs:enumeration value="IT402"/>
+                <xs:enumeration value="IT410"/>
+                <xs:enumeration value="IT419"/>
+                <xs:enumeration value="IT421"/>
+                <xs:enumeration value="IT423"/>
+                <xs:enumeration value="IT426"/>
+                <xs:enumeration value="IT434"/>
+                <xs:enumeration value="IT437"/>
+                <xs:enumeration value="IT737"/>
+                <xs:enumeration value="IT789"/>
+                <xs:enumeration value="IT945"/>
+                <xs:enumeration value="IT946"/>
+                <xs:enumeration value="LT002"/>
+                <xs:enumeration value="LT003"/>
+                <xs:enumeration value="LT004"/>
+                <xs:enumeration value="LT005"/>
+                <xs:enumeration value="LT006"/>
+                <xs:enumeration value="LU002"/>
+                <xs:enumeration value="LV001"/>
+                <xs:enumeration value="LV003"/>
+                <xs:enumeration value="LV004"/>
+                <xs:enumeration value="MT001"/>
+                <xs:enumeration value="NLBG01033"/>
+                <xs:enumeration value="NLBG05013"/>
+                <xs:enumeration value="NLBG05017"/>
+                <xs:enumeration value="NLBG07020"/>
+                <xs:enumeration value="NLBG08011"/>
+                <xs:enumeration value="NLBG09024"/>
+                <xs:enumeration value="NLBG10009"/>
+                <xs:enumeration value="NLBG10027"/>
+                <xs:enumeration value="NLBG12004"/>
+                <xs:enumeration value="NLBG15005"/>
+                <xs:enumeration value="NLBG17061"/>
+                <xs:enumeration value="NLBG25017"/>
+                <xs:enumeration value="NLBG25021"/>
+                <xs:enumeration value="NLBG27003"/>
+                <xs:enumeration value="NLBG27008"/>
+                <xs:enumeration value="NLBG28003"/>
+                <xs:enumeration value="NLBG28005"/>
+                <xs:enumeration value="NLBG29002"/>
+                <xs:enumeration value="NLBG30015"/>
+                <xs:enumeration value="NLBG30017"/>
+                <xs:enumeration value="NLBG31003"/>
+                <xs:enumeration value="NLBG32001"/>
+                <xs:enumeration value="NO003"/>
+                <xs:enumeration value="NO017"/>
+                <xs:enumeration value="NO025"/>
+                <xs:enumeration value="NO029"/>
+                <xs:enumeration value="PL008"/>
+                <xs:enumeration value="PL010"/>
+                <xs:enumeration value="PL017"/>
+                <xs:enumeration value="PL018"/>
+                <xs:enumeration value="PL023"/>
+                <xs:enumeration value="PL027"/>
+                <xs:enumeration value="PL028"/>
+                <xs:enumeration value="PL032"/>
+                <xs:enumeration value="PL034"/>
+                <xs:enumeration value="PL035"/>
+                <xs:enumeration value="PL037"/>
+                <xs:enumeration value="PL042"/>
+                <xs:enumeration value="PL047"/>
+                <xs:enumeration value="PL059"/>
+                <xs:enumeration value="PL061"/>
+                <xs:enumeration value="PL064"/>
+                <xs:enumeration value="PL073"/>
+                <xs:enumeration value="PL074"/>
+                <xs:enumeration value="PL084"/>
+                <xs:enumeration value="PL086"/>
+                <xs:enumeration value="PL093"/>
+                <xs:enumeration value="PL113"/>
+                <xs:enumeration value="PL115"/>
+                <xs:enumeration value="PL128"/>
+                <xs:enumeration value="PL130"/>
+                <xs:enumeration value="PL138"/>
+                <xs:enumeration value="PL141"/>
+                <xs:enumeration value="PL142"/>
+                <xs:enumeration value="PL150"/>
+                <xs:enumeration value="PL153"/>
+                <xs:enumeration value="PL167"/>
+                <xs:enumeration value="PL171"/>
+                <xs:enumeration value="PL176"/>
+                <xs:enumeration value="PL179"/>
+                <xs:enumeration value="PL181"/>
+                <xs:enumeration value="PL183"/>
+                <xs:enumeration value="PL186"/>
+                <xs:enumeration value="PL189"/>
+                <xs:enumeration value="PL192"/>
+                <xs:enumeration value="PL201"/>
+                <xs:enumeration value="PL206"/>
+                <xs:enumeration value="PL207"/>
+                <xs:enumeration value="PT004"/>
+                <xs:enumeration value="PT018"/>
+                <xs:enumeration value="PT022"/>
+                <xs:enumeration value="PTAGL016"/>
+                <xs:enumeration value="PTAGL048"/>
+                <xs:enumeration value="PTAGL049"/>
+                <xs:enumeration value="PTAGL060"/>
+                <xs:enumeration value="PTAGL070"/>
+                <xs:enumeration value="PTAGL085"/>
+                <xs:enumeration value="PTAGL105"/>
+                <xs:enumeration value="PTAGL116"/>
+                <xs:enumeration value="PTAGL117"/>
+                <xs:enumeration value="PTAGL131"/>
+                <xs:enumeration value="PTAGL306"/>
+                <xs:enumeration value="RO005"/>
+                <xs:enumeration value="RO006"/>
+                <xs:enumeration value="RO007"/>
+                <xs:enumeration value="RO016"/>
+                <xs:enumeration value="RO018"/>
+                <xs:enumeration value="RO019"/>
+                <xs:enumeration value="RO020"/>
+                <xs:enumeration value="RO022"/>
+                <xs:enumeration value="RO033"/>
+                <xs:enumeration value="RO036"/>
+                <xs:enumeration value="RO038"/>
+                <xs:enumeration value="RO049"/>
+                <xs:enumeration value="RO056"/>
+                <xs:enumeration value="RO070"/>
+                <xs:enumeration value="RO075"/>
+                <xs:enumeration value="RO076"/>
+                <xs:enumeration value="RO077"/>
+                <xs:enumeration value="RO082"/>
+                <xs:enumeration value="RO087"/>
+                <xs:enumeration value="RO090"/>
+                <xs:enumeration value="RO094"/>
+                <xs:enumeration value="RO096"/>
+                <xs:enumeration value="RO100"/>
+                <xs:enumeration value="RO112"/>
+                <xs:enumeration value="SE008"/>
+                <xs:enumeration value="SE026"/>
+                <xs:enumeration value="SE036"/>
+                <xs:enumeration value="SE044"/>
+                <xs:enumeration value="SE054"/>
+                <xs:enumeration value="SE_AGGLO_1004"/>
+                <xs:enumeration value="SE_AGGLO_1005"/>
+                <xs:enumeration value="SI009"/>
+                <xs:enumeration value="SI010"/>
+                <xs:enumeration value="SK002"/>
+                <xs:enumeration value="SK004"/>
+                <xs:enumeration value="SK006"/>
+                <xs:enumeration value="SK008"/>
+                <xs:enumeration value="SK010"/>
+                <xs:enumeration value="SK012"/>
+                <xs:enumeration value="UK002"/>
+                <xs:enumeration value="UK008"/>
+                <xs:enumeration value="UK026"/>
+                <xs:enumeration value="UK031"/>
+                <xs:enumeration value="UK034"/>
+                <xs:enumeration value="UK038"/>
+                <xs:enumeration value="UK039"/>
+                <xs:enumeration value="UK044"/>
+                <xs:enumeration value="UK050"/>
+                <xs:enumeration value="UK051"/>
+                <xs:enumeration value="UK052"/>
+                <xs:enumeration value="UK055"/>
+                <xs:enumeration value="UK062"/>
+                <xs:enumeration value="UK066"/>
+                <xs:enumeration value="UK070"/>
+                <xs:enumeration value="UK073"/>
+                <xs:enumeration value="UK087"/>
+                <xs:enumeration value="UK089"/>
+                <xs:enumeration value="UK095"/>
+                <xs:enumeration value="UK097"/>
+                <xs:enumeration value="UK098"/>
+                <xs:enumeration value="UK103"/>
+                <xs:enumeration value="UK110"/>
+                <xs:enumeration value="UK122"/>
+                <xs:enumeration value="UK125"/>
+                <xs:enumeration value="UK132"/>
+                <xs:enumeration value="UK133"/>
+                <xs:enumeration value="UK135"/>
+                <xs:enumeration value="UK143"/>
+                <xs:enumeration value="UK149"/>
+                <xs:enumeration value="UK159"/>
+                <xs:enumeration value="UK168"/>
+                <xs:enumeration value="UK173"/>
+                <xs:enumeration value="UK178"/>
+                <xs:enumeration value="UK184"/>
+                <xs:enumeration value="UK190"/>
+                <xs:enumeration value="UK193"/>
+                <xs:enumeration value="UK200"/>
+                <xs:enumeration value="UK204"/>
+                <xs:enumeration value="UK207"/>
+                <xs:enumeration value="UK208"/>
+                <xs:enumeration value="UK211"/>
+                <xs:enumeration value="UK214"/>
+                <xs:enumeration value="UK216"/>
+                <xs:enumeration value="UK221"/>
+                <xs:enumeration value="UK223"/>
+                <xs:enumeration value="UK224"/>
+                <xs:enumeration value="UK238"/>
+                <xs:enumeration value="UK241"/>
+                <xs:enumeration value="UK242"/>
+                <xs:enumeration value="UK243"/>
+                <xs:enumeration value="UK244"/>
+                <xs:enumeration value="UK246"/>
+                <xs:enumeration value="UK256"/>
+                <xs:enumeration value="UK259"/>
+                <xs:enumeration value="UK260"/>
+                <xs:enumeration value="UK263"/>
+                <xs:enumeration value="UK267"/>
+                <xs:enumeration value="UK268"/>
+                <xs:enumeration value="UK269"/>
+                <xs:enumeration value="UK271"/>
+                <xs:enumeration value="UK274"/>
+                <xs:enumeration value="UK275"/>
+                <xs:enumeration value="UK279"/>
+                <xs:enumeration value="UK280"/>
+                <xs:enumeration value="UK287"/>
+                <xs:enumeration value="UK301"/>
+                <xs:enumeration value="UK319"/>
+                <xs:enumeration value="UK320"/>
+                <xs:enumeration value="UK321"/>
+                <xs:enumeration value="UK322"/>
+                <xs:enumeration value="UK323"/>
+                <xs:enumeration value="UK324"/>
+                <xs:enumeration value="UK325"/>
+                <xs:enumeration value="UK326"/>
+                <xs:enumeration value="UK327"/>
+                <xs:enumeration value="UK328"/>
+                <xs:enumeration value="HU053"/>
+                <xs:enumeration value="HU062"/>
+                <xs:enumeration value="HU064"/>
+                <xs:enumeration value="HU065"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="aggCalculation">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>aggCalculation</isoattrs:Name>
+                <isoattrs:Definition>Methods used for calculation of the generated load of the agglomeration.</isoattrs:Definition>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="0"/>
+                <xs:maxLength value="4096"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="aggChanges">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>aggChanges</isoattrs:Name>
+                <isoattrs:Definition>Significant changes of the generated load since the previous Report.</isoattrs:Definition>
+                <ddattrs:Methodology>A valid alternative to the default boolean values 'false' and 'true' are values '0' and '1', respectively.&#13;
+&#13;
+This value is required when the variation is more than 20% or there is a change of threshold (2000  -10 000 -100 000 population equivalent).</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:boolean"/>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="aggChangesComment">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>aggChangesComment</isoattrs:Name>
+                <isoattrs:Definition>Explanation of significant changes of the generated load compared to the previous reported load.</isoattrs:Definition>
+                <ddattrs:Methodology>To be filled only if aggChanges = 1 (yes)</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="0"/>
+                <xs:maxLength value="4096"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="aggPeriodOver">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>aggPeriodOver</isoattrs:Name>
+                <isoattrs:Definition>An overall deadline for the implementation of the UWWTD in individual agglomeration.</isoattrs:Definition>
+                <ddattrs:Methodology>This value is required.&#13;
+&#13;
+For EU 12 MS (CY, CZ, EE, HU, LV, LT, MT, PL, SK, SI, BG, RO), the implementation deadline must be in line with the dates listed in the Transitional periods and interim targets for the implementation of UWWTD  (http://ec.europa.eu/environment/water/water-urbanwaste/legislation/pdf/transitional_periods_eu10_eu2.pdf).&#13;
+&#13;
+Use the format YYYY-MM-DD.&#13;
+The date should be in the range 31.12.1998-31.12.2023.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:date"/>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="aggDateArt3">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>aggDateArt3</isoattrs:Name>
+                <isoattrs:Definition>Deadline for the implementation of requirements of article 3 of the UWWTD (provision of collecting system for agglomeration), and for Article 6 and Article 7.</isoattrs:Definition>
+                <ddattrs:Methodology>This value is required.&#13;
+ &#13;
+Use the format YYYY-MM-DD.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:date"/>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="aggDateArt4">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>aggDateArt4</isoattrs:Name>
+                <isoattrs:Definition>Deadline for the implementation of requirements of article 4 of the UWWTD (provision of secondary treatment to urban waste water entering collecting system).</isoattrs:Definition>
+                <ddattrs:Methodology>This value is required.&#13;
+&#13;
+Use the format YYYY-MM-DD.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:date"/>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="aggDateArt5">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>aggDateArt5</isoattrs:Name>
+                <isoattrs:Definition>Deadline for the implementation of requirements of article 5 of the UWWTD (provision of more stringent treatment to urban waste water entering collecting system and being discharge after a treatment into sensitive areas or their catchments).</isoattrs:Definition>
+                <ddattrs:Methodology>This value is required for all active agglomerations of size ≥ 10 000 p.e., served by UWWTPs discharging into sensitive areas.&#13;
+&#13;
+Use the format YYYY-MM-DD.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:date"/>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="aggC1">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>aggC1</isoattrs:Name>
+                <isoattrs:Definition>Rate of generated load of agglomeration collected through collecting system (% of the agglomeration size – aggGenerated).</isoattrs:Definition>
+                <ddattrs:Methodology>This value is required required for all active agglomerations.&#13;
+The following condition must be met:&#13;
+aggC1 + aggC2 + aggPercWithoutTreatment = 100&#13;
+&#13;
+The value should be reported with two decimal places.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+                <xs:totalDigits value="18"/>
+                <xs:minInclusive value="0"/>
+                <xs:maxInclusive value="100"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="aggMethodC1">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>aggMethodC1</isoattrs:Name>
+                <isoattrs:Definition>Method of determination of the value for aggC1 (rate).</isoattrs:Definition>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="C"/>
+                <xs:enumeration value="E"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="aggC2">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>aggC2</isoattrs:Name>
+                <isoattrs:Definition>Rate of generated load of agglomeration addressed through Individuai Appropritate Systems - IAS (% of the agglomeration size – aggGenerated).</isoattrs:Definition>
+                <ddattrs:Methodology>This value is required for all active agglomerations.&#13;
+&#13;
+The following condition must be met:&#13;
+aggC1 + aggC2 + aggPercWithoutTreatment = 100&#13;
+&#13;
+The value should be reported with two decimal places.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+                <xs:totalDigits value="18"/>
+                <xs:minInclusive value="0"/>
+                <xs:maxInclusive value="100"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="aggMethodC2">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>aggMethodC2</isoattrs:Name>
+                <isoattrs:Definition>Method of determination of the value for aggC2 (rate).</isoattrs:Definition>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="C"/>
+                <xs:enumeration value="E"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="aggPercWithoutTreatment">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>aggPercWithoutTreatment</isoattrs:Name>
+                <isoattrs:Definition>Rate of generated load of agglomeration not collected through collecting systems and not addressed through IAS (% of the agglomeration size – aggGenerated).</isoattrs:Definition>
+                <ddattrs:Methodology>This value is required for all active agglomerations.&#13;
+&#13;
+The following condition must be met:&#13;
+aggC1 + aggC2 + aggPercWithoutTreatment = 100&#13;
+&#13;
+The value should be reported with two decimal places.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+                <xs:totalDigits value="18"/>
+                <xs:minInclusive value="0"/>
+                <xs:maxInclusive value="100"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="aggMethodWithoutTreatment">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>aggMethodWithoutTreatment</isoattrs:Name>
+                <isoattrs:Definition>Method of determination of the value for aggPercWithoutTreatment (rate).</isoattrs:Definition>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="C"/>
+                <xs:enumeration value="E"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="aggPercPrimTreatment">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>aggPercPrimTreatment</isoattrs:Name>
+                <isoattrs:Definition>A share (in %) of generated load addressed via IAS receive primary treatment.</isoattrs:Definition>
+                <ddattrs:Methodology>Information about the share of total generated load addressed via Individual Appropriate System (IAS)  receiving primary treatment should be provided for agglomerations with the fraction of generated load treated via IAS &gt;= 2000 p.e.&#13;
+&#13;
+The following condition must be met:&#13;
+aggC2 = aggPercPrimTreatment + aggPercSecTreatment + aggPercStringentTreatment</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+                <xs:totalDigits value="18"/>
+                <xs:minInclusive value="0"/>
+                <xs:maxInclusive value="100"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="aggPercSecTreatment">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>aggPercSecTreatment</isoattrs:Name>
+                <isoattrs:Definition>A share (in %) of generated load addressed via IAS receive secondary treatment.&#13;
+</isoattrs:Definition>
+                <ddattrs:Methodology>Information on the share of total generated load addressed via Individual Appropriate System (IAS) receiving secondary treatment should be provided for agglomerations with the fraction of generated load treated via IAS &gt;= 2000 p.e.&#13;
+&#13;
+The following condition must be met:&#13;
+aggC2 = aggPercPrimTreatment + aggPercSecTreatment + aggPercStringentTreatment</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+                <xs:totalDigits value="18"/>
+                <xs:minInclusive value="0"/>
+                <xs:maxInclusive value="100"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="aggPercStringentTreatment">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>aggPercStringentTreatment</isoattrs:Name>
+                <isoattrs:Definition>A share (in %) of generated load addressed via IAS receive more stringent treatment.</isoattrs:Definition>
+                <ddattrs:Methodology>Information on the share of total generated load addressed via Individual Appropriate Systems receiving more stringent treatment should be provided for agglomerations with the fraction of generated load treated via IAS &gt;= 2000 p.e.&#13;
+&#13;
+The following condition must be met:&#13;
+aggC2 = aggPercPrimTreatment + aggPercSecTreatment + aggPercStringentTreatment</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+                <xs:totalDigits value="18"/>
+                <xs:minInclusive value="0"/>
+                <xs:maxInclusive value="100"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="aggHaveRegistrationSystem">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>aggHaveRegistrationSystem</isoattrs:Name>
+                <isoattrs:Definition>Is a registration system for leaks in collecting system in place?</isoattrs:Definition>
+                <ddattrs:Methodology>A valid alternative to the default boolean values 'false' and 'true' are values '0' and '1', respectively.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:boolean"/>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="aggExistMaintenancePlan">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>aggExistMaintenancePlan</isoattrs:Name>
+                <isoattrs:Definition>Is a maintenance plan (quality assurance) of collecting system in place?</isoattrs:Definition>
+                <ddattrs:Methodology>A valid alternative to the default boolean values 'false' and 'true' are values '0' and '1', respectively.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:boolean"/>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="aggPressureTest">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>aggPressureTest</isoattrs:Name>
+                <isoattrs:Definition>Have Pressure tests been used to maintain collecting systems and prevent leaks?</isoattrs:Definition>
+                <ddattrs:Methodology>A valid alternative to the default boolean values 'false' and 'true' are values '0' and '1', respectively.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:boolean"/>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="aggVideoInspections">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>aggVideoInspections</isoattrs:Name>
+                <isoattrs:Definition>Have regular video inspections been used to maintain collecting systems and prevent leaks?</isoattrs:Definition>
+                <ddattrs:Methodology>A valid alternative to the default boolean values 'false' and 'true' are values '0' and '1', respectively.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:boolean"/>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="aggOtherMeasures">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>aggOtherMeasures</isoattrs:Name>
+                <isoattrs:Definition>Have other measures been used to maintain collecting systems and prevent leaks?</isoattrs:Definition>
+                <ddattrs:Methodology>A valid alternative to the default boolean values 'false' and 'true' are values '0' and '1', respectively.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:boolean"/>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="aggExplanationOther">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>aggExplanationOther</isoattrs:Name>
+                <isoattrs:Definition>Short explanation of other measures.</isoattrs:Definition>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="0"/>
+                <xs:maxLength value="4096"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="aggSewageNetwork">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>aggSewageNetwork</isoattrs:Name>
+                <isoattrs:Definition>Type of collecting system</isoattrs:Definition>
+                <ddattrs:Methodology>This information should be provided if the size of agglomeration is more than 10 000 p.e.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="B"/>
+                <xs:enumeration value="C"/>
+                <xs:enumeration value="S"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="aggBestTechnicalKnowledge">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>aggBestTechnicalKnowledge</isoattrs:Name>
+                <isoattrs:Definition>Is best technical knowledge to limit pollution applied?</isoattrs:Definition>
+                <ddattrs:Methodology>A valid alternative to the default boolean values 'false' and 'true' are values '0' and '1', respectively.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:boolean"/>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="aggDilutionRates">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>aggDilutionRates</isoattrs:Name>
+                <isoattrs:Definition>Have measures of Dilution rates been used to limit pollution? </isoattrs:Definition>
+                <ddattrs:Methodology>A valid alternative to the default boolean values 'false' and 'true' are values '0' and '1', respectively.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:boolean"/>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="aggCapacity">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>aggCapacity</isoattrs:Name>
+                <isoattrs:Definition>Have measures of Capacity in relation to dry weather flow been used to limit pollution?</isoattrs:Definition>
+                <ddattrs:Methodology>A valid alternative to the default boolean values 'false' and 'true' are values '0' and '1', respectively.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:boolean"/>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="aggAccOverflows">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>aggAccOverflows</isoattrs:Name>
+                <isoattrs:Definition>Have measures of Acceptable number of overflows per year been used to limit pollution?</isoattrs:Definition>
+                <ddattrs:Methodology>A valid alternative to the default boolean values 'false' and 'true' are values '0' and '1', respectively.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:boolean"/>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="aggAccOverflowNumber">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>aggAccOverflowNumber</isoattrs:Name>
+                <isoattrs:Definition>A number of overflows per year.</isoattrs:Definition>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:integer">
+                <xs:totalDigits value="9"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="aggSewerOverflows_m3">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>aggSewerOverflows_m3</isoattrs:Name>
+                <isoattrs:Definition>Annual volume of raw sewage discharged via combined sewer overflows (CSOs) in the year reported: m3/y</isoattrs:Definition>
+                <ddattrs:Methodology>This information should be provided  for all agglomerations of more than 100 000 p.e. </ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:integer">
+                <xs:totalDigits value="9"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="aggSewerOverflows_pe">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>aggSewerOverflows_pe</isoattrs:Name>
+                <isoattrs:Definition>Annual load of raw sewage discharged through combined sewer overflows (CSOs) in the year reported: p.e.</isoattrs:Definition>
+                <ddattrs:Methodology>This information should be provided  for all agglomerations of more than 100 000 p.e.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:integer">
+                <xs:totalDigits value="9"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="aggForecast">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>aggForecast</isoattrs:Name>
+                <isoattrs:Definition>The date by when the total generated load of the agglomeration will be collected through collecting systems or addressed via IAS.</isoattrs:Definition>
+                <ddattrs:Methodology>Relevant, when the parameter aggPercWithoutTreatment (= NOT collected nor treated load) &gt; 0</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:date"/>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="aggBeginLife">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>aggBeginLife</isoattrs:Name>
+                <isoattrs:Definition>begin Lifespan Version</isoattrs:Definition>
+                <ddattrs:Methodology>Date and time at which this version of the spatial object was inserted or changed in the spatial data set. Has to be equivalent to the first designation date of this agglomeration.&#13;
+&#13;
+aggBeginLife can't be higher than aggEndLife.&#13;
+&#13;
+Use the format YYYY-MM-DD.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:date"/>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="aggEndLife">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>aggEndLife</isoattrs:Name>
+                <isoattrs:Definition>end Lifespan Version</isoattrs:Definition>
+                <ddattrs:Methodology>Date and time at which this version of the spatial object was superseded or retired in the spatial data set.&#13;
+&#13;
+Should be filled in only in case the reported object is no longer active.&#13;
+aggEndLife can't be lower than aggBeginLife&#13;
+&#13;
+Use the format YYYY-MM-DD.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:date"/>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="aggHyperlink">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>aggHyperlink</isoattrs:Name>
+                <isoattrs:Definition>A hyperlink to the national website, where agglomeration can be found.</isoattrs:Definition>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="0"/>
+                <xs:maxLength value="255"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="aggRemarks">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>aggRemarks</isoattrs:Name>
+                <isoattrs:Definition>Remarks</isoattrs:Definition>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="0"/>
+                <xs:maxLength value="4096"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+</xs:schema>

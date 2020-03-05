@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://dd.eionet.europa.eu/namespaces/844" xmlns:ddattrs="http://dd.eionet.europa.eu/namespaces/3" xmlns:isoattrs="http://dd.eionet.europa.eu/namespaces/2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://dd.eionet.europa.eu/namespaces/844" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema  http://www.w3.org/2001/XMLSchema.xsd">
+    <xs:element name="ReceivingAreasSAParameter">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Definition>Table lists designation criteria, designation dates and deadlines for meeting objectives of sensitive areas and catchments.</isoattrs:Definition>
+                <isoattrs:Name>ReceivingAreasSAParameter</isoattrs:Name>
+                <ddattrs:ShortDescription>Designation criteria for the Sensitive areas and catchments</ddattrs:ShortDescription>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" minOccurs="0" name="Row">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="repCode"/>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="rcaCode"/>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="rcaParameter"/>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="rcaDateDesignation"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="rcaStartDate"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="rcaCRelevantDirective"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="rcaCIDOtherDirective"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="rcaCDateOtherDirective"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="repCode">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+                <ddattrs:Owner>4037322</ddattrs:Owner>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Methodology>This value is required.&#13;
+First 2 characters must be the 2-alpha character ISO country code (use 'EL' for Greece and 'UK' for the United Kingdom).</ddattrs:Methodology>
+                <isoattrs:Definition>Report ID, as specified by country</isoattrs:Definition>
+                <isoattrs:Name>repCode</isoattrs:Name>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="1"/>
+                <xs:maxLength value="16"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="rcaCode">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>rcaCode</isoattrs:Name>
+                <isoattrs:Definition>ID of the sensitive area</isoattrs:Definition>
+                <ddattrs:Methodology>This value is required.&#13;
+&#13;
+ID of the sensitive area filled in this field has to be listed in the table ReceivingAreasSAMain, field rcaCode.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="1"/>
+                <xs:maxLength value="32"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="rcaParameter">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>rcaParameter</isoattrs:Name>
+                <isoattrs:Definition>Name of the receiving area parameter</isoattrs:Definition>
+                <ddattrs:Methodology>This value is required.&#13;
+&#13;
+Criteria for identification of sensitive areas as specified in the Annex II of the UWWTD. Parameters must be consistent with the parameters subject to more stringent treatment as reported in the table ReceivingAreasSAMain. Individual parameters should be filled separately, i.e. a row per parameter.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="aN"/>
+                <xs:enumeration value="aP"/>
+                <xs:enumeration value="b"/>
+                <xs:enumeration value="c"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="rcaDateDesignation">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>rcaDateDesignation</isoattrs:Name>
+                <isoattrs:Definition>Date of designation</isoattrs:Definition>
+                <ddattrs:Methodology>This value is required.&#13;
+&#13;
+Date defining when the sensitive area was legally designated.&#13;
+&#13;
+Use the format YYYY-MM-DD.&#13;
+&#13;
+The date should be  between 1993-01-01 and the date of the reporting (repVersion).</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:date"/>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="rcaStartDate">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>rcaStartDate</isoattrs:Name>
+                <isoattrs:Definition>Starting date of application</isoattrs:Definition>
+                <ddattrs:Methodology>Date defining when the deadline to comply with the requirements of the article 5(2,3) has legally expired.&#13;
+In some cases (e.g infringement procedures), the starting date of application is not 7 years after the designation. A sensitive area can have several deadlines depending on the paremeters.&#13;
+&#13;
+Use the format YYYY-MM-DD.&#13;
+&#13;
+The date should be between 1993-01-01 and the rcaDateDesignation + 7 years.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:date"/>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="rcaCRelevantDirective">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>rcaCRelevantDirective</isoattrs:Name>
+                <isoattrs:Definition>Designation criteria c - relevant EU-Directives and related parameters</isoattrs:Definition>
+                <ddattrs:Methodology>Name of the relevant Directive.&#13;
+Relevant in case rcaParameter = c was selected.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="0"/>
+                <xs:maxLength value="4096"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="rcaCIDOtherDirective">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>rcaCIDOtherDirective</isoattrs:Name>
+                <isoattrs:Definition>Designation criteria c - ID applied to the area according to this Directive</isoattrs:Definition>
+                <ddattrs:Methodology>ID of the receiving area as reported under relevant (other) Directive.&#13;
+Relevant in case rcaParameter = c was selected.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="0"/>
+                <xs:maxLength value="128"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="rcaCDateOtherDirective">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>rcaCDateOtherDirective</isoattrs:Name>
+                <isoattrs:Definition>Designation criteria c - reference date of the area according to this Directive</isoattrs:Definition>
+                <ddattrs:Methodology>Relevant in case rcaParameter = c was selected.&#13;
+&#13;
+Use the format YYYY-MM-DD.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:date"/>
+        </xs:simpleType>
+    </xs:element>
+</xs:schema>

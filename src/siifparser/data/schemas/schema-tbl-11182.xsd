@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://dd.eionet.europa.eu/namespaces/843" xmlns:ddattrs="http://dd.eionet.europa.eu/namespaces/3" xmlns:isoattrs="http://dd.eionet.europa.eu/namespaces/2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://dd.eionet.europa.eu/namespaces/843" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema  http://www.w3.org/2001/XMLSchema.xsd">
+    <xs:element name="ReceivingAreasSAMain">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>ReceivingAreasSAMain</isoattrs:Name>
+                <isoattrs:Definition>Table summarizes information on individual sensitive areas and catchments, including type of sensitive area, the article of the Directive under which the area was designated,  designation date, starting date of application and parameters subject to more stringent treatment.</isoattrs:Definition>
+                <ddattrs:ShortDescription>Basic attributes of the Sensitive areas and catchments</ddattrs:ShortDescription>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" minOccurs="0" name="Row">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="repCode"/>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="rcaCode"/>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="rcaName"/>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="rcaEnvDom"/>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="rcaZtype"/>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="rcaSpZTyp"/>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="rcaParameterN"/>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="rcaParameterP"/>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="rcaParameterM"/>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="rcaParameterOther"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="rcaArt58DateDesign"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="rcaDateArt58"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="rcaDateArt54"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="rcaHyperlink"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="rcaBeginLife"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="rcaEndLife"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="rcaRemarks"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="repCode">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+                <ddattrs:Owner>4037322</ddattrs:Owner>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Methodology>This value is required.&#13;
+First 2 characters must be the 2-alpha character ISO country code (use 'EL' for Greece and 'UK' for the United Kingdom).</ddattrs:Methodology>
+                <isoattrs:Definition>Report ID, as specified by country</isoattrs:Definition>
+                <isoattrs:Name>repCode</isoattrs:Name>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="1"/>
+                <xs:maxLength value="16"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="rcaCode">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>rcaCode</isoattrs:Name>
+                <isoattrs:Definition>ID of the sensitive area</isoattrs:Definition>
+                <ddattrs:Methodology>This value is required.&#13;
+&#13;
+Identifier of the spatial object; rcaCode must be unique in the table.&#13;
+&#13;
+Identifier must be consistent with the identifiers used in previous reports (provided they are still active).&#13;
+&#13;
+First 2 characters must be the 2-alpha character ISO country code (use 'EL' for Greece and 'UK' for the United Kingdom).&#13;
+Do not use characters with accents and other diacritical marks (national characters). Do not use spaces or other spatial characters. The hyphen '-' and the underscore '_' characters are allowed.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="1"/>
+                <xs:maxLength value="32"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="rcaName">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>rcaName</isoattrs:Name>
+                <isoattrs:Definition>Name of the sensitive area</isoattrs:Definition>
+                <ddattrs:Methodology>This value is required.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="1"/>
+                <xs:maxLength value="255"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="rcaEnvDom">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>rcaEnvDom</isoattrs:Name>
+                <isoattrs:Definition>Environmental Domain</isoattrs:Definition>
+                <ddattrs:Methodology>This value is required.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="WATER"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="rcaZtype">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>rcaZtype</isoattrs:Name>
+                <isoattrs:Definition>Type of receiving area</isoattrs:Definition>
+                <ddattrs:Methodology>This value is required.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="UWW55CMSA"/>
+                <xs:enumeration value="UWWCASA"/>
+                <xs:enumeration value="UWWCLSA"/>
+                <xs:enumeration value="UWWCMSA"/>
+                <xs:enumeration value="UWWLKSA"/>
+                <xs:enumeration value="UWWRISA"/>
+                <xs:enumeration value="UWWTWSA"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="rcaSpZTyp">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>rcaSpZTyp</isoattrs:Name>
+                <isoattrs:Definition>Sub-type of receiving area</isoattrs:Definition>
+                <ddattrs:Methodology>This value is required.&#13;
+&#13;
+Specification of Articles of the UWWTD under which a particular receiving area was designated.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="A523"/>
+                <xs:enumeration value="A54"/>
+                <xs:enumeration value="A54523"/>
+                <xs:enumeration value="A58523"/>
+                <xs:enumeration value="A5854"/>
+                <xs:enumeration value="A5854523"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="rcaParameterN">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>rcaParameterN</isoattrs:Name>
+                <isoattrs:Definition>Parameters subject to More Stringent Treatment: N</isoattrs:Definition>
+                <ddattrs:Methodology>This value is required.&#13;
+&#13;
+A valid alternative to the default boolean values 'false' and 'true' are values '0' and '1', respectively.&#13;
+&#13;
+All treatment plants serving agglomerations of more than 10 000 p.e. discharging into Nitrogen euthrophic sensitive area must be equipped with more stringent treatment removing nitrogen. Parameters subject to more stringend treatment must be identical for sensitive areas and their catchments. Consistency with the historical dataset must be ensured.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:boolean"/>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="rcaParameterP">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>rcaParameterP</isoattrs:Name>
+                <isoattrs:Definition>Parameters subject to More Stringent Treatment: P</isoattrs:Definition>
+                <ddattrs:Methodology>This value is required.&#13;
+&#13;
+A valid alternative to the default boolean values 'false' and 'true' are values '0' and '1', respectively.&#13;
+&#13;
+All treatment plants serving agglomerations of more than 10 000 p.e. discharging into Phosphorus euthrophic sensitive area must be equipped with more stringent treatment removing phosphorus. Parameters subject to more stringend treatment must be identical for sensitive areas and their catchments.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:boolean"/>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="rcaParameterM">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>rcaParameterM</isoattrs:Name>
+                <isoattrs:Definition>Parameters subject to More Stringent Treatment: M</isoattrs:Definition>
+                <ddattrs:Methodology>This value is required.&#13;
+&#13;
+A valid alternative to the default boolean values "false" and "true" are values "0" and "1", respectively.&#13;
+&#13;
+All treatment plants serving agglomerations of more than 10 000 p.e. discharging in this area have to be equipped with a more stringent treatment microbiological removal. Parameters subject to more stringend treatment must be identical for sensitive areas and their catchments.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:boolean"/>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="rcaParameterOther">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>rcaParameterOther</isoattrs:Name>
+                <isoattrs:Definition>Parameters subject to More Stringent Treatment: Other</isoattrs:Definition>
+                <ddattrs:Methodology>This value is required.&#13;
+&#13;
+A valid alternative to the default boolean values "false" and "true" are values "0" and "1", respectively.&#13;
+&#13;
+All treatment plants serving agglomerations of more than 10 000 p.e. discharging into  sensitive area  where  more stringent treatment  is needed to fulfill council directives.. The type of treatment can be elaborated under rcaRemarks. Parameters subject to more stringent treatment must be identical for sensitive areas and their catchments.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:boolean"/>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="rcaArt58DateDesign">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>rcaArt58DateDesign</isoattrs:Name>
+                <isoattrs:Definition>Date of designation of Art. 5(8) of the UWWTD</isoattrs:Definition>
+                <ddattrs:Methodology>Date defining when the Article 5.8 receiving area was legally designated or became effective. &#13;
+Only relevant if rcaSpZtyp = A58523, A5854 or A5854523.&#13;
+&#13;
+Use the format YYYY-MM-DD.&#13;
+&#13;
+The date should be between 1993-01-01 and the date of the reporting (repVersion) YYYY-12-31.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:date"/>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="rcaDateArt58">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>rcaDateArt58</isoattrs:Name>
+                <isoattrs:Definition>Starting date of application of Art. 5(8) of the UWWTD</isoattrs:Definition>
+                <ddattrs:Methodology>Date defining when the deadline to comply with the requirements of the Article 5.8 for the receiving area has legally expired.&#13;
+Only relevant if rcaSpZTyp = A58523, A5854 or A5854523.&#13;
+&#13;
+Use the format YYYY-MM-DD.&#13;
+&#13;
+The date should be between 1993-01-01 and the date of designation of Art. 5(8) of UWWTD (rcaArt58DateDesign) + 7 years.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:date"/>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="rcaDateArt54">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>rcaDateArt54</isoattrs:Name>
+                <isoattrs:Definition>Starting date of application of Art. 5(4) of the UWWTD</isoattrs:Definition>
+                <ddattrs:Methodology>Date defining when the deadline to comply with the requirements of the article 5.4 for the receiving area has legally expired.&#13;
+Only relevant if rcaSpZTyp = A54 or A54523 or A5854 or A5854523.&#13;
+&#13;
+Use the format YYYY-MM-DD.&#13;
+&#13;
+The date should be  between 1993-01-01 and the YYYY-12-31 (YYYY = the reference year of reporting).</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:date"/>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="rcaHyperlink">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>rcaHyperlink</isoattrs:Name>
+                <isoattrs:Definition>Hyperlink to a national webpage</isoattrs:Definition>
+                <ddattrs:Methodology>Hyperlink given to give access to detailed information on this area if such a webpage exists at national level.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="0"/>
+                <xs:maxLength value="255"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="rcaBeginLife">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>rcaBeginLife</isoattrs:Name>
+                <isoattrs:Definition>begin Lifespan Version</isoattrs:Definition>
+                <ddattrs:Methodology>Date and time at which this version of the spatial object was inserted or changed in the spatial data set. Has to be equivalent to the first designation date of this sensitive area.&#13;
+&#13;
+rcaBeginLife can't be higher than rcaEndLife.&#13;
+&#13;
+Use the format YYYY-MM-DD.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:date"/>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="rcaEndLife">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>rcaEndLife</isoattrs:Name>
+                <isoattrs:Definition>end Lifespan Version</isoattrs:Definition>
+                <ddattrs:Methodology>Date and time at which this version of the spatial object was superseded or retired in the spatial data set.&#13;
+&#13;
+Should be filled in only in case the reported object is no longer active.&#13;
+rcaEndLife can't be lower than rcaBeginLife&#13;
+&#13;
+Use the format YYYY-MM-DD.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:date"/>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="rcaRemarks">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>rcaRemarks</isoattrs:Name>
+                <isoattrs:Definition>Remarks</isoattrs:Definition>
+                <ddattrs:Methodology>Any kind of comments as regards this specific senstive area.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="0"/>
+                <xs:maxLength value="4096"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+</xs:schema>

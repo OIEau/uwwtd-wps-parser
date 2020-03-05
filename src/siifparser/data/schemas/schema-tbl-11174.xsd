@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://dd.eionet.europa.eu/namespaces/826" xmlns:ddattrs="http://dd.eionet.europa.eu/namespaces/3" xmlns:isoattrs="http://dd.eionet.europa.eu/namespaces/2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://dd.eionet.europa.eu/namespaces/826" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema  http://www.w3.org/2001/XMLSchema.xsd">
+    <xs:element name="MSLevel">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <ddattrs:ShortDescription>Information on the sludge disposal and management, aggregated at MS level. </ddattrs:ShortDescription>
+                <isoattrs:Name>MSLevel</isoattrs:Name>
+                <isoattrs:Definition>Table contains information on sludge disposal and handling, broken down into types of sludge disposal methods, as well as information on wastewater reuse aggregated at MS level.</isoattrs:Definition>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" minOccurs="0" name="Row">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="repCode"/>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="mslSludgeProduction"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="mslDischargePipelines"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="mslDischargeShips"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="mslDischargeOthers"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="mslReuseSoilAgriculture"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="mslReuseOthers"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="mslDisposalLandfill"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="mslDisposalIncineration"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="mslDisposalOthers"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="mslWWReusePerc"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="mslWWReuseAgri"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="mslWWReuseInd"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="mslWWReuseOther"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="mslWWReuseExplain"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="mslRemarks"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="repCode">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+                <ddattrs:Owner>4037322</ddattrs:Owner>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Methodology>This value is required.&#13;
+First 2 characters must be the 2-alpha character ISO country code (use 'EL' for Greece and 'UK' for the United Kingdom).</ddattrs:Methodology>
+                <isoattrs:Definition>Report ID, as specified by country</isoattrs:Definition>
+                <isoattrs:Name>repCode</isoattrs:Name>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="1"/>
+                <xs:maxLength value="16"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="mslSludgeProduction">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>mslSludgeProduction</isoattrs:Name>
+                <isoattrs:Definition>Yearly production of sludge (tons of dry solids/year).</isoattrs:Definition>
+                <ddattrs:Methodology>This value is required.&#13;
+The value of the mslSludgeProduction must be equal to the sum of all reported fractions of sludge disposal and reuse. </ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+                <xs:totalDigits value="18"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="mslDischargePipelines">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>mslDischargePipelines</isoattrs:Name>
+                <isoattrs:Definition>Sludge discharged into surface waters: Pipelines (t DS/y)</isoattrs:Definition>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+                <xs:totalDigits value="18"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="mslDischargeShips">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>mslDischargeShips</isoattrs:Name>
+                <isoattrs:Definition>Sludge discharged into surface waters: Ships (t DS/y)</isoattrs:Definition>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+                <xs:totalDigits value="18"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="mslDischargeOthers">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>mslDischargeOthers</isoattrs:Name>
+                <isoattrs:Definition>Sludge discharged into surface waters: Others (t DS/y)</isoattrs:Definition>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+                <xs:totalDigits value="18"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="mslReuseSoilAgriculture">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>mslReuseSoilAgriculture</isoattrs:Name>
+                <isoattrs:Definition>Sludge re-used: Soil and agriculture (t DS/y)</isoattrs:Definition>
+                <ddattrs:Methodology>This value should be provided  in case of re-used: Soil and agriculture (t DS/y)&#13;
+&#13;
+mslReuseSoilAgriculture + mslReuseOthers + mslDisposalLandfill + mslDisposalIncineration + mslDisposalOthers = mslSludgeProduction&#13;
+</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+                <xs:totalDigits value="18"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="mslReuseOthers">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>mslReuseOthers</isoattrs:Name>
+                <isoattrs:Definition>Sludge re-used: Others (t DS/y)</isoattrs:Definition>
+                <ddattrs:Methodology>This value should be provided in case of re-used: Others (t DS/y) &#13;
+&#13;
+mslReuseSoilAgriculture + mslReuseOthers + mslDisposalLandfill + mslDisposalIncineration + mslDisposalOthers = mslSludgeProduction</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+                <xs:totalDigits value="18"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="mslDisposalLandfill">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>mslDisposalLandfill</isoattrs:Name>
+                <isoattrs:Definition>Sludge disposed: Landfill (t DS/y)</isoattrs:Definition>
+                <ddattrs:Methodology>This value should be provided in case of disposed: Landfill (t DS/y) &#13;
+&#13;
+mslReuseSoilAgriculture + mslReuseOthers + mslDisposalLandfill + mslDisposalIncineration + mslDisposalOthers = mslSludgeProduction</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+                <xs:totalDigits value="18"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="mslDisposalIncineration">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>mslDisposalIncineration</isoattrs:Name>
+                <isoattrs:Definition>Sludge disposed: Incineration (t DS/y)</isoattrs:Definition>
+                <ddattrs:Methodology>This value should be provided in case of  disposed: Incineration (t DS/y) &#13;
+&#13;
+mslReuseSoilAgriculture + mslReuseOthers + mslDisposalLandfill + mslDisposalIncineration + mslDisposalOthers = mslSludgeProduction</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+                <xs:totalDigits value="18"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="mslDisposalOthers">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>mslDisposalOthers</isoattrs:Name>
+                <isoattrs:Definition>Sludge disposed: Others (t DS/y)</isoattrs:Definition>
+                <ddattrs:Methodology>This value should be provided in case of disposed: Others (t DS/y) &#13;
+&#13;
+mslReuseSoilAgriculture + mslReuseOthers + mslDisposalLandfill + mslDisposalIncineration + mslDisposalOthers = mslSludgeProduction</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+                <xs:totalDigits value="18"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="mslWWReusePerc">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>mslWWReusePerc</isoattrs:Name>
+                <isoattrs:Definition>Rate of treated waste water re-used (% of total volume treated).</isoattrs:Definition>
+                <ddattrs:Methodology>This value should be provided if reuse of treated waste water.&#13;
+The value should be reported with maximum 2 decimal places.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+                <xs:totalDigits value="9"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="mslWWReuseAgri">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>mslWWReuseAgri</isoattrs:Name>
+                <isoattrs:Definition>Re-use of treated waste water in: Agriculture</isoattrs:Definition>
+                <ddattrs:Methodology>This value should be provided if reuse of treated waste water in Agriculture.&#13;
+&#13;
+A valid alternative to the default boolean values 'false' and 'true' are values '0' and '1', respectively.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:boolean"/>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="mslWWReuseInd">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>mslWWReuseInd</isoattrs:Name>
+                <isoattrs:Definition>Re-use of treated wastewater in: Industry</isoattrs:Definition>
+                <ddattrs:Methodology>This value is required if reuse of treated waste water in Industry.&#13;
+&#13;
+A valid alternative to the default boolean values "false" and "true" are values "0" and "1", respectively.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:boolean"/>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="mslWWReuseOther">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>mslWWReuseOther</isoattrs:Name>
+                <isoattrs:Definition>Re-use of treated waste water in: Others</isoattrs:Definition>
+                <ddattrs:Methodology>This value is required if reuse of treated waste water  in others.&#13;
+&#13;
+A valid alternative to the default boolean values 'false' and 'true' are values '0' and '1', respectively.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:boolean"/>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="mslWWReuseExplain">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>mslWWReuseExplain</isoattrs:Name>
+                <isoattrs:Definition>Re-use of treated waste water: Please explain others</isoattrs:Definition>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="0"/>
+                <xs:maxLength value="50"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="mslRemarks">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>mslRemarks</isoattrs:Name>
+                <isoattrs:Definition>Remarks</isoattrs:Definition>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="0"/>
+                <xs:maxLength value="255"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://dd.eionet.europa.eu/namespaces/817" xmlns:ddattrs="http://dd.eionet.europa.eu/namespaces/3" xmlns:isoattrs="http://dd.eionet.europa.eu/namespaces/2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://dd.eionet.europa.eu/namespaces/817" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema  http://www.w3.org/2001/XMLSchema.xsd">
+    <xs:element name="ReportPeriod">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>ReportPeriod</isoattrs:Name>
+                <isoattrs:Definition>Table specifies country, ID of the report, version of the reported data and reference year for reporting.</isoattrs:Definition>
+                <ddattrs:ShortDescription>Information on the report</ddattrs:ShortDescription>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" minOccurs="0" name="Row">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="rptMStateKey"/>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="repCode"/>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="repVersion"/>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="repSituationAt"/>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="repReportedPeriod"/>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="repReferenceSystem"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="rptMStateKey">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>rptMStateKey</isoattrs:Name>
+                <isoattrs:Definition>Abbreviation of EEA Member state or Collaborating Country, as defined in the codelist.</isoattrs:Definition>
+                <ddattrs:Methodology>This value is required.&#13;
+&#13;
+ISO 3166-alpha-2 code elements (exception for Greece and United Kingdom - use 'EL' for Greece and 'UK' for the United Kingdom).</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="AL"/>
+                <xs:enumeration value="AT"/>
+                <xs:enumeration value="BA"/>
+                <xs:enumeration value="BE"/>
+                <xs:enumeration value="BG"/>
+                <xs:enumeration value="CH"/>
+                <xs:enumeration value="CY"/>
+                <xs:enumeration value="CZ"/>
+                <xs:enumeration value="DE"/>
+                <xs:enumeration value="DK"/>
+                <xs:enumeration value="EE"/>
+                <xs:enumeration value="EL"/>
+                <xs:enumeration value="ES"/>
+                <xs:enumeration value="FI"/>
+                <xs:enumeration value="FR"/>
+                <xs:enumeration value="HR"/>
+                <xs:enumeration value="HU"/>
+                <xs:enumeration value="IE"/>
+                <xs:enumeration value="IS"/>
+                <xs:enumeration value="IT"/>
+                <xs:enumeration value="LI"/>
+                <xs:enumeration value="LT"/>
+                <xs:enumeration value="LU"/>
+                <xs:enumeration value="LV"/>
+                <xs:enumeration value="ME"/>
+                <xs:enumeration value="MK"/>
+                <xs:enumeration value="MT"/>
+                <xs:enumeration value="NL"/>
+                <xs:enumeration value="NO"/>
+                <xs:enumeration value="PL"/>
+                <xs:enumeration value="PT"/>
+                <xs:enumeration value="RO"/>
+                <xs:enumeration value="RS"/>
+                <xs:enumeration value="SE"/>
+                <xs:enumeration value="SI"/>
+                <xs:enumeration value="SK"/>
+                <xs:enumeration value="TR"/>
+                <xs:enumeration value="UK"/>
+                <xs:enumeration value="XK"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="repCode">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+                <ddattrs:Owner>4037322</ddattrs:Owner>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Methodology>This value is required.&#13;
+First 2 characters must be the 2-alpha character ISO country code (use 'EL' for Greece and 'UK' for the United Kingdom).</ddattrs:Methodology>
+                <isoattrs:Definition>Report ID, as specified by country</isoattrs:Definition>
+                <isoattrs:Name>repCode</isoattrs:Name>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="1"/>
+                <xs:maxLength value="16"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="repVersion">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>repVersion</isoattrs:Name>
+                <isoattrs:Definition>Version of reported data (“date of the reporting”).</isoattrs:Definition>
+                <ddattrs:Methodology>Date of this reporting version. This value is required (each update should be identified by the version of reported data).&#13;
+&#13;
+Use the format YYYY-MM-DD.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:date"/>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="repSituationAt">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>repSituationAt</isoattrs:Name>
+                <isoattrs:Definition>Specifying the end date of the period for which the data was reported.</isoattrs:Definition>
+                <ddattrs:Methodology>This value is required. &#13;
+&#13;
+Use the format YYYY-MM-DD.&#13;
+Example: 2016-12-31</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:date"/>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="repReportedPeriod">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>repReportedPeriod</isoattrs:Name>
+                <isoattrs:Definition>Reported Year</isoattrs:Definition>
+                <ddattrs:Methodology>This value is required.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="4"/>
+                <xs:maxLength value="4"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="repReferenceSystem">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>repReferenceSystem</isoattrs:Name>
+                <isoattrs:Definition>Specifying the reference system used for reporting spatial data.</isoattrs:Definition>
+                <ddattrs:Methodology>This value is required.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="ETRS89"/>
+                <xs:enumeration value="ETRS89 + WGS-84"/>
+                <xs:enumeration value="WGS-84"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+</xs:schema>

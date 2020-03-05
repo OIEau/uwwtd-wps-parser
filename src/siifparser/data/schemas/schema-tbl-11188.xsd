@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://dd.eionet.europa.eu/namespaces/864" xmlns:ddattrs="http://dd.eionet.europa.eu/namespaces/3" xmlns:isoattrs="http://dd.eionet.europa.eu/namespaces/2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://dd.eionet.europa.eu/namespaces/864" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema  http://www.w3.org/2001/XMLSchema.xsd">
+    <xs:element name="ReceivingAreasSALSAPredecessor">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <ddattrs:ShortDescription>Predecessors of deactivated receiving areas (data lifecycle management)</ddattrs:ShortDescription>
+                <isoattrs:Definition>Table describes relation between sensitive area that is not operational any longer and its successor.</isoattrs:Definition>
+                <isoattrs:Name>ReceivingAreasSALSAPredecessor</isoattrs:Name>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" minOccurs="0" name="Row">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="repCode"/>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="rcaCode"/>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="rcaCodePredecessor"/>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="rcaEvolutionType"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="rcasalsaRemark"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="repCode">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+                <ddattrs:Owner>4037322</ddattrs:Owner>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Methodology>This value is required.&#13;
+First 2 characters must be the 2-alpha character ISO country code (use 'EL' for Greece and 'UK' for the United Kingdom).</ddattrs:Methodology>
+                <isoattrs:Definition>Report ID, as specified by country</isoattrs:Definition>
+                <isoattrs:Name>repCode</isoattrs:Name>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="1"/>
+                <xs:maxLength value="16"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="rcaCode">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>rcaCode</isoattrs:Name>
+                <isoattrs:Definition>ID code of the sensitive or less sensitive area</isoattrs:Definition>
+                <ddattrs:Methodology>This value is required.&#13;
+&#13;
+Identifier of the spatial object which is still operational.&#13;
+&#13;
+ID of the sensitive area filled in this field has to be listed in the table ReceivingAreasSAMain, field rcaCode.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="1"/>
+                <xs:maxLength value="32"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="rcaCodePredecessor">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>rcaCodePredecessor</isoattrs:Name>
+                <isoattrs:Definition>ID code of the sensitive or less senstive area that is no longer operational.</isoattrs:Definition>
+                <ddattrs:Methodology>This value is required.&#13;
+&#13;
+ID code of the spatial object which is no longer operational.&#13;
+&#13;
+ID of the predecessor makes possible to check the consistency in the designation criteria between the old and new sensitive areas. &#13;
+&#13;
+Receiving area reported as an rcaCodePredecessor must be reported as a rcaCode in the table ReceivingAreas_SAMain and at the same time, the rcaEndLife must be reported for this receiving area as the YYYY-12-31, the year before this object was superseded. The&#13;
+beginlifespanVersion attribute of the new ID code will be (YYYY+1)-01-01.&#13;
+&#13;
+</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="1"/>
+                <xs:maxLength value="16"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="rcaEvolutionType">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>rcaEvolutionType</isoattrs:Name>
+                <isoattrs:Definition>Reason of the link between this existing ID code and the ID code no more in use.</isoattrs:Definition>
+                <ddattrs:Methodology>This value is required.&#13;
+&#13;
+It has to be considered that when there is a new ID code there is a new object even if the real-world entity has not changed. For a MS which wants only to change the ID code due to a new codification of all the SA or LSA, the endLifespanVersion attribute must be filled with a valid DateTime in the SA or LSA table in the line corresponding to the old ID code attribute. The year of the reporting of the change there is a need to report the SAmain or LSA table with the new and old codes. The endLifespanVersion attribute of the old code will be filled with a date corresponding to YYYY-12-31, the year before this object was superseded. The beginlifespanVersion attribute of the new ID code will be (YYYY+1)-01-01.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="AGGREGATION"/>
+                <xs:enumeration value="CHANGEBOTHAGGREGATIONANDSPLITTING"/>
+                <xs:enumeration value="CHANGECODE"/>
+                <xs:enumeration value="CHANGEGEOMETRY"/>
+                <xs:enumeration value="DELETION"/>
+                <xs:enumeration value="OTHER"/>
+                <xs:enumeration value="SPLITTING"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="rcasalsaRemark">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>rcasalsaRemark</isoattrs:Name>
+                <isoattrs:Definition>Remark</isoattrs:Definition>
+                <ddattrs:Methodology>Remark to further explain the changes.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="0"/>
+                <xs:maxLength value="4096"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+</xs:schema>

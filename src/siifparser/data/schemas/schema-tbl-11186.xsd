@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://dd.eionet.europa.eu/namespaces/865" xmlns:ddattrs="http://dd.eionet.europa.eu/namespaces/3" xmlns:isoattrs="http://dd.eionet.europa.eu/namespaces/2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://dd.eionet.europa.eu/namespaces/865" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema  http://www.w3.org/2001/XMLSchema.xsd">
+    <xs:element name="ReceivingAreasSASA">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <ddattrs:ShortDescription>Relation between sensitive areas and their catchments</ddattrs:ShortDescription>
+                <isoattrs:Definition>The table indicates a link between sensitive area and its corresponding catchment of sensitive area.</isoattrs:Definition>
+                <isoattrs:Name>ReceivingAreasSASA</isoattrs:Name>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" minOccurs="0" name="Row">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="repCode"/>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="rcaCode"/>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="rcaRelatedSA"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="rcaRelatedSARemark"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="repCode">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+                <ddattrs:Owner>4037322</ddattrs:Owner>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Methodology>This value is required.&#13;
+First 2 characters must be the 2-alpha character ISO country code (use 'EL' for Greece and 'UK' for the United Kingdom).</ddattrs:Methodology>
+                <isoattrs:Definition>Report ID, as specified by country</isoattrs:Definition>
+                <isoattrs:Name>repCode</isoattrs:Name>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="1"/>
+                <xs:maxLength value="16"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="rcaCode">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>rcaCode</isoattrs:Name>
+                <isoattrs:Definition>ID of the catchment Sensitive area </isoattrs:Definition>
+                <ddattrs:Methodology>This value is required.&#13;
+&#13;
+Catchment of a sensitive area that is linked to other existing sensitive areas types (River, coastal, lake, transitional). &#13;
+&#13;
+ID of the catchment of a sensitive area filled in this field has to be listed in the table ReceivingAreasSAMain, field rcaCode.&#13;
+&#13;
+Designation of the catchment of sensitive area is not required in cases where: the entire territory of a Member State is designated as one sensitive area (Receiving area designated under the Directive Article 5.8).</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="1"/>
+                <xs:maxLength value="32"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="rcaRelatedSA">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>rcaRelatedSA</isoattrs:Name>
+                <isoattrs:Definition>ID of the related sensitive area</isoattrs:Definition>
+                <ddattrs:Methodology>This value is required.&#13;
+&#13;
+Related Sensitive Area. ZoneTypeCode has to be UWWRISA or UWWLKSA or UWWCASA or UWWTWSA.&#13;
+&#13;
+ID of the related sensitive area filled in this field has to be listed in the table ReceivingAreasSAMain, field rcaCode.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="1"/>
+                <xs:maxLength value="32"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="rcaRelatedSARemark">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>rcaRelatedSARemark</isoattrs:Name>
+                <isoattrs:Definition>Remark</isoattrs:Definition>
+                <ddattrs:Methodology>Explain how SA are related</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="0"/>
+                <xs:maxLength value="4096"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+</xs:schema>

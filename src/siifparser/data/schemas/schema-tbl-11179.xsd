@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://dd.eionet.europa.eu/namespaces/825" xmlns:ddattrs="http://dd.eionet.europa.eu/namespaces/3" xmlns:isoattrs="http://dd.eionet.europa.eu/namespaces/2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://dd.eionet.europa.eu/namespaces/825" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema  http://www.w3.org/2001/XMLSchema.xsd">
+    <xs:element name="Industries">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <ddattrs:ShortDescription>Information on food-processing industries</ddattrs:ShortDescription>
+                <isoattrs:Name>Industries</isoattrs:Name>
+                <isoattrs:Definition>Table contains information on food-processing industrial plants, basic descriptors and the date of compliance.</isoattrs:Definition>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" minOccurs="0" name="Row">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="repCode"/>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="indState"/>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="indCodePlant"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="indNamePlant"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="indBranch"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="indOrganicLoad"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="indConditions"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="indDateCompliance"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="repCode">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+                <ddattrs:Owner>4037322</ddattrs:Owner>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Methodology>This value is required.&#13;
+First 2 characters must be the 2-alpha character ISO country code (use 'EL' for Greece and 'UK' for the United Kingdom).</ddattrs:Methodology>
+                <isoattrs:Definition>Report ID, as specified by country</isoattrs:Definition>
+                <isoattrs:Name>repCode</isoattrs:Name>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="1"/>
+                <xs:maxLength value="16"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="indState">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>indState</isoattrs:Name>
+                <isoattrs:Definition>Status of the plant</isoattrs:Definition>
+                <ddattrs:Methodology>This value is required.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="indCodePlant">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>indCodePlant</isoattrs:Name>
+                <isoattrs:Definition>ID of the food-processing industrial plant</isoattrs:Definition>
+                <ddattrs:Methodology>This value is required.&#13;
+&#13;
+First 2 characters must be the 2-alpha character ISO country code (use 'EL' for Greece and 'UK' for the United Kingdom).&#13;
+Do not use characters with accents and other diacritical marks (national characters). Do not use spaces or other spatial characters. The hyphen '-' and the underscore '_' characters are allowed.&#13;
+&#13;
+If the industrial plant has been reported also under the E-PRTR, IED, identical codes should be used. </ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="1"/>
+                <xs:maxLength value="32"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="indNamePlant">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>indNamePlant</isoattrs:Name>
+                <isoattrs:Definition>Name of the plant</isoattrs:Definition>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="1"/>
+                <xs:maxLength value="255"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="indBranch">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>indBranch</isoattrs:Name>
+                <isoattrs:Definition>Industrial sector of food-processing</isoattrs:Definition>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="ALC"/>
+                <xs:enumeration value="BREW"/>
+                <xs:enumeration value="DRINK"/>
+                <xs:enumeration value="FEED"/>
+                <xs:enumeration value="FISH"/>
+                <xs:enumeration value="FRUIT"/>
+                <xs:enumeration value="GELA"/>
+                <xs:enumeration value="MALT"/>
+                <xs:enumeration value="MEAT"/>
+                <xs:enumeration value="MILK"/>
+                <xs:enumeration value="POTA"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="indOrganicLoad">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>indOrganicLoad</isoattrs:Name>
+                <isoattrs:Definition>Organic load (p.e.)</isoattrs:Definition>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:integer">
+                <xs:totalDigits value="11"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="indConditions">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>indConditions</isoattrs:Name>
+                <isoattrs:Definition>Do the discharges from industrial facility respect conditions under Art. 13?</isoattrs:Definition>
+                <ddattrs:Methodology>According to the article 13 of the UWWTD, biodegradable industrial waste water from plants belonging to the industrial sectors listed in Annex III which does not enter urban waste water treatment plants before discharge to receiving waters shall before discharge respect conditions established in prior regulations and/or specific authorization by the competent authority or appropriate body, in respect of all discharges from plants representing 4000 p.e. or more.&#13;
+&#13;
+A valid alternative to the default boolean values 'false' and 'true' are values '0' and '1', respectively.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:boolean"/>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="indDateCompliance">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>indDateCompliance</isoattrs:Name>
+                <isoattrs:Definition>Date of compliance</isoattrs:Definition>
+                <ddattrs:Methodology>Date of compliance with the regulations and/or specific authorization by the competent authority or appropriate body, in respect of all discharges from plants representing 4000 p.e. or more.&#13;
+&#13;
+Use the format YYYY-MM-DD.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:date"/>
+        </xs:simpleType>
+    </xs:element>
+</xs:schema>

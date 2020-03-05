@@ -1,0 +1,3103 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<UWWTDArt15 xmlns="http://dd.eionet.europa.eu/namespaces/802"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="http://dd.eionet.europa.eu/namespaces/802  http://dd.eionet.europa.eu/v2/dataset/3381/schema-dst-3381.xsd">
+   <Reporter xmlns="http://dd.eionet.europa.eu/namespaces/816">
+      <Row>
+         <rptMStateKey>CY</rptMStateKey>
+         <rptMStateValue>Cyprus</rptMStateValue>
+         <rptCulture>el-CY</rptCulture>
+      </Row>
+   </Reporter>
+   <ReportPeriod xmlns="http://dd.eionet.europa.eu/namespaces/817">
+      <Row>
+         <rptMStateKey>CY</rptMStateKey>
+         <repCode>CY 2017 Art.15</repCode>
+         <repVersion>2018-07-20</repVersion>
+         <repSituationAt>2016-12-31</repSituationAt>
+         <repReportedPeriod>2016</repReportedPeriod>
+         <repReferenceSystem>WGS-84</repReferenceSystem>
+      </Row>
+   </ReportPeriod>
+   <Contacts xmlns="http://dd.eionet.europa.eu/namespaces/818">
+      <Row>
+         <repCode>CY 2017 Art.15</repCode>
+         <conName>Stella Perikenti</conName>
+         <conInstitution>Department of Environment / Ministry of Agriculture, Rural Development and Environment</conInstitution>
+         <conStreet>20-22 28th Oktovriou</conStreet>
+         <conZIP>1498</conZIP>
+         <conCity>Nicosia</conCity>
+         <conPhone>00357-26-804573</conPhone>
+         <conFax>00357-22-774945</conFax>
+         <conEmail>sperikenti@environment.moa.gov.cy</conEmail>
+      </Row>
+   </Contacts>
+   <ReceivingAreasSAMain xmlns="http://dd.eionet.europa.eu/namespaces/843">
+      <Row>
+         <repCode>CY 2017 Art.15</repCode>
+         <rcaCode>CY SA_CM1</rcaCode>
+         <rcaName>Lago d'Idro o Eridio</rcaName>
+         <rcaEnvDom>Water</rcaEnvDom>
+         <rcaZtype>UWWCMSA</rcaZtype>
+         <rcaSpZTyp>A523</rcaSpZTyp>
+         <rcaParameterN>1</rcaParameterN>
+         <rcaParameterP>1</rcaParameterP>
+         <rcaParameterM>0</rcaParameterM>
+         <rcaParameterOther>0</rcaParameterOther>
+         <rcaBeginLife>2004-02-27</rcaBeginLife>
+         <rcaRemarks>Cyprus reviewed the Sensitive Areas for discharges from urban waste water treatment plants via the Water Pollution Control (Sensitive Areas for Disposal of Urban Waste Water) Ministerial Decree of 2013 (No. 280/2013). Cyprus defined 1 Sensitive Area for Urban Waste Water Discharge (Polemidia Dam) which is subject to eutrophication and 1 Catchment of Sensitive Area (Catchment of Polemidia).</rcaRemarks>
+      </Row>
+      <Row>
+         <repCode>CY 2017 Art.15</repCode>
+         <rcaCode>CY SA-LK1</rcaCode>
+         <rcaName>Polemidia dam</rcaName>
+         <rcaEnvDom>Water</rcaEnvDom>
+         <rcaZtype>UWWLKSA</rcaZtype>
+         <rcaSpZTyp>A523</rcaSpZTyp>
+         <rcaParameterN>1</rcaParameterN>
+         <rcaParameterP>1</rcaParameterP>
+         <rcaParameterM>0</rcaParameterM>
+         <rcaParameterOther>0</rcaParameterOther>
+         <rcaBeginLife>2004-02-27</rcaBeginLife>
+         <rcaRemarks>Cyprus reviewed the Sensitive Areas for discharges from urban waste water treatment plants via the Water Pollution Control (Sensitive Areas for Disposal of Urban Waste Water) Ministerial Decree of 2013 (No. 280/2013). Cyprus defined 1 Sensitive Area for Urban Waste Water Discharge (Polemidia Dam) which is subject to eutrophication and 1 Catchment of Sensitive Area (Catchment of Polemidia).</rcaRemarks>
+      </Row>
+   </ReceivingAreasSAMain>
+   <ReceivingAreasSAParameter xmlns="http://dd.eionet.europa.eu/namespaces/844">
+      <Row>
+         <repCode>CY 2017 Art.15</repCode>
+         <rcaCode>CY SA_CM1</rcaCode>
+         <rcaParameter>aN</rcaParameter>
+         <rcaDateDesignation>2004-02-27</rcaDateDesignation>
+         <rcaStartDate>2008-12-31</rcaStartDate>
+      </Row>
+      <Row>
+         <repCode>CY 2017 Art.15</repCode>
+         <rcaCode>CY SA_CM1</rcaCode>
+         <rcaParameter>aP</rcaParameter>
+         <rcaDateDesignation>2004-02-27</rcaDateDesignation>
+         <rcaStartDate>2008-12-31</rcaStartDate>
+      </Row>
+      <Row>
+         <repCode>CY 2017 Art.15</repCode>
+         <rcaCode>CY SA-LK1</rcaCode>
+         <rcaParameter>aN</rcaParameter>
+         <rcaDateDesignation>2004-02-27</rcaDateDesignation>
+         <rcaStartDate>2008-12-31</rcaStartDate>
+      </Row>
+      <Row>
+         <repCode>CY 2017 Art.15</repCode>
+         <rcaCode>CY SA-LK1</rcaCode>
+         <rcaParameter>aP</rcaParameter>
+         <rcaDateDesignation>2004-02-27</rcaDateDesignation>
+         <rcaStartDate>2008-12-31</rcaStartDate>
+      </Row>
+   </ReceivingAreasSAParameter>
+   <ReceivingAreasSA54 xmlns="http://dd.eionet.europa.eu/namespaces/845"/>
+   <ReceivingAreasLSA xmlns="http://dd.eionet.europa.eu/namespaces/846"/>
+   <ReceivingAreasSASA xmlns="http://dd.eionet.europa.eu/namespaces/865">
+      <Row>
+         <repCode>CY 2017 Art.15</repCode>
+         <rcaCode>CY SA_CM1</rcaCode>
+         <rcaRelatedSA>CY SA-LK1</rcaRelatedSA>
+         <rcaRelatedSARemark>The catchment of SA is defined as the part of  the Garyllis river catchment from the Vati area to Polemidia Dam.The SA is a part of the catchment of SA.</rcaRelatedSARemark>
+      </Row>
+   </ReceivingAreasSASA>
+   <ReceivingAreasSALSAPredecessor xmlns="http://dd.eionet.europa.eu/namespaces/864"/>
+   <Agglomerations xmlns="http://dd.eionet.europa.eu/namespaces/820">
+      <Row>
+         <aggState>1</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>ER413-Agglo</aggCode>
+         <aggNUTS>CY000</aggNUTS>
+         <aggLatitude></aggLatitude>
+         <aggLongitude></aggLongitude>
+         <aggGenerated>2800</aggGenerated>
+         <aggCalculation>The calculation of the generated load  includes resident population, seasonal population , tourism and industrial waste water.</aggCalculation>
+         <aggChanges>false</aggChanges>
+         <aggPeriodOver>1997-12-31</aggPeriodOver>
+         <aggDateArt3>2095-12-31</aggDateArt3>
+         <aggDateArt4>1988-12-31</aggDateArt4>
+         <aggDateArt5>2035-11-30</aggDateArt5>
+         <aggC1>1</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>2</aggC2>
+         <aggMethodC2>E</aggMethodC2>
+         <aggPercWithoutTreatment>98</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggForecast>2025-12-31</aggForecast>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+         <aggEndLife>2004-12-31</aggEndLife>
+      </Row>
+      <Row>
+         <aggState>1</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>CY413-Agglo</aggCode>
+         <aggName></aggName>
+         <aggNUTS>CY000</aggNUTS>
+         <aggGenerated>2800</aggGenerated>
+         <aggCalculation>The calculation of the generated load  includes resident population, seasonal population , tourism and industrial waste water.</aggCalculation>
+         <aggChanges>false</aggChanges>
+         <aggPeriodOver>2012-12-31</aggPeriodOver>
+         <aggDateArt3>2000-12-31</aggDateArt3>
+         <aggDateArt4>1999-12-31</aggDateArt4>
+         <aggDateArt5>1999-11-30</aggDateArt5>
+         <aggC1>0</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>2</aggC2>
+         <aggMethodC2>E</aggMethodC2>
+         <aggPercWithoutTreatment>98</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggForecast>2025-12-31</aggForecast>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+      </Row>
+      <Row>
+         <aggState>1</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>CE413-Agglo</aggCode>
+         <aggName>Meneou</aggName>
+         <aggNUTS>CY000</aggNUTS>
+         <aggLatitude>34.86126</aggLatitude>
+         <aggLongitude>33.59595</aggLongitude>
+         <aggGenerated>2300</aggGenerated>
+         <aggCalculation>The calculation of the generated load  includes resident population, seasonal population , tourism and industrial waste water.</aggCalculation>
+         <aggChanges>false</aggChanges>
+         <aggPeriodOver>1998-01-01</aggPeriodOver>
+         <aggDateArt3>1998-12-31</aggDateArt3>
+         <aggDateArt4>1999-12-31</aggDateArt4>
+         <aggDateArt5>2000-11-30</aggDateArt5>
+         <aggC1>0</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>2</aggC2>
+         <aggMethodC2>E</aggMethodC2>
+         <aggPercWithoutTreatment>98</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggForecast>2027-06-30</aggForecast>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+      </Row>
+      <Row>
+         <aggState>0</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>CY414-Agglo</aggCode>
+         <aggName>Voroklini</aggName>
+         <aggNUTS>CY000</aggNUTS>
+         <aggLatitude>34.98768</aggLatitude>
+         <aggLongitude>33.65081</aggLongitude>
+         <aggGenerated>11000</aggGenerated>
+         <aggCalculation>The calculation of the generated load  includes resident population, seasonal population , tourism and industrial waste water.</aggCalculation>
+         <aggChanges>false</aggChanges>
+         <aggPeriodOver>1989-12-31</aggPeriodOver>
+         <aggDateArt3>2012-12-31</aggDateArt3>
+         <aggDateArt4>2012-12-31</aggDateArt4>
+         <aggC1>0</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>2</aggC2>
+         <aggMethodC2>E</aggMethodC2>
+         <aggPercWithoutTreatment>98</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggForecast>2025-12-31</aggForecast>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+      </Row>
+      <Row>
+         <aggState>1</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>CY41-Agglo</aggCode>
+         <aggName>Larnaca</aggName>
+         <aggNUTS>CY000</aggNUTS>
+         <aggLatitude>34.9224</aggLatitude>
+         <aggLongitude>33.62392</aggLongitude>
+         <aggGenerated>80000</aggGenerated>
+         <aggCalculation>The calculation of the generated load  includes resident population, seasonal population , tourism and industrial waste water.</aggCalculation>
+         <aggChanges>false</aggChanges>
+         <aggPeriodOver>2012-12-31</aggPeriodOver>
+         <aggDateArt3>2012-12-31</aggDateArt3>
+         <aggDateArt4>2012-12-31</aggDateArt4>
+         <aggC1>86.5</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>11.5</aggC2>
+         <aggMethodC2>C</aggMethodC2>
+         <aggPercWithoutTreatment>2</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggPercPrimTreatment>0</aggPercPrimTreatment>
+         <aggPercSecTreatment>0</aggPercSecTreatment>
+         <aggPercStringentTreatment>11.5</aggPercStringentTreatment>
+         <aggSewageNetwork>S</aggSewageNetwork>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+      </Row>
+      <Row>
+         <aggState>1</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>CY501-Agglo</aggCode>
+         <aggName>Kyperounda</aggName>
+         <aggNUTS>CY000</aggNUTS>
+         <aggLatitude>34.93998</aggLatitude>
+         <aggLongitude>32.97281</aggLongitude>
+         <aggGenerated>2200</aggGenerated>
+         <aggCalculation>The calculation of the generated load  includes resident population, seasonal population , tourism and industrial waste water.</aggCalculation>
+         <aggChanges>false</aggChanges>
+         <aggPeriodOver>2012-12-31</aggPeriodOver>
+         <aggDateArt3>2012-12-31</aggDateArt3>
+         <aggDateArt4>2012-12-31</aggDateArt4>
+         <aggC1>100</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>0</aggC2>
+         <aggMethodC2>E</aggMethodC2>
+         <aggPercWithoutTreatment>0</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+      </Row>
+      <Row>
+         <aggState>1</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>CY502-Agglo</aggCode>
+         <aggName>Platres</aggName>
+         <aggNUTS>CY000</aggNUTS>
+         <aggLatitude>34.88842</aggLatitude>
+         <aggLongitude>32.86144</aggLongitude>
+         <aggGenerated>2000</aggGenerated>
+         <aggCalculation>The calculation of the generated load  includes resident population, seasonal population , tourism and industrial waste water.</aggCalculation>
+         <aggChanges>false</aggChanges>
+         <aggPeriodOver>2012-12-31</aggPeriodOver>
+         <aggDateArt3>2012-12-31</aggDateArt3>
+         <aggDateArt4>2012-12-31</aggDateArt4>
+         <aggC1>100</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>0</aggC2>
+         <aggMethodC2>E</aggMethodC2>
+         <aggPercWithoutTreatment>0</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+      </Row>
+      <Row>
+         <aggState>1</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>CY503-Agglo</aggCode>
+         <aggName>Agros</aggName>
+         <aggNUTS>CY000</aggNUTS>
+         <aggLatitude>34.91768</aggLatitude>
+         <aggLongitude>33.02042</aggLongitude>
+         <aggGenerated>2500</aggGenerated>
+         <aggCalculation>The calculation of the generated load  includes resident population, seasonal population , tourism and industrial waste water.</aggCalculation>
+         <aggChanges>false</aggChanges>
+         <aggPeriodOver>2012-12-31</aggPeriodOver>
+         <aggDateArt3>2012-12-31</aggDateArt3>
+         <aggDateArt4>2012-12-31</aggDateArt4>
+         <aggC1>100</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>0</aggC2>
+         <aggMethodC2>E</aggMethodC2>
+         <aggPercWithoutTreatment>0</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+      </Row>
+      <Row>
+         <aggState>1</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>CY504-Agglo</aggCode>
+         <aggName>Pelendri</aggName>
+         <aggNUTS>CY000</aggNUTS>
+         <aggLatitude>34.89644</aggLatitude>
+         <aggLongitude>32.96587</aggLongitude>
+         <aggGenerated></aggGenerated>
+         <aggCalculation>The calculation of the generated load  includes resident population, seasonal population , tourism and industrial waste water.</aggCalculation>
+         <aggChanges>false</aggChanges>
+         <aggPeriodOver>2012-12-31</aggPeriodOver>
+         <aggDateArt3>2012-12-31</aggDateArt3>
+         <aggDateArt4>2012-12-31</aggDateArt4>
+         <aggC1>-1</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>0</aggC2>
+         <aggMethodC2>E</aggMethodC2>
+         <aggPercWithoutTreatment>0</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+      </Row>
+      <Row>
+         <aggState>1</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>CY505-Agglo</aggCode>
+         <aggName>Ypsonas</aggName>
+         <aggNUTS>CY000</aggNUTS>
+         <aggLatitude>34.68832</aggLatitude>
+         <aggLongitude>32.96105</aggLongitude>
+         <aggGenerated>14700</aggGenerated>
+         <aggCalculation>The calculation of the generated load  includes resident population, seasonal population , tourism and industrial waste water.</aggCalculation>
+         <aggChanges>false</aggChanges>
+         <aggPeriodOver>2012-12-31</aggPeriodOver>
+         <aggDateArt3>2012-12-31</aggDateArt3>
+         <aggDateArt4>2012-12-31</aggDateArt4>
+         <aggC1>0</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>2</aggC2>
+         <aggMethodC2>E</aggMethodC2>
+         <aggPercWithoutTreatment>98</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggForecast>2026-12-31</aggForecast>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+      </Row>
+      <Row>
+         <aggState>1</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>CY506-Agglo</aggCode>
+         <aggName>Kolossi</aggName>
+         <aggNUTS>CY000</aggNUTS>
+         <aggLatitude>34.66912</aggLatitude>
+         <aggLongitude>32.93322</aggLongitude>
+         <aggGenerated>6000</aggGenerated>
+         <aggCalculation>The calculation of the generated load  includes resident population, seasonal population , tourism and industrial waste water.</aggCalculation>
+         <aggChanges>false</aggChanges>
+         <aggPeriodOver>2012-12-31</aggPeriodOver>
+         <aggDateArt3>2012-12-31</aggDateArt3>
+         <aggDateArt4>2012-12-31</aggDateArt4>
+         <aggC1>0</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>2</aggC2>
+         <aggMethodC2>E</aggMethodC2>
+         <aggPercWithoutTreatment>98</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggForecast>2025-12-31</aggForecast>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+      </Row>
+      <Row>
+         <aggState>1</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>CY507-Agglo</aggCode>
+         <aggName>Episkopi</aggName>
+         <aggNUTS>CY000</aggNUTS>
+         <aggLatitude>34.66967</aggLatitude>
+         <aggLongitude>32.90466</aggLongitude>
+         <aggGenerated>3700</aggGenerated>
+         <aggCalculation>The calculation of the generated load  includes resident population, seasonal population , tourism and industrial waste water.</aggCalculation>
+         <aggChanges>false</aggChanges>
+         <aggPeriodOver>2012-12-31</aggPeriodOver>
+         <aggDateArt3>2012-12-31</aggDateArt3>
+         <aggDateArt4>2012-12-31</aggDateArt4>
+         <aggC1>0</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>2</aggC2>
+         <aggMethodC2>E</aggMethodC2>
+         <aggPercWithoutTreatment>98</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggForecast>2025-12-31</aggForecast>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+      </Row>
+      <Row>
+         <aggState>1</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>CY508-Agglo</aggCode>
+         <aggName>Trachoni</aggName>
+         <aggNUTS>CY000</aggNUTS>
+         <aggLatitude>34.65684</aggLatitude>
+         <aggLongitude>32.96392</aggLongitude>
+         <aggGenerated>4000</aggGenerated>
+         <aggCalculation>The calculation of the generated load  includes resident population, seasonal population , tourism and industrial waste water.</aggCalculation>
+         <aggChanges>false</aggChanges>
+         <aggPeriodOver>2012-12-31</aggPeriodOver>
+         <aggDateArt3>2012-12-31</aggDateArt3>
+         <aggDateArt4>2012-12-31</aggDateArt4>
+         <aggC1>0</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>2</aggC2>
+         <aggMethodC2>E</aggMethodC2>
+         <aggPercWithoutTreatment>98</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggForecast>2025-12-31</aggForecast>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+      </Row>
+      <Row>
+         <aggState>1</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>CY510-Agglo</aggCode>
+         <aggName>Pissouri</aggName>
+         <aggNUTS>CY000</aggNUTS>
+         <aggLatitude>34.655902</aggLatitude>
+         <aggLongitude>32.731438</aggLongitude>
+         <aggGenerated>3000</aggGenerated>
+         <aggCalculation>The calculation of the generated load  includes resident population, seasonal population , tourism and industrial waste water.</aggCalculation>
+         <aggChanges>false</aggChanges>
+         <aggPeriodOver>2012-12-31</aggPeriodOver>
+         <aggDateArt3>2012-12-31</aggDateArt3>
+         <aggDateArt4>2012-12-31</aggDateArt4>
+         <aggC1>0</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>100</aggC2>
+         <aggMethodC2>E</aggMethodC2>
+         <aggPercWithoutTreatment>0</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggPercPrimTreatment>0</aggPercPrimTreatment>
+         <aggPercSecTreatment>100</aggPercSecTreatment>
+         <aggPercStringentTreatment>0</aggPercStringentTreatment>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+         <aggEndLife>2004-01-01</aggEndLife>
+         <aggRemarks>The generated load of agglomeration treated by IAS is the generated load treated in situ and the generated load transported to UWWTPs by trucks.</aggRemarks>
+      </Row>
+      <Row>
+         <aggState>1</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>CY511-Agglo</aggCode>
+         <aggName>Pano Polemedia</aggName>
+         <aggNUTS>CY000</aggNUTS>
+         <aggLatitude>34.70348</aggLatitude>
+         <aggLongitude>32.99332</aggLongitude>
+         <aggGenerated>3500</aggGenerated>
+         <aggCalculation>The calculation of the generated load  includes resident population, seasonal population , tourism and industrial waste water.</aggCalculation>
+         <aggChanges>false</aggChanges>
+         <aggPeriodOver>2012-12-31</aggPeriodOver>
+         <aggDateArt3>2012-12-31</aggDateArt3>
+         <aggDateArt4>2012-12-31</aggDateArt4>
+         <aggC1>0</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>2</aggC2>
+         <aggMethodC2>E</aggMethodC2>
+         <aggPercWithoutTreatment>98</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggForecast>2022-03-01</aggForecast>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+      </Row>
+      <Row>
+         <aggState>1</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>CY512-Agglo</aggCode>
+         <aggName>Agios Tychonas</aggName>
+         <aggNUTS>CY000</aggNUTS>
+         <aggLatitude>34.72709</aggLatitude>
+         <aggLongitude>33.13998</aggLongitude>
+         <aggGenerated>7000</aggGenerated>
+         <aggCalculation>The calculation of the generated load  includes resident population, seasonal population , tourism and industrial waste water.</aggCalculation>
+         <aggChanges>false</aggChanges>
+         <aggPeriodOver>2012-12-31</aggPeriodOver>
+         <aggDateArt3>2012-12-31</aggDateArt3>
+         <aggDateArt4>2012-12-31</aggDateArt4>
+         <aggC1>0</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>2</aggC2>
+         <aggMethodC2>E</aggMethodC2>
+         <aggPercWithoutTreatment>98</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggForecast>2018-06-30</aggForecast>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+      </Row>
+      <Row>
+         <aggState>1</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>CY513-Agglo</aggCode>
+         <aggName>Mouttagiaka</aggName>
+         <aggNUTS>CY000</aggNUTS>
+         <aggLatitude>34.72055</aggLatitude>
+         <aggLongitude>33.09986</aggLongitude>
+         <aggGenerated>3800</aggGenerated>
+         <aggCalculation>The calculation of the generated load  includes resident population, seasonal population , tourism and industrial waste water.</aggCalculation>
+         <aggChanges>false</aggChanges>
+         <aggPeriodOver>2012-12-31</aggPeriodOver>
+         <aggDateArt3>2012-12-31</aggDateArt3>
+         <aggDateArt4>2012-12-31</aggDateArt4>
+         <aggC1>0</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>2</aggC2>
+         <aggMethodC2>E</aggMethodC2>
+         <aggPercWithoutTreatment>98</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggForecast>2018-07-31</aggForecast>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+      </Row>
+      <Row>
+         <aggState>1</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>CY514-Agglo</aggCode>
+         <aggName>Parekklisia</aggName>
+         <aggNUTS>CY000</aggNUTS>
+         <aggLatitude>34.74494</aggLatitude>
+         <aggLongitude>33.16082</aggLongitude>
+         <aggGenerated>2500</aggGenerated>
+         <aggCalculation>The calculation of the generated load  includes resident population, seasonal population , tourism and industrial waste water.</aggCalculation>
+         <aggChanges>false</aggChanges>
+         <aggPeriodOver>2012-12-31</aggPeriodOver>
+         <aggDateArt3>2012-12-31</aggDateArt3>
+         <aggDateArt4>2012-12-31</aggDateArt4>
+         <aggC1>0</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>2</aggC2>
+         <aggMethodC2>E</aggMethodC2>
+         <aggPercWithoutTreatment>98</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggForecast>2022-07-01</aggForecast>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+      </Row>
+      <Row>
+         <aggState>1</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>CY515-Agglo</aggCode>
+         <aggName>Pyrgos</aggName>
+         <aggNUTS>CY000</aggNUTS>
+         <aggLatitude>34.74358</aggLatitude>
+         <aggLongitude>33.18243</aggLongitude>
+         <aggGenerated>2300</aggGenerated>
+         <aggCalculation>The calculation of the generated load  includes resident population, seasonal population , tourism and industrial waste water.</aggCalculation>
+         <aggChanges>false</aggChanges>
+         <aggPeriodOver>2012-12-31</aggPeriodOver>
+         <aggDateArt3>2012-12-31</aggDateArt3>
+         <aggDateArt4>2012-12-31</aggDateArt4>
+         <aggC1>0</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>2</aggC2>
+         <aggMethodC2>E</aggMethodC2>
+         <aggPercWithoutTreatment>98</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggForecast>2022-07-01</aggForecast>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+      </Row>
+      <Row>
+         <aggState>1</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>CY51-Agglo</aggCode>
+         <aggName>Limassol</aggName>
+         <aggNUTS>CY000</aggNUTS>
+         <aggLatitude>34.68064</aggLatitude>
+         <aggLongitude>33.04334</aggLongitude>
+         <aggGenerated>165000</aggGenerated>
+         <!--<bigCityID>CY005</bigCityID>-->
+         <bigCityID/>  
+         <aggCalculation>The calculation of the generated load  includes resident population, seasonal population , tourism and industrial waste water.</aggCalculation>
+         <aggChanges>false</aggChanges>
+         <aggPeriodOver>2008-12-31</aggPeriodOver>
+         <aggDateArt3>2008-12-31</aggDateArt3>
+         <aggDateArt4>2008-12-31</aggDateArt4>
+         <aggDateArt5>2008-12-31</aggDateArt5>
+         <aggC1>100</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>0</aggC2>
+         <aggMethodC2>E</aggMethodC2>
+         <aggPercWithoutTreatment>0</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggSewageNetwork>S</aggSewageNetwork>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+         <aggRemarks>The collecting system is fully completed and connected.</aggRemarks>
+      </Row>
+      <Row>
+         <aggState>1</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>CY52-Agglo</aggCode>
+         <aggName>Agia Phyla</aggName>
+         <aggNUTS>CY000</aggNUTS>
+         <aggLatitude>34.70871</aggLatitude>
+         <aggLongitude>33.02659</aggLongitude>
+         <aggGenerated>65000</aggGenerated>
+         <aggCalculation>The calculation of the generated load  includes resident population, seasonal population , tourism and industrial waste water.</aggCalculation>
+         <aggChanges>false</aggChanges>
+         <aggPeriodOver>2012-12-31</aggPeriodOver>
+         <aggDateArt3>2012-12-31</aggDateArt3>
+         <aggDateArt4>2012-12-31</aggDateArt4>
+         <aggDateArt5>2012-12-31</aggDateArt5>
+         <aggC1>93.83</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>2</aggC2>
+         <aggMethodC2>E</aggMethodC2>
+         <aggPercWithoutTreatment>4.17</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggSewageNetwork>S</aggSewageNetwork>
+         <aggForecast>2018-04-01</aggForecast>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+      </Row>
+      <Row>
+         <aggState>1</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>CY601-Agglo</aggCode>
+         <aggName>Polis Chrysochous</aggName>
+         <aggNUTS>CY000</aggNUTS>
+         <aggLatitude>35.03671</aggLatitude>
+         <aggLongitude>32.42649</aggLongitude>
+         <aggGenerated>5500</aggGenerated>
+         <aggCalculation>The calculation of the generated load  includes resident population, seasonal population , tourism and industrial waste water.</aggCalculation>
+         <aggChanges>false</aggChanges>
+         <aggPeriodOver>2012-12-31</aggPeriodOver>
+         <aggDateArt3>2012-12-31</aggDateArt3>
+         <aggDateArt4>2012-12-31</aggDateArt4>
+         <aggC1>0</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>2</aggC2>
+         <aggMethodC2>E</aggMethodC2>
+         <aggPercWithoutTreatment>98</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggForecast>2025-12-31</aggForecast>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+      </Row>
+      <Row>
+         <aggState>1</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>CY602-Agglo</aggCode>
+         <aggName>Pegeia</aggName>
+         <aggNUTS>CY000</aggNUTS>
+         <aggLatitude>34.88421</aggLatitude>
+         <aggLongitude>32.3811</aggLongitude>
+         <aggGenerated>7000</aggGenerated>
+         <aggCalculation>The calculation of the generated load  includes resident population, seasonal population , tourism and industrial waste water.</aggCalculation>
+         <aggChanges>false</aggChanges>
+         <aggPeriodOver>2012-12-31</aggPeriodOver>
+         <aggDateArt3>2012-12-31</aggDateArt3>
+         <aggDateArt4>2012-12-31</aggDateArt4>
+         <aggC1>0</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>100</aggC2>
+         <aggMethodC2>E</aggMethodC2>
+         <aggPercWithoutTreatment>0</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggPercPrimTreatment>0</aggPercPrimTreatment>
+         <aggPercSecTreatment>100</aggPercSecTreatment>
+         <aggPercStringentTreatment>0</aggPercStringentTreatment>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+         <aggRemarks>The generated load of agglomeration treated by IAS is the generated load treated in situ and the generated load transported to UWWTPs by trucks.</aggRemarks>
+      </Row>
+      <Row>
+         <aggState>1</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>CY603-Agglo</aggCode>
+         <aggName>Emba</aggName>
+         <aggNUTS>CY000</aggNUTS>
+         <aggLatitude>34.80691</aggLatitude>
+         <aggLongitude>32.4244</aggLongitude>
+         <aggGenerated>5800</aggGenerated>
+         <aggCalculation>The calculation of the generated load  includes resident population, seasonal population , tourism and industrial waste water.</aggCalculation>
+         <aggChanges>false</aggChanges>
+         <aggPeriodOver>2012-12-31</aggPeriodOver>
+         <aggDateArt3>2012-12-31</aggDateArt3>
+         <aggDateArt4>2012-12-31</aggDateArt4>
+         <aggC1>100</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>0</aggC2>
+         <aggMethodC2>E</aggMethodC2>
+         <aggPercWithoutTreatment>0</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+         <aggRemarks>The collecting system is fully completed and connected.</aggRemarks>
+      </Row>
+      <Row>
+         <aggState>1</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>CY604-Agglo</aggCode>
+         <aggName>Chlorakas</aggName>
+         <aggNUTS>CY000</aggNUTS>
+         <aggLatitude>34.79932</aggLatitude>
+         <aggLongitude>32.40863</aggLongitude>
+         <aggGenerated>10000</aggGenerated>
+         <aggCalculation>The calculation of the generated load  includes resident population, seasonal population , tourism and industrial waste water.</aggCalculation>
+         <aggChanges>false</aggChanges>
+         <aggPeriodOver>2012-12-31</aggPeriodOver>
+         <aggDateArt3>2012-12-31</aggDateArt3>
+         <aggDateArt4>2012-12-31</aggDateArt4>
+         <aggC1>100</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>0</aggC2>
+         <aggMethodC2>E</aggMethodC2>
+         <aggPercWithoutTreatment>0</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+         <aggRemarks>The collecting system is fully completed and connected.</aggRemarks>
+      </Row>
+      <Row>
+         <aggState>1</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>CY605-Agglo</aggCode>
+         <aggName>Kissonerga</aggName>
+         <aggNUTS>CY000</aggNUTS>
+         <aggLatitude>34.82312</aggLatitude>
+         <aggLongitude>32.40229</aggLongitude>
+         <aggGenerated>4300</aggGenerated>
+         <aggCalculation>The calculation of the generated load  includes resident population, seasonal population , tourism and industrial waste water.</aggCalculation>
+         <aggChanges>false</aggChanges>
+         <aggPeriodOver>2012-12-31</aggPeriodOver>
+         <aggDateArt3>2012-12-31</aggDateArt3>
+         <aggDateArt4>2012-12-31</aggDateArt4>
+         <aggC1>100</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>0</aggC2>
+         <aggMethodC2>E</aggMethodC2>
+         <aggPercWithoutTreatment>0</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+         <aggRemarks>The collecting system is fully completed and connected.</aggRemarks>
+      </Row>
+      <Row>
+         <aggState>1</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>CY606-Agglo</aggCode>
+         <aggName>Tala</aggName>
+         <aggNUTS>CY000</aggNUTS>
+         <aggLatitude>34.83823</aggLatitude>
+         <aggLongitude>32.43457</aggLongitude>
+         <aggGenerated>4500</aggGenerated>
+         <aggCalculation>The calculation of the generated load  includes resident population, seasonal population , tourism and industrial waste water.</aggCalculation>
+         <aggChanges>false</aggChanges>
+         <aggPeriodOver>2012-12-31</aggPeriodOver>
+         <aggDateArt3>2012-12-31</aggDateArt3>
+         <aggDateArt4>2012-12-31</aggDateArt4>
+         <aggC1>0</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>100</aggC2>
+         <aggMethodC2>E</aggMethodC2>
+         <aggPercWithoutTreatment>0</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggPercPrimTreatment>0</aggPercPrimTreatment>
+         <aggPercSecTreatment>100</aggPercSecTreatment>
+         <aggPercStringentTreatment>0</aggPercStringentTreatment>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+         <aggRemarks>The generated load of agglomeration treated by IAS is the generated load treated in situ and the generated load transported to UWWTPs by trucks.</aggRemarks>
+      </Row>
+      <Row>
+         <aggState>1</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>CY61-Agglo</aggCode>
+         <aggName>Paphos</aggName>
+         <aggNUTS>CY000</aggNUTS>
+         <aggLatitude>34.77616</aggLatitude>
+         <aggLongitude>32.42048</aggLongitude>
+         <aggGenerated>100000</aggGenerated>
+         <aggCalculation>The calculation of the generated load  includes resident population, seasonal population , tourism and industrial waste water.</aggCalculation>
+         <aggChanges>false</aggChanges>
+         <aggPeriodOver>2011-12-31</aggPeriodOver>
+         <aggDateArt3>2011-12-31</aggDateArt3>
+         <aggDateArt4>2011-12-31</aggDateArt4>
+         <aggC1>100</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>0</aggC2>
+         <aggMethodC2>E</aggMethodC2>
+         <aggPercWithoutTreatment>0</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggSewageNetwork>S</aggSewageNetwork>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+         <aggRemarks>The collecting system is fully completed and connected.</aggRemarks>
+      </Row>
+      <Row>
+         <aggState>1</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>CY303-Agglo</aggCode>
+         <aggName>Liopetri</aggName>
+         <aggNUTS>CY000</aggNUTS>
+         <aggLatitude>35.00849</aggLatitude>
+         <aggLongitude>33.89249</aggLongitude>
+         <aggGenerated>4700</aggGenerated>
+         <aggCalculation>The calculation of the generated load  includes resident population, seasonal population , tourism and industrial waste water.</aggCalculation>
+         <aggChanges>false</aggChanges>
+         <aggPeriodOver>2012-12-31</aggPeriodOver>
+         <aggDateArt3>2012-12-31</aggDateArt3>
+         <aggDateArt4>2012-12-31</aggDateArt4>
+         <aggC1>0</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>2</aggC2>
+         <aggMethodC2>E</aggMethodC2>
+         <aggPercWithoutTreatment>98</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggForecast>2021-10-03</aggForecast>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+      </Row>
+      <Row>
+         <aggState>1</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>CY304-Agglo</aggCode>
+         <aggName>Phrenaros</aggName>
+         <aggNUTS>CY000</aggNUTS>
+         <aggLatitude>35.0418</aggLatitude>
+         <aggLongitude>33.92388</aggLongitude>
+         <aggGenerated>4400</aggGenerated>
+         <aggCalculation>The calculation of the generated load  includes resident population, seasonal population , tourism and industrial waste water.</aggCalculation>
+         <aggChanges>false</aggChanges>
+         <aggPeriodOver>2012-12-31</aggPeriodOver>
+         <aggDateArt3>2012-12-31</aggDateArt3>
+         <aggDateArt4>2012-12-31</aggDateArt4>
+         <aggC1>0</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>2</aggC2>
+         <aggMethodC2>E</aggMethodC2>
+         <aggPercWithoutTreatment>98</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggForecast>2021-10-03</aggForecast>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+      </Row>
+      <Row>
+         <aggState>1</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>CY305-Agglo</aggCode>
+         <aggName>Achna</aggName>
+         <aggNUTS>CY000</aggNUTS>
+         <aggLatitude>35.05494</aggLatitude>
+         <aggLongitude>33.7841</aggLongitude>
+         <aggGenerated>2400</aggGenerated>
+         <aggCalculation>The calculation of the generated load  includes resident population, seasonal population , tourism and industrial waste water.</aggCalculation>
+         <aggChanges>false</aggChanges>
+         <aggPeriodOver>2012-12-31</aggPeriodOver>
+         <aggDateArt3>2012-12-31</aggDateArt3>
+         <aggDateArt4>2012-12-31</aggDateArt4>
+         <aggC1>0</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>2</aggC2>
+         <aggMethodC2>E</aggMethodC2>
+         <aggPercWithoutTreatment>98</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggForecast>2021-10-03</aggForecast>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+      </Row>
+      <Row>
+         <aggState>1</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>CY306-Agglo</aggCode>
+         <aggName>Derynia</aggName>
+         <aggNUTS>CY000</aggNUTS>
+         <aggLatitude>35.06377</aggLatitude>
+         <aggLongitude>33.96018</aggLongitude>
+         <aggGenerated>7000</aggGenerated>
+         <aggCalculation>The calculation of the generated load  includes resident population, seasonal population , tourism and industrial waste water.</aggCalculation>
+         <aggChanges>false</aggChanges>
+         <aggPeriodOver>2012-12-31</aggPeriodOver>
+         <aggDateArt3>2012-12-31</aggDateArt3>
+         <aggDateArt4>2012-12-31</aggDateArt4>
+         <aggC1>0</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>2</aggC2>
+         <aggMethodC2>E</aggMethodC2>
+         <aggPercWithoutTreatment>98</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggForecast>2021-10-03</aggForecast>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+      </Row>
+      <Row>
+         <aggState>1</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>CY31-Agglo</aggCode>
+         <aggName>Ayia Napa</aggName>
+         <aggNUTS>CY000</aggNUTS>
+         <aggLatitude>34.98935</aggLatitude>
+         <aggLongitude>34.00102</aggLongitude>
+         <aggGenerated>56250</aggGenerated>
+         <aggCalculation>The generated load of the agglomeration is equal to the organic design capacity of the treatment plant. The collecting system is fully completed and connected.</aggCalculation>
+         <aggChanges>true</aggChanges>
+         <aggChangesComment>A change in the generated load is occurred due to the rapid growth of the tourist industry following the connection to the collecting system of extended and newly constructed hotels within the agglomeration. Both Ayia Napa and Paralimni are the most touristic destinations in Cyprus.</aggChangesComment>
+         <aggPeriodOver>2012-12-31</aggPeriodOver>
+         <aggDateArt3>2012-12-31</aggDateArt3>
+         <aggDateArt4>2012-12-31</aggDateArt4>
+         <aggC1>100</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>0</aggC2>
+         <aggMethodC2>E</aggMethodC2>
+         <aggPercWithoutTreatment>0</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggSewageNetwork>S</aggSewageNetwork>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+         <aggRemarks>The collecting system is fully completed and connected.</aggRemarks>
+      </Row>
+      <Row>
+         <aggState>1</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>CY32-Agglo</aggCode>
+         <aggName>Paralimni</aggName>
+         <aggNUTS>CY000</aggNUTS>
+         <aggLatitude>35.03718</aggLatitude>
+         <aggLongitude>33.98309</aggLongitude>
+         <aggGenerated>68750</aggGenerated>
+         <aggCalculation>The generated load of the agglomeration is equal to the organic design capacity of the treatment plant. The collecting system is fully completed and connected.</aggCalculation>
+         <aggChanges>true</aggChanges>
+         <aggChangesComment>A change in the generated load is occurred due to the rapid growth of the tourist industry following the connection to the collecting system of extended and newly constructed hotels within the agglomeration. Both Ayia Napa and Paralimni are the most touristic destinations in Cyprus.</aggChangesComment>
+         <aggPeriodOver>2008-12-31</aggPeriodOver>
+         <aggDateArt3>2008-12-31</aggDateArt3>
+         <aggDateArt4>2008-12-31</aggDateArt4>
+         <aggC1>100</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>0</aggC2>
+         <aggMethodC2>E</aggMethodC2>
+         <aggPercWithoutTreatment>0</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggSewageNetwork>S</aggSewageNetwork>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+         <aggRemarks>The collecting system is fully completed and connected.</aggRemarks>
+      </Row>
+      <Row>
+         <aggState>1</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>CY402-Agglo</aggCode>
+         <aggName>Aradippou</aggName>
+         <aggNUTS>CY000</aggNUTS>
+         <aggLatitude>34.95152</aggLatitude>
+         <aggLongitude>33.59202</aggLongitude>
+         <aggGenerated>20000</aggGenerated>
+         <aggCalculation>The calculation of the generated load  includes resident population, seasonal population , tourism and industrial waste water.</aggCalculation>
+         <aggChanges>false</aggChanges>
+         <aggPeriodOver>2012-12-31</aggPeriodOver>
+         <aggDateArt3>2012-12-31</aggDateArt3>
+         <aggDateArt4>2012-12-31</aggDateArt4>
+         <aggC1>0</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>2</aggC2>
+         <aggMethodC2>E</aggMethodC2>
+         <aggPercWithoutTreatment>98</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggForecast>2025-12-31</aggForecast>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+      </Row>
+      <Row>
+         <aggState>1</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>CY403-Agglo</aggCode>
+         <aggName>Kiti</aggName>
+         <aggNUTS>CY000</aggNUTS>
+         <aggLatitude>34.8442</aggLatitude>
+         <aggLongitude>33.57336</aggLongitude>
+         <aggGenerated>4400</aggGenerated>
+         <aggCalculation>The calculation of the generated load  includes resident population, seasonal population , tourism and industrial waste water.</aggCalculation>
+         <aggChanges>false</aggChanges>
+         <aggPeriodOver>2012-12-31</aggPeriodOver>
+         <aggDateArt3>2012-12-31</aggDateArt3>
+         <aggDateArt4>2012-12-31</aggDateArt4>
+         <aggC1>0</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>2</aggC2>
+         <aggMethodC2>E</aggMethodC2>
+         <aggPercWithoutTreatment>98</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggForecast>2027-06-30</aggForecast>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+      </Row>
+      <Row>
+         <aggState>1</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>CY404-Agglo</aggCode>
+         <aggName>Pervolia</aggName>
+         <aggNUTS>CY000</aggNUTS>
+         <aggLatitude>34.82943</aggLatitude>
+         <aggLongitude>33.58112</aggLongitude>
+         <aggGenerated>6200</aggGenerated>
+         <aggCalculation>The calculation of the generated load  includes resident population, seasonal population , tourism and industrial waste water.</aggCalculation>
+         <aggChanges>false</aggChanges>
+         <aggPeriodOver>2012-12-31</aggPeriodOver>
+         <aggDateArt3>2012-12-31</aggDateArt3>
+         <aggDateArt4>2012-12-31</aggDateArt4>
+         <aggC1>0</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>2</aggC2>
+         <aggMethodC2>E</aggMethodC2>
+         <aggPercWithoutTreatment>98</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggForecast>2027-06-30</aggForecast>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+      </Row>
+      <Row>
+         <aggState>1</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>CY405-Agglo</aggCode>
+         <aggName>Dromolaxia</aggName>
+         <aggNUTS>CY000</aggNUTS>
+         <aggLatitude>34.87691</aggLatitude>
+         <aggLongitude>33.58612</aggLongitude>
+         <aggGenerated>5200</aggGenerated>
+         <aggCalculation>The calculation of the generated load  includes resident population, seasonal population , tourism and industrial waste water.</aggCalculation>
+         <aggChanges>false</aggChanges>
+         <aggPeriodOver>2012-12-31</aggPeriodOver>
+         <aggDateArt3>2012-12-31</aggDateArt3>
+         <aggDateArt4>2012-12-31</aggDateArt4>
+         <aggC1>0</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>2</aggC2>
+         <aggMethodC2>E</aggMethodC2>
+         <aggPercWithoutTreatment>98</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggForecast>2027-06-30</aggForecast>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+      </Row>
+      <Row>
+         <aggState>1</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>CY406-Agglo</aggCode>
+         <aggName>Livadhia</aggName>
+         <aggNUTS>CY000</aggNUTS>
+         <aggLatitude>34.9485</aggLatitude>
+         <aggLongitude>33.63116</aggLongitude>
+         <aggGenerated>5500</aggGenerated>
+         <aggCalculation>The calculation of the generated load  includes resident population, seasonal population , tourism and industrial waste water.</aggCalculation>
+         <aggChanges>false</aggChanges>
+         <aggPeriodOver>2012-12-31</aggPeriodOver>
+         <aggDateArt3>2012-12-31</aggDateArt3>
+         <aggDateArt4>2012-12-31</aggDateArt4>
+         <aggC1>50.91</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>2</aggC2>
+         <aggMethodC2>E</aggMethodC2>
+         <aggPercWithoutTreatment>47.09</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggForecast>2025-12-31</aggForecast>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+      </Row>
+      <Row>
+         <aggState>1</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>CY407-Agglo</aggCode>
+         <aggName>Athienou</aggName>
+         <aggNUTS>CY000</aggNUTS>
+         <aggLatitude>35.0617</aggLatitude>
+         <aggLongitude>33.54197</aggLongitude>
+         <aggGenerated>5000</aggGenerated>
+         <aggCalculation>The calculation of the generated load  includes resident population, seasonal population , tourism and industrial waste water.</aggCalculation>
+         <aggChanges>false</aggChanges>
+         <aggPeriodOver>2012-12-31</aggPeriodOver>
+         <aggDateArt3>2012-12-31</aggDateArt3>
+         <aggDateArt4>2012-12-31</aggDateArt4>
+         <aggC1>0</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>2</aggC2>
+         <aggMethodC2>E</aggMethodC2>
+         <aggPercWithoutTreatment>98</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggForecast>2018-03-31</aggForecast>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+      </Row>
+      <Row>
+         <aggState>1</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>CY408-Agglo</aggCode>
+         <aggName>Ormideia</aggName>
+         <aggNUTS>CY000</aggNUTS>
+         <aggLatitude>34.99271</aggLatitude>
+         <aggLongitude>33.78163</aggLongitude>
+         <aggGenerated>4200</aggGenerated>
+         <aggCalculation>The calculation of the generated load  includes resident population, seasonal population , tourism and industrial waste water.</aggCalculation>
+         <aggChanges>false</aggChanges>
+         <aggPeriodOver>2012-12-31</aggPeriodOver>
+         <aggDateArt3>2012-12-31</aggDateArt3>
+         <aggDateArt4>2012-12-31</aggDateArt4>
+         <aggC1>0</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>2</aggC2>
+         <aggMethodC2>E</aggMethodC2>
+         <aggPercWithoutTreatment>98</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggForecast>2021-10-03</aggForecast>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+      </Row>
+      <Row>
+         <aggState>1</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>CY409-Agglo</aggCode>
+         <aggName>Xylotymvou</aggName>
+         <aggNUTS>CY000</aggNUTS>
+         <aggLatitude>35.01754</aggLatitude>
+         <aggLongitude>33.7446</aggLongitude>
+         <aggGenerated>3700</aggGenerated>
+         <aggCalculation>The calculation of the generated load  includes resident population, seasonal population , tourism and industrial waste water.</aggCalculation>
+         <aggChanges>false</aggChanges>
+         <aggPeriodOver>2012-12-31</aggPeriodOver>
+         <aggDateArt3>2012-12-31</aggDateArt3>
+         <aggDateArt4>2012-12-31</aggDateArt4>
+         <aggC1>0</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>2</aggC2>
+         <aggMethodC2>E</aggMethodC2>
+         <aggPercWithoutTreatment>98</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggForecast>2021-10-03</aggForecast>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+      </Row>
+      <Row>
+         <aggState>1</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>CY101-Agglo</aggCode>
+         <aggName>Peristerona</aggName>
+         <aggNUTS>CY000</aggNUTS>
+         <aggLatitude>35.12963</aggLatitude>
+         <aggLongitude>33.0797</aggLongitude>
+         <aggGenerated>2300</aggGenerated>
+         <aggCalculation>The calculation of the generated load  includes resident population, seasonal population , tourism and industrial waste water.</aggCalculation>
+         <aggChanges>false</aggChanges>
+         <aggPeriodOver>2012-12-31</aggPeriodOver>
+         <aggDateArt3>2012-12-31</aggDateArt3>
+         <aggDateArt4>2012-12-31</aggDateArt4>
+         <aggC1>100</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>0</aggC2>
+         <aggMethodC2>E</aggMethodC2>
+         <aggPercWithoutTreatment>0</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+      </Row>
+      <Row>
+         <aggState>1</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>CY102-Agglo</aggCode>
+         <aggName>Astromeritis</aggName>
+         <aggNUTS>CY000</aggNUTS>
+         <aggLatitude>35.14138</aggLatitude>
+         <aggLongitude>33.03968</aggLongitude>
+         <aggGenerated>2400</aggGenerated>
+         <aggCalculation>The calculation of the generated load  includes resident population, seasonal population , tourism and industrial waste water.</aggCalculation>
+         <aggChanges>false</aggChanges>
+         <aggPeriodOver>2012-12-31</aggPeriodOver>
+         <aggDateArt3>2012-12-31</aggDateArt3>
+         <aggDateArt4>2012-12-31</aggDateArt4>
+         <aggC1>100</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>0</aggC2>
+         <aggMethodC2>E</aggMethodC2>
+         <aggPercWithoutTreatment>0</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+      </Row>
+      <Row>
+         <aggState>1</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>CY103-Agglo</aggCode>
+         <aggName>Akaki</aggName>
+         <aggNUTS>CY000</aggNUTS>
+         <aggLatitude>35.13365</aggLatitude>
+         <aggLongitude>33.13028</aggLongitude>
+         <aggGenerated>3000</aggGenerated>
+         <aggCalculation>The calculation of the generated load  includes resident population, seasonal population , tourism and industrial waste water.</aggCalculation>
+         <aggChanges>false</aggChanges>
+         <aggPeriodOver>2012-12-31</aggPeriodOver>
+         <aggDateArt3>2012-12-31</aggDateArt3>
+         <aggDateArt4>2012-12-31</aggDateArt4>
+         <aggC1>100</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>0</aggC2>
+         <aggMethodC2>E</aggMethodC2>
+         <aggPercWithoutTreatment>0</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+      </Row>
+      <Row>
+         <aggState>1</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>CY104-Agglo</aggCode>
+         <aggName>Lythrodontas</aggName>
+         <aggNUTS>CY000</aggNUTS>
+         <aggLatitude>34.95042</aggLatitude>
+         <aggLongitude>33.2944</aggLongitude>
+         <aggGenerated>3500</aggGenerated>
+         <aggCalculation>The calculation of the generated load  includes resident population, seasonal population , tourism and industrial waste water.</aggCalculation>
+         <aggChanges>false</aggChanges>
+         <aggPeriodOver>2012-12-31</aggPeriodOver>
+         <aggDateArt3>2012-12-31</aggDateArt3>
+         <aggDateArt4>2012-12-31</aggDateArt4>
+         <aggC1>100</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>0</aggC2>
+         <aggMethodC2>E</aggMethodC2>
+         <aggPercWithoutTreatment>0</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+      </Row>
+      <Row>
+         <aggState>1</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>CY105-Agglo</aggCode>
+         <aggName>Paliometocho</aggName>
+         <aggNUTS>CY000</aggNUTS>
+         <aggLatitude>35.12375</aggLatitude>
+         <aggLongitude>33.19218</aggLongitude>
+         <aggGenerated>4500</aggGenerated>
+         <aggCalculation>The calculation of the generated load  includes resident population, seasonal population , tourism and industrial waste water.</aggCalculation>
+         <aggChanges>false</aggChanges>
+         <aggPeriodOver>2012-12-31</aggPeriodOver>
+         <aggDateArt3>2012-12-31</aggDateArt3>
+         <aggDateArt4>2012-12-31</aggDateArt4>
+         <aggC1>0</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>2</aggC2>
+         <aggMethodC2>E</aggMethodC2>
+         <aggPercWithoutTreatment>98</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggForecast>2019-06-30</aggForecast>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+      </Row>
+      <Row>
+         <aggState>1</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>CY106-Agglo</aggCode>
+         <aggName>Kokkinotremithia</aggName>
+         <aggNUTS>CY000</aggNUTS>
+         <aggLatitude>35.15306</aggLatitude>
+         <aggLongitude>33.20007</aggLongitude>
+         <aggGenerated>4000</aggGenerated>
+         <aggCalculation>The calculation of the generated load  includes resident population, seasonal population , tourism and industrial waste water.</aggCalculation>
+         <aggChanges>false</aggChanges>
+         <aggPeriodOver>2012-12-31</aggPeriodOver>
+         <aggDateArt3>2012-12-31</aggDateArt3>
+         <aggDateArt4>2012-12-31</aggDateArt4>
+         <aggC1>0</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>2</aggC2>
+         <aggMethodC2>E</aggMethodC2>
+         <aggPercWithoutTreatment>98</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggForecast>2019-06-30</aggForecast>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+      </Row>
+      <Row>
+         <aggState>1</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>CY107-Agglo</aggCode>
+         <aggName>Dhali</aggName>
+         <aggNUTS>CY000</aggNUTS>
+         <aggLatitude>35.02166</aggLatitude>
+         <aggLongitude>33.41998</aggLongitude>
+         <aggGenerated>11000</aggGenerated>
+         <aggCalculation>The calculation of the generated load  includes resident population, seasonal population , tourism and industrial waste water.</aggCalculation>
+         <aggChanges>false</aggChanges>
+         <aggPeriodOver>2012-12-31</aggPeriodOver>
+         <aggDateArt3>2012-12-31</aggDateArt3>
+         <aggDateArt4>2012-12-31</aggDateArt4>
+         <aggC1>21.36</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>31.88</aggC2>
+         <aggMethodC2>E</aggMethodC2>
+         <aggPercWithoutTreatment>46.76</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggPercPrimTreatment>0</aggPercPrimTreatment>
+         <aggPercSecTreatment>0</aggPercSecTreatment>
+         <aggPercStringentTreatment>31.88</aggPercStringentTreatment>
+         <aggSewageNetwork>S</aggSewageNetwork>
+         <aggForecast>2026-12-31</aggForecast>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+      </Row>
+      <Row>
+         <aggState>1</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>CY108-Agglo</aggCode>
+         <aggName>Pera Chorio Nisou</aggName>
+         <aggNUTS>CY000</aggNUTS>
+         <aggLatitude>35.01239</aggLatitude>
+         <aggLongitude>33.3882</aggLongitude>
+         <aggGenerated>4800</aggGenerated>
+         <aggCalculation>The calculation of the generated load  includes resident population, seasonal population , tourism and industrial waste water.</aggCalculation>
+         <aggChanges>false</aggChanges>
+         <aggPeriodOver>2012-12-31</aggPeriodOver>
+         <aggDateArt3>2012-12-31</aggDateArt3>
+         <aggDateArt4>2012-12-31</aggDateArt4>
+         <aggC1>55.21</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>44.79</aggC2>
+         <aggMethodC2>E</aggMethodC2>
+         <aggPercWithoutTreatment>0</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggPercPrimTreatment>0</aggPercPrimTreatment>
+         <aggPercSecTreatment>0</aggPercSecTreatment>
+         <aggPercStringentTreatment>44.79</aggPercStringentTreatment>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+      </Row>
+      <Row>
+         <aggState>1</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>CY109-Agglo</aggCode>
+         <aggName>Lympia</aggName>
+         <aggNUTS>CY000</aggNUTS>
+         <aggLatitude>34.99786</aggLatitude>
+         <aggLongitude>33.46168</aggLongitude>
+         <aggGenerated>2700</aggGenerated>
+         <aggCalculation>The calculation of the generated load  includes resident population, seasonal population , tourism and industrial waste water.</aggCalculation>
+         <aggChanges>false</aggChanges>
+         <aggPeriodOver>2012-12-31</aggPeriodOver>
+         <aggDateArt3>2012-12-31</aggDateArt3>
+         <aggDateArt4>2012-12-31</aggDateArt4>
+         <aggC1>0</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>2</aggC2>
+         <aggMethodC2>E</aggMethodC2>
+         <aggPercWithoutTreatment>98</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggForecast>2026-12-31</aggForecast>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+      </Row>
+      <Row>
+         <aggState>1</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>CY110-Agglo</aggCode>
+         <aggName>Kakopetria</aggName>
+         <aggNUTS>CY000</aggNUTS>
+         <aggLatitude>34.99027</aggLatitude>
+         <aggLongitude>32.90509</aggLongitude>
+         <aggGenerated>2500</aggGenerated>
+         <aggCalculation>The calculation of the generated load  includes resident population, seasonal population , tourism and industrial waste water.</aggCalculation>
+         <aggChanges>false</aggChanges>
+         <aggPeriodOver>2012-12-31</aggPeriodOver>
+         <aggDateArt3>2012-12-31</aggDateArt3>
+         <aggDateArt4>2012-12-31</aggDateArt4>
+         <aggC1>48</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>2</aggC2>
+         <aggMethodC2>E</aggMethodC2>
+         <aggPercWithoutTreatment>50</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggForecast>2022-02-01</aggForecast>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+      </Row>
+      <Row>
+         <aggState>1</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>CY111-Agglo</aggCode>
+         <aggName>Tseri</aggName>
+         <aggNUTS>CY000</aggNUTS>
+         <aggLatitude>35.07204</aggLatitude>
+         <aggLongitude>33.32321</aggLongitude>
+         <aggGenerated>7000</aggGenerated>
+         <aggCalculation>The calculation of the generated load  includes resident population, seasonal population , tourism and industrial waste water.</aggCalculation>
+         <aggChanges>false</aggChanges>
+         <aggPeriodOver>2012-12-31</aggPeriodOver>
+         <aggDateArt3>2012-12-31</aggDateArt3>
+         <aggDateArt4>2012-12-31</aggDateArt4>
+         <aggC1>100</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>0</aggC2>
+         <aggMethodC2>E</aggMethodC2>
+         <aggPercWithoutTreatment>0</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+         <aggRemarks>The collecting system is fully completed and connected.</aggRemarks>
+      </Row>
+      <Row>
+         <aggState>1</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>CY112-Agglo</aggCode>
+         <aggName>Yeri</aggName>
+         <aggNUTS>CY000</aggNUTS>
+         <aggLatitude>35.10660</aggLatitude>
+         <aggLongitude>33.42256</aggLongitude>
+         <aggGenerated>8500</aggGenerated>
+         <aggCalculation>The calculation of the generated load  includes resident population, seasonal population , tourism and industrial waste water.</aggCalculation>
+         <aggChanges>false</aggChanges>
+         <aggPeriodOver>2012-12-31</aggPeriodOver>
+         <aggDateArt3>2012-12-31</aggDateArt3>
+         <aggDateArt4>2012-12-31</aggDateArt4>
+         <aggC1>100</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>0</aggC2>
+         <aggMethodC2>E</aggMethodC2>
+         <aggPercWithoutTreatment>0</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+         <aggRemarks>The collecting system is fully completed and connected.</aggRemarks>
+      </Row>
+      <Row>
+         <aggState>1</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>CY11-Agglo</aggCode>
+         <aggName>Nicosia</aggName>
+         <aggNUTS>CY000</aggNUTS>
+         <aggLatitude>35.1742</aggLatitude>
+         <aggLongitude>33.36437</aggLongitude>
+         <aggGenerated>235000</aggGenerated>
+         <bigCityID>CY001</bigCityID>
+         <aggCalculation>The calculation of the generated load  includes resident population, seasonal population , tourism and industrial waste water.</aggCalculation>
+         <aggChanges>false</aggChanges>
+         <aggPeriodOver>2009-12-31</aggPeriodOver>
+         <aggDateArt3>2009-12-31</aggDateArt3>
+         <aggDateArt4>2009-12-31</aggDateArt4>
+         <aggC1>100</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>0</aggC2>
+         <aggMethodC2>E</aggMethodC2>
+         <aggPercWithoutTreatment>0</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggSewageNetwork>S</aggSewageNetwork>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+         <aggRemarks>The collecting system is fully completed and connected.</aggRemarks>
+      </Row>
+      <Row>
+         <aggState>1</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>CY301-Agglo</aggCode>
+         <aggName>Avgorou</aggName>
+         <aggNUTS>CY000</aggNUTS>
+         <aggLatitude>35.03618</aggLatitude>
+         <aggLongitude>33.8402</aggLongitude>
+         <aggGenerated>4700</aggGenerated>
+         <aggCalculation>The calculation of the generated load  includes resident population, seasonal population , tourism and industrial waste water.</aggCalculation>
+         <aggChanges>false</aggChanges>
+         <aggPeriodOver>2012-12-31</aggPeriodOver>
+         <aggDateArt3>2012-12-31</aggDateArt3>
+         <aggDateArt4>2012-12-31</aggDateArt4>
+         <aggC1>0</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>2</aggC2>
+         <aggMethodC2>E</aggMethodC2>
+         <aggPercWithoutTreatment>98</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggForecast>2021-10-03</aggForecast>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+      </Row>
+      <Row>
+         <aggState>1</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>CY302-Agglo</aggCode>
+         <aggName>Sotira</aggName>
+         <aggNUTS>CY000</aggNUTS>
+         <aggLatitude>35.0281</aggLatitude>
+         <aggLongitude>33.95322</aggLongitude>
+         <aggGenerated>6500</aggGenerated>
+         <aggCalculation>The calculation of the generated load  includes resident population, seasonal population , tourism and industrial waste water.</aggCalculation>
+         <aggChanges>false</aggChanges>
+         <aggPeriodOver>2012-12-31</aggPeriodOver>
+         <aggDateArt3>2012-12-31</aggDateArt3>
+         <aggDateArt4>2012-12-31</aggDateArt4>
+         <aggC1>0</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>2</aggC2>
+         <aggMethodC2>E</aggMethodC2>
+         <aggPercWithoutTreatment>98</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggForecast>2021-10-03</aggForecast>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+      </Row>
+      <Row>
+         <aggState>1</aggState>
+         <repCode>CY 2017 Art.15</repCode>
+         <aggCode>CY410-Agglo</aggCode>
+         <aggName>Xylofagou</aggName>
+         <aggNUTS>CY000</aggNUTS>
+         <aggLatitude>34.97702</aggLatitude>
+         <aggLongitude>33.84942</aggLongitude>
+         <aggGenerated>6300</aggGenerated>
+         <aggCalculation>The calculation of the generated load  includes resident population, seasonal population , tourism and industrial waste water.</aggCalculation>
+         <aggChanges>false</aggChanges>
+         <aggPeriodOver>2012-12-31</aggPeriodOver>
+         <aggDateArt3>2012-12-31</aggDateArt3>
+         <aggDateArt4>2012-12-31</aggDateArt4>
+         <aggC1>0</aggC1>
+         <aggMethodC1>E</aggMethodC1>
+         <aggC2>2</aggC2>
+         <aggMethodC2>E</aggMethodC2>
+         <aggPercWithoutTreatment>98</aggPercWithoutTreatment>
+         <aggMethodWithoutTreatment>E</aggMethodWithoutTreatment>
+         <aggForecast>2021-10-03</aggForecast>
+         <aggBeginLife>2005-01-01</aggBeginLife>
+      </Row>
+   </Agglomerations>
+   <UWWTPs xmlns="http://dd.eionet.europa.eu/namespaces/821">
+      <Row>
+         <uwwState>1</uwwState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY110_UWWTP</uwwCode>
+         <uwwName>Kakopetria</uwwName>
+         <uwwCollectingSystem>ISCON</uwwCollectingSystem>
+         <uwwLatitude>34.99241</uwwLatitude>
+         <uwwLongitude>32.90300</uwwLongitude>
+         <uwwNUTS>CY000</uwwNUTS>
+         <uwwLoadEnteringUWWTP>1200</uwwLoadEnteringUWWTP>
+         <uwwCapacity>2200</uwwCapacity>
+         <uwwPrimaryTreatment>true</uwwPrimaryTreatment>
+         <uwwSecondaryTreatment>true</uwwSecondaryTreatment>
+         <uwwOtherTreatment>false</uwwOtherTreatment>
+         <uwwNRemoval>false</uwwNRemoval>
+         <uwwPRemoval>false</uwwPRemoval>
+         <uwwUV>false</uwwUV>
+         <uwwChlorination>false</uwwChlorination>
+         <uwwOzonation>false</uwwOzonation>
+         <uwwSandFiltration>false</uwwSandFiltration>
+         <uwwMicroFiltration>false</uwwMicroFiltration>
+         <uwwOther>false</uwwOther>
+         <uwwBOD5Perf>P</uwwBOD5Perf>
+         <uwwCODPerf>P</uwwCODPerf>
+         <uwwTSSPerf>NR</uwwTSSPerf>
+         <uwwNTotPerf>NR</uwwNTotPerf>
+         <uwwPTotPerf>NR</uwwPTotPerf>
+         <uwwOtherPerf>NR</uwwOtherPerf>
+         <uwwWasteWaterTreated>52560</uwwWasteWaterTreated>
+         <uwwMethodWasteWaterTreated>C</uwwMethodWasteWaterTreated>
+         <uwwBeginLife>2005-01-01</uwwBeginLife>
+      </Row>
+      <Row>
+         <uwwState>1</uwwState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY31_UWWTPP</uwwCode>
+         <uwwName>Paralimni</uwwName>
+         <uwwCollectingSystem>ISCON</uwwCollectingSystem>
+         <uwwLatitude>34.99097</uwwLatitude>
+         <uwwLongitude>34.04097</uwwLongitude>
+         <uwwNUTS>CY000</uwwNUTS>
+         <uwwLoadEnteringUWWTP>68750</uwwLoadEnteringUWWTP>
+         <uwwCapacity>68750</uwwCapacity>
+         <uwwPrimaryTreatment>true</uwwPrimaryTreatment>
+         <uwwSecondaryTreatment>true</uwwSecondaryTreatment>
+         <uwwOtherTreatment>true</uwwOtherTreatment>
+         <uwwNRemoval>true</uwwNRemoval>
+         <uwwPRemoval>true</uwwPRemoval>
+         <uwwUV>false</uwwUV>
+         <uwwChlorination>true</uwwChlorination>
+         <uwwOzonation>false</uwwOzonation>
+         <uwwSandFiltration>true</uwwSandFiltration>
+         <uwwMicroFiltration>false</uwwMicroFiltration>
+         <uwwOther>false</uwwOther>
+         <uwwBOD5Perf>P</uwwBOD5Perf>
+         <uwwCODPerf>P</uwwCODPerf>
+         <uwwTSSPerf>NR</uwwTSSPerf>
+         <uwwNTotPerf>NR</uwwNTotPerf>
+         <uwwPTotPerf>NR</uwwPTotPerf>
+         <uwwOtherPerf>NR</uwwOtherPerf>
+         <uwwWasteWaterTreated>2080247</uwwWasteWaterTreated>
+         <uwwMethodWasteWaterTreated>M</uwwMethodWasteWaterTreated>
+         <uwwBeginLife>2011-01-01</uwwBeginLife>
+         <uwwRemarks>The load in p.e. is considered the same as the organic design capacity of the plant. The collecting system is fully completed and connected.</uwwRemarks>
+      </Row>
+      <Row>
+         <uwwState>1</uwwState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY31_UWWTPA</uwwCode>
+         <uwwName>Ayia Napa</uwwName>
+         <uwwCollectingSystem>ISCON</uwwCollectingSystem>
+         <uwwLatitude>34.99097</uwwLatitude>
+         <uwwLongitude>34.04097</uwwLongitude>
+         <uwwNUTS>CY000</uwwNUTS>
+         <uwwLoadEnteringUWWTP>56250</uwwLoadEnteringUWWTP>
+         <uwwCapacity>56250</uwwCapacity>
+         <uwwPrimaryTreatment>true</uwwPrimaryTreatment>
+         <uwwSecondaryTreatment>true</uwwSecondaryTreatment>
+         <uwwOtherTreatment>true</uwwOtherTreatment>
+         <uwwNRemoval>true</uwwNRemoval>
+         <uwwPRemoval>true</uwwPRemoval>
+         <uwwUV>false</uwwUV>
+         <uwwChlorination>true</uwwChlorination>
+         <uwwOzonation>false</uwwOzonation>
+         <uwwSandFiltration>true</uwwSandFiltration>
+         <uwwMicroFiltration>false</uwwMicroFiltration>
+         <uwwOther>false</uwwOther>
+         <uwwBOD5Perf>P</uwwBOD5Perf>
+         <uwwCODPerf>P</uwwCODPerf>
+         <uwwTSSPerf>NR</uwwTSSPerf>
+         <uwwNTotPerf>NR</uwwNTotPerf>
+         <uwwPTotPerf>NR</uwwPTotPerf>
+         <uwwOtherPerf>NR</uwwOtherPerf>
+         <uwwWasteWaterTreated>1124212</uwwWasteWaterTreated>
+         <uwwMethodWasteWaterTreated>M</uwwMethodWasteWaterTreated>
+         <uwwBeginLife>2011-01-01</uwwBeginLife>
+         <uwwRemarks>The load in p.e. is considered the same as the organic design capacity of the plant. The collecting system is fully completed and connected.</uwwRemarks>
+      </Row>
+      <Row>
+         <uwwState>1</uwwState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY406_UWWTP</uwwCode>
+         <uwwName>Livadhia Refugee Camp</uwwName>
+         <uwwCollectingSystem>ISCON</uwwCollectingSystem>
+         <uwwLatitude>34.96055</uwwLatitude>
+         <uwwLongitude>33.61278</uwwLongitude>
+         <uwwNUTS>CY000</uwwNUTS>
+         <uwwLoadEnteringUWWTP>2000</uwwLoadEnteringUWWTP>
+         <uwwCapacity>2000</uwwCapacity>
+         <uwwPrimaryTreatment>true</uwwPrimaryTreatment>
+         <uwwSecondaryTreatment>true</uwwSecondaryTreatment>
+         <uwwOtherTreatment>true</uwwOtherTreatment>
+         <uwwNRemoval>false</uwwNRemoval>
+         <uwwPRemoval>false</uwwPRemoval>
+         <uwwUV>false</uwwUV>
+         <uwwChlorination>true</uwwChlorination>
+         <uwwOzonation>false</uwwOzonation>
+         <uwwSandFiltration>true</uwwSandFiltration>
+         <uwwMicroFiltration>false</uwwMicroFiltration>
+         <uwwOther>false</uwwOther>
+         <uwwBOD5Perf>P</uwwBOD5Perf>
+         <uwwCODPerf>P</uwwCODPerf>
+         <uwwTSSPerf>NR</uwwTSSPerf>
+         <uwwNTotPerf>NR</uwwNTotPerf>
+         <uwwPTotPerf>NR</uwwPTotPerf>
+         <uwwOtherPerf>NR</uwwOtherPerf>
+         <uwwWasteWaterTreated>109500</uwwWasteWaterTreated>
+         <uwwMethodWasteWaterTreated>C</uwwMethodWasteWaterTreated>
+         <uwwBeginLife>2005-01-01</uwwBeginLife>
+      </Row>
+      <Row>
+         <uwwState>1</uwwState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY41_UWWTP</uwwCode>
+         <uwwName>Larnaca</uwwName>
+         <uwwCollectingSystem>ISCON</uwwCollectingSystem>
+         <uwwHistorie>Capacity upgrated on 10/11/2015</uwwHistorie>
+         <uwwLatitude>34.86444</uwwLatitude>
+         <uwwLongitude>33.62839</uwwLongitude>
+         <uwwNUTS>CY000</uwwNUTS>
+         <uwwLoadEnteringUWWTP>70000</uwwLoadEnteringUWWTP>
+         <uwwCapacity>100000</uwwCapacity>
+         <uwwPrimaryTreatment>true</uwwPrimaryTreatment>
+         <uwwSecondaryTreatment>true</uwwSecondaryTreatment>
+         <uwwOtherTreatment>true</uwwOtherTreatment>
+         <uwwNRemoval>true</uwwNRemoval>
+         <uwwPRemoval>true</uwwPRemoval>
+         <uwwUV>false</uwwUV>
+         <uwwChlorination>true</uwwChlorination>
+         <uwwOzonation>false</uwwOzonation>
+         <uwwSandFiltration>true</uwwSandFiltration>
+         <uwwMicroFiltration>false</uwwMicroFiltration>
+         <uwwOther>true</uwwOther>
+         <uwwSpecification>MBR Technology, Ultra Filtration</uwwSpecification>
+         <uwwBOD5Perf>P</uwwBOD5Perf>
+         <uwwCODPerf>P</uwwCODPerf>
+         <uwwTSSPerf>NR</uwwTSSPerf>
+         <uwwNTotPerf>NR</uwwNTotPerf>
+         <uwwPTotPerf>NR</uwwPTotPerf>
+         <uwwOtherPerf>NR</uwwOtherPerf>
+         <uwwBODIncomingMeasured>974.27</uwwBODIncomingMeasured>
+         <uwwCODIncomingMeasured>2146.16</uwwCODIncomingMeasured>
+         <uwwNIncomingMeasured>185.65</uwwNIncomingMeasured>
+         <uwwPIncomingMeasured>20.49</uwwPIncomingMeasured>
+         <uwwBODDischargeMeasured>6.88</uwwBODDischargeMeasured>
+         <uwwCODDischargeMeasured>53.96</uwwCODDischargeMeasured>
+         <uwwNDischargeMeasured>3.94</uwwNDischargeMeasured>
+         <uwwPDischargeMeasured>2.27</uwwPDischargeMeasured>
+         <uwwWasteWaterTreated>1963176</uwwWasteWaterTreated>
+         <uwwMethodWasteWaterTreated>M</uwwMethodWasteWaterTreated>
+         <uwwBeginLife>2005-01-01</uwwBeginLife>
+      </Row>
+      <Row>
+         <uwwState>1</uwwState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY501_UWWTP</uwwCode>
+         <uwwName>Kyperounda</uwwName>
+         <uwwCollectingSystem>ISCON</uwwCollectingSystem>
+         <uwwLatitude>34.93475</uwwLatitude>
+         <uwwLongitude>32.98184</uwwLongitude>
+         <uwwNUTS>CY000</uwwNUTS>
+         <uwwLoadEnteringUWWTP>2200</uwwLoadEnteringUWWTP>
+         <uwwCapacity>3500</uwwCapacity>
+         <uwwPrimaryTreatment>true</uwwPrimaryTreatment>
+         <uwwSecondaryTreatment>true</uwwSecondaryTreatment>
+         <uwwOtherTreatment>true</uwwOtherTreatment>
+         <uwwNRemoval>false</uwwNRemoval>
+         <uwwPRemoval>false</uwwPRemoval>
+         <uwwUV>false</uwwUV>
+         <uwwChlorination>true</uwwChlorination>
+         <uwwOzonation>false</uwwOzonation>
+         <uwwSandFiltration>true</uwwSandFiltration>
+         <uwwMicroFiltration>false</uwwMicroFiltration>
+         <uwwOther>false</uwwOther>
+         <uwwBOD5Perf>P</uwwBOD5Perf>
+         <uwwCODPerf>P</uwwCODPerf>
+         <uwwTSSPerf>NR</uwwTSSPerf>
+         <uwwNTotPerf>NR</uwwNTotPerf>
+         <uwwPTotPerf>NR</uwwPTotPerf>
+         <uwwOtherPerf>NR</uwwOtherPerf>
+         <uwwWasteWaterTreated>109500</uwwWasteWaterTreated>
+         <uwwMethodWasteWaterTreated>C</uwwMethodWasteWaterTreated>
+         <uwwBeginLife>2005-01-01</uwwBeginLife>
+      </Row>
+      <Row>
+         <uwwState>1</uwwState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY502_UWWTP</uwwCode>
+         <uwwName>Platres</uwwName>
+         <uwwCollectingSystem>ISCON</uwwCollectingSystem>
+         <uwwLatitude>34.87805</uwwLatitude>
+         <uwwLongitude>32.86130</uwwLongitude>
+         <uwwNUTS>CY000</uwwNUTS>
+         <uwwLoadEnteringUWWTP>2000</uwwLoadEnteringUWWTP>
+         <uwwCapacity>3500</uwwCapacity>
+         <uwwPrimaryTreatment>true</uwwPrimaryTreatment>
+         <uwwSecondaryTreatment>true</uwwSecondaryTreatment>
+         <uwwOtherTreatment>true</uwwOtherTreatment>
+         <uwwNRemoval>false</uwwNRemoval>
+         <uwwPRemoval>false</uwwPRemoval>
+         <uwwUV>false</uwwUV>
+         <uwwChlorination>true</uwwChlorination>
+         <uwwOzonation>false</uwwOzonation>
+         <uwwSandFiltration>true</uwwSandFiltration>
+         <uwwMicroFiltration>false</uwwMicroFiltration>
+         <uwwOther>false</uwwOther>
+         <uwwBOD5Perf>P</uwwBOD5Perf>
+         <uwwCODPerf>P</uwwCODPerf>
+         <uwwTSSPerf>NR</uwwTSSPerf>
+         <uwwNTotPerf>NR</uwwNTotPerf>
+         <uwwPTotPerf>NR</uwwPTotPerf>
+         <uwwOtherPerf>NR</uwwOtherPerf>
+         <uwwWasteWaterTreated>73000</uwwWasteWaterTreated>
+         <uwwMethodWasteWaterTreated>C</uwwMethodWasteWaterTreated>
+         <uwwBeginLife>2005-01-01</uwwBeginLife>
+      </Row>
+      <Row>
+         <uwwState>1</uwwState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY503_UWWTP</uwwCode>
+         <uwwName>Agros</uwwName>
+         <uwwCollectingSystem>ISCON</uwwCollectingSystem>
+         <uwwLatitude>34.91201</uwwLatitude>
+         <uwwLongitude>33.01887</uwwLongitude>
+         <uwwNUTS>CY000</uwwNUTS>
+         <uwwLoadEnteringUWWTP>2500</uwwLoadEnteringUWWTP>
+         <uwwCapacity>5250</uwwCapacity>
+         <uwwPrimaryTreatment>true</uwwPrimaryTreatment>
+         <uwwSecondaryTreatment>true</uwwSecondaryTreatment>
+         <uwwOtherTreatment>true</uwwOtherTreatment>
+         <uwwNRemoval>false</uwwNRemoval>
+         <uwwPRemoval>false</uwwPRemoval>
+         <uwwUV>false</uwwUV>
+         <uwwChlorination>true</uwwChlorination>
+         <uwwOzonation>false</uwwOzonation>
+         <uwwSandFiltration>true</uwwSandFiltration>
+         <uwwMicroFiltration>false</uwwMicroFiltration>
+         <uwwOther>false</uwwOther>
+         <uwwBOD5Perf>P</uwwBOD5Perf>
+         <uwwCODPerf>P</uwwCODPerf>
+         <uwwTSSPerf>NR</uwwTSSPerf>
+         <uwwNTotPerf>NR</uwwNTotPerf>
+         <uwwPTotPerf>NR</uwwPTotPerf>
+         <uwwOtherPerf>NR</uwwOtherPerf>
+         <uwwWasteWaterTreated>91250</uwwWasteWaterTreated>
+         <uwwMethodWasteWaterTreated>C</uwwMethodWasteWaterTreated>
+         <uwwBeginLife>2005-01-01</uwwBeginLife>
+      </Row>
+      <Row>
+         <uwwState>1</uwwState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY51_UWWTP</uwwCode>
+         <uwwName>Limassol</uwwName>
+         <uwwCollectingSystem>ISCON</uwwCollectingSystem>
+         <uwwLatitude>34.71127</uwwLatitude>
+         <uwwLongitude>33.21331</uwwLongitude>
+         <uwwNUTS>CY000</uwwNUTS>
+         <uwwLoadEnteringUWWTP>225989</uwwLoadEnteringUWWTP>
+         <uwwCapacity>272000</uwwCapacity>
+         <uwwPrimaryTreatment>true</uwwPrimaryTreatment>
+         <uwwSecondaryTreatment>true</uwwSecondaryTreatment>
+         <uwwOtherTreatment>true</uwwOtherTreatment>
+         <uwwNRemoval>true</uwwNRemoval>
+         <uwwPRemoval>true</uwwPRemoval>
+         <uwwUV>false</uwwUV>
+         <uwwChlorination>true</uwwChlorination>
+         <uwwOzonation>false</uwwOzonation>
+         <uwwSandFiltration>true</uwwSandFiltration>
+         <uwwMicroFiltration>false</uwwMicroFiltration>
+         <uwwOther>false</uwwOther>
+         <uwwBOD5Perf>P</uwwBOD5Perf>
+         <uwwCODPerf>P</uwwCODPerf>
+         <uwwTSSPerf>P</uwwTSSPerf>
+         <uwwNTotPerf>P</uwwNTotPerf>
+         <uwwPTotPerf>P</uwwPTotPerf>
+         <uwwOtherPerf>NR</uwwOtherPerf>
+         <uwwBODIncomingMeasured>3320.75</uwwBODIncomingMeasured>
+         <uwwCODIncomingMeasured>7310.31</uwwCODIncomingMeasured>
+         <uwwNIncomingMeasured>641.4</uwwNIncomingMeasured>
+         <uwwPIncomingMeasured>87.21</uwwPIncomingMeasured>
+         <uwwBODDischargeMeasured>28.01</uwwBODDischargeMeasured>
+         <uwwCODDischargeMeasured>197.7</uwwCODDischargeMeasured>
+         <uwwNDischargeMeasured>101.97</uwwNDischargeMeasured>
+         <uwwPDischargeMeasured>7.28</uwwPDischargeMeasured>
+         <uwwWasteWaterTreated>8154210</uwwWasteWaterTreated>
+         <uwwMethodWasteWaterTreated>M</uwwMethodWasteWaterTreated>
+         <uwwBeginLife>2005-01-01</uwwBeginLife>
+         <uwwRemarks>The load in p.e. is calculated on the basis of the max average weekly load based on the use of 24h flow in combination with the respective 24 hour BOD5 sample.</uwwRemarks>
+      </Row>
+      <Row>
+         <uwwState>1</uwwState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY61_UWWTP</uwwCode>
+         <uwwName>Paphos</uwwName>
+         <uwwCollectingSystem>ISCON</uwwCollectingSystem>
+         <uwwLatitude>34.72693</uwwLatitude>
+         <uwwLongitude>32.46858</uwwLongitude>
+         <uwwNUTS>CY000</uwwNUTS>
+         <uwwLoadEnteringUWWTP>120100</uwwLoadEnteringUWWTP>
+         <uwwCapacity>162500</uwwCapacity>
+         <uwwPrimaryTreatment>true</uwwPrimaryTreatment>
+         <uwwSecondaryTreatment>true</uwwSecondaryTreatment>
+         <uwwOtherTreatment>true</uwwOtherTreatment>
+         <uwwNRemoval>true</uwwNRemoval>
+         <uwwPRemoval>true</uwwPRemoval>
+         <uwwUV>false</uwwUV>
+         <uwwChlorination>true</uwwChlorination>
+         <uwwOzonation>false</uwwOzonation>
+         <uwwSandFiltration>true</uwwSandFiltration>
+         <uwwMicroFiltration>false</uwwMicroFiltration>
+         <uwwOther>false</uwwOther>
+         <uwwBOD5Perf>P</uwwBOD5Perf>
+         <uwwCODPerf>P</uwwCODPerf>
+         <uwwTSSPerf>NR</uwwTSSPerf>
+         <uwwNTotPerf>NR</uwwNTotPerf>
+         <uwwPTotPerf>NR</uwwPTotPerf>
+         <uwwOtherPerf>NR</uwwOtherPerf>
+         <uwwBODIncomingMeasured>1633.29</uwwBODIncomingMeasured>
+         <uwwCODIncomingMeasured>3175.74</uwwCODIncomingMeasured>
+         <uwwNIncomingMeasured>310.49</uwwNIncomingMeasured>
+         <uwwPIncomingMeasured>43.69</uwwPIncomingMeasured>
+         <uwwBODDischargeMeasured>19.45</uwwBODDischargeMeasured>
+         <uwwCODDischargeMeasured>71.39</uwwCODDischargeMeasured>
+         <uwwNDischargeMeasured>23.6</uwwNDischargeMeasured>
+         <uwwPDischargeMeasured>11.4</uwwPDischargeMeasured>
+         <uwwWasteWaterTreated>4035142</uwwWasteWaterTreated>
+         <uwwMethodWasteWaterTreated>M</uwwMethodWasteWaterTreated>
+         <uwwBeginLife>2005-01-01</uwwBeginLife>
+         <uwwRemarks>The load in p.e. is considered the same as the load of 2014 that was calculated on the basis of the max average weekly load based on the use of 24h flow in combination with the respective 24 hour BOD5 sample.</uwwRemarks>
+      </Row>
+      <Row>
+         <uwwState>1</uwwState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY11_3_UWWTP</uwwCode>
+         <uwwName>Central Vathia Gonia</uwwName>
+         <uwwCollectingSystem>NOTCON</uwwCollectingSystem>
+         <uwwLatitude>35.07583</uwwLatitude>
+         <uwwLongitude>33.44886</uwwLongitude>
+         <uwwNUTS>CY000</uwwNUTS>
+         <uwwLoadEnteringUWWTP>14857</uwwLoadEnteringUWWTP>
+         <uwwCapacity>45765</uwwCapacity>
+         <uwwPrimaryTreatment>true</uwwPrimaryTreatment>
+         <uwwSecondaryTreatment>true</uwwSecondaryTreatment>
+         <uwwOtherTreatment>true</uwwOtherTreatment>
+         <uwwNRemoval>false</uwwNRemoval>
+         <uwwPRemoval>false</uwwPRemoval>
+         <uwwUV>false</uwwUV>
+         <uwwChlorination>true</uwwChlorination>
+         <uwwOzonation>false</uwwOzonation>
+         <uwwSandFiltration>true</uwwSandFiltration>
+         <uwwMicroFiltration>false</uwwMicroFiltration>
+         <uwwOther>false</uwwOther>
+         <uwwBOD5Perf>P</uwwBOD5Perf>
+         <uwwCODPerf>P</uwwCODPerf>
+         <uwwTSSPerf>NR</uwwTSSPerf>
+         <uwwNTotPerf>NR</uwwNTotPerf>
+         <uwwPTotPerf>NR</uwwPTotPerf>
+         <uwwOtherPerf>NR</uwwOtherPerf>
+         <uwwWasteWaterTreated>59320</uwwWasteWaterTreated>
+         <uwwMethodWasteWaterTreated>C</uwwMethodWasteWaterTreated>
+         <uwwBeginLife>2005-01-01</uwwBeginLife>
+         <uwwRemarks>The load in p.e. is calculated on the basis of the max average weekly load based on the use of 24h flow in combination with the respective 24 hour BOD5 sample.</uwwRemarks>
+      </Row>
+      <Row>
+         <uwwState>1</uwwState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY11_4_UWWTP</uwwCode>
+         <uwwName>Anthoupolis-B</uwwName>
+         <uwwCollectingSystem>ISCON</uwwCollectingSystem>
+         <uwwLatitude>35.1044</uwwLatitude>
+         <uwwLongitude>33.2711</uwwLongitude>
+         <uwwNUTS>CY000</uwwNUTS>
+         <uwwLoadEnteringUWWTP>35983</uwwLoadEnteringUWWTP>
+         <uwwCapacity>130000</uwwCapacity>
+         <uwwPrimaryTreatment>true</uwwPrimaryTreatment>
+         <uwwSecondaryTreatment>true</uwwSecondaryTreatment>
+         <uwwOtherTreatment>true</uwwOtherTreatment>
+         <uwwNRemoval>true</uwwNRemoval>
+         <uwwPRemoval>true</uwwPRemoval>
+         <uwwUV>false</uwwUV>
+         <uwwChlorination>false</uwwChlorination>
+         <uwwOzonation>false</uwwOzonation>
+         <uwwSandFiltration>false</uwwSandFiltration>
+         <uwwMicroFiltration>false</uwwMicroFiltration>
+         <uwwOther>true</uwwOther>
+         <uwwSpecification>MBR Technology</uwwSpecification>
+         <uwwBOD5Perf>P</uwwBOD5Perf>
+         <uwwCODPerf>P</uwwCODPerf>
+         <uwwTSSPerf>NR</uwwTSSPerf>
+         <uwwNTotPerf>NR</uwwNTotPerf>
+         <uwwPTotPerf>NR</uwwPTotPerf>
+         <uwwOtherPerf>NR</uwwOtherPerf>
+         <uwwBODIncomingMeasured>556.16</uwwBODIncomingMeasured>
+         <uwwCODIncomingMeasured>1291.82</uwwCODIncomingMeasured>
+         <uwwNIncomingMeasured>139.08</uwwNIncomingMeasured>
+         <uwwPIncomingMeasured>17.14</uwwPIncomingMeasured>
+         <uwwBODDischargeMeasured>1.94</uwwBODDischargeMeasured>
+         <uwwCODDischargeMeasured>30.38</uwwCODDischargeMeasured>
+         <uwwNDischargeMeasured>5.6</uwwNDischargeMeasured>
+         <uwwPDischargeMeasured>3.58</uwwPDischargeMeasured>
+         <uwwWasteWaterTreated>1525793</uwwWasteWaterTreated>
+         <uwwMethodWasteWaterTreated>M</uwwMethodWasteWaterTreated>
+         <uwwBeginLife>2009-01-01</uwwBeginLife>
+         <uwwRemarks>The load in p.e. is calculated on the basis of the max average weekly load based on the use of 24h flow in combination with the respective 24 hour BOD5 sample.</uwwRemarks>
+      </Row>
+      <Row>
+         <uwwState>1</uwwState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY11_5_UWWTP</uwwCode>
+         <uwwName>Vathia-Gonia-A</uwwName>
+         <uwwCollectingSystem>ISCON</uwwCollectingSystem>
+         <uwwLatitude>35.08162</uwwLatitude>
+         <uwwLongitude>33.44552</uwwLongitude>
+         <uwwNUTS>CY000</uwwNUTS>
+         <uwwLoadEnteringUWWTP>63187</uwwLoadEnteringUWWTP>
+         <uwwCapacity>201667</uwwCapacity>
+         <uwwPrimaryTreatment>true</uwwPrimaryTreatment>
+         <uwwSecondaryTreatment>true</uwwSecondaryTreatment>
+         <uwwOtherTreatment>true</uwwOtherTreatment>
+         <uwwNRemoval>true</uwwNRemoval>
+         <uwwPRemoval>true</uwwPRemoval>
+         <uwwUV>true</uwwUV>
+         <uwwChlorination>false</uwwChlorination>
+         <uwwOzonation>false</uwwOzonation>
+         <uwwSandFiltration>false</uwwSandFiltration>
+         <uwwMicroFiltration>false</uwwMicroFiltration>
+         <uwwOther>true</uwwOther>
+         <uwwSpecification>MBR Technology</uwwSpecification>
+         <uwwBOD5Perf>P</uwwBOD5Perf>
+         <uwwCODPerf>P</uwwCODPerf>
+         <uwwTSSPerf>NR</uwwTSSPerf>
+         <uwwNTotPerf>NR</uwwNTotPerf>
+         <uwwPTotPerf>NR</uwwPTotPerf>
+         <uwwOtherPerf>NR</uwwOtherPerf>
+         <uwwBODIncomingMeasured>1113.65</uwwBODIncomingMeasured>
+         <uwwCODIncomingMeasured>2560.46</uwwCODIncomingMeasured>
+         <uwwNIncomingMeasured>286.88</uwwNIncomingMeasured>
+         <uwwPIncomingMeasured>34.25</uwwPIncomingMeasured>
+         <uwwBODDischargeMeasured>3.39</uwwBODDischargeMeasured>
+         <uwwCODDischargeMeasured>56.04</uwwCODDischargeMeasured>
+         <uwwNDischargeMeasured>29.58</uwwNDischargeMeasured>
+         <uwwPDischargeMeasured>2.29</uwwPDischargeMeasured>
+         <uwwWasteWaterTreated>2914994</uwwWasteWaterTreated>
+         <uwwMethodWasteWaterTreated>M</uwwMethodWasteWaterTreated>
+         <uwwBeginLife>2011-01-01</uwwBeginLife>
+         <uwwRemarks>The load in p.e. is calculated on the basis of the max average weekly load based on the use of 24h flow in combination with the respective 24 hour BOD5 sample.</uwwRemarks>
+      </Row>
+      <Row>
+         <uwwState>1</uwwState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY504_UWWTP</uwwCode>
+         <uwwName>Pelendri</uwwName>
+         <uwwCollectingSystem>ISCON</uwwCollectingSystem>
+         <uwwLatitude>34.88690</uwwLatitude>
+         <uwwLongitude>32.96678</uwwLongitude>
+         <uwwNUTS>CY000</uwwNUTS>
+         <uwwLoadEnteringUWWTP>2200</uwwLoadEnteringUWWTP>
+         <uwwCapacity>3000</uwwCapacity>
+         <uwwPrimaryTreatment>true</uwwPrimaryTreatment>
+         <uwwSecondaryTreatment>true</uwwSecondaryTreatment>
+         <uwwOtherTreatment>true</uwwOtherTreatment>
+         <uwwNRemoval>false</uwwNRemoval>
+         <uwwPRemoval>false</uwwPRemoval>
+         <uwwUV>false</uwwUV>
+         <uwwChlorination>true</uwwChlorination>
+         <uwwOzonation>false</uwwOzonation>
+         <uwwSandFiltration>true</uwwSandFiltration>
+         <uwwMicroFiltration>false</uwwMicroFiltration>
+         <uwwOther>false</uwwOther>
+         <uwwBOD5Perf>P</uwwBOD5Perf>
+         <uwwCODPerf>P</uwwCODPerf>
+         <uwwTSSPerf>NR</uwwTSSPerf>
+         <uwwNTotPerf>NR</uwwNTotPerf>
+         <uwwPTotPerf>NR</uwwPTotPerf>
+         <uwwOtherPerf>NR</uwwOtherPerf>
+         <uwwWasteWaterTreated>131400</uwwWasteWaterTreated>
+         <uwwMethodWasteWaterTreated>C</uwwMethodWasteWaterTreated>
+         <uwwBeginLife>2009-01-01</uwwBeginLife>
+      </Row>
+      <Row>
+         <uwwState>1</uwwState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY104_UWWTP</uwwCode>
+         <uwwName>Lythrodontas</uwwName>
+         <uwwCollectingSystem>ISCON</uwwCollectingSystem>
+         <uwwLatitude>34.95936</uwwLatitude>
+         <uwwLongitude>33.30661</uwwLongitude>
+         <uwwNUTS>CY000</uwwNUTS>
+         <uwwLoadEnteringUWWTP>3500</uwwLoadEnteringUWWTP>
+         <uwwCapacity>3500</uwwCapacity>
+         <uwwPrimaryTreatment>true</uwwPrimaryTreatment>
+         <uwwSecondaryTreatment>true</uwwSecondaryTreatment>
+         <uwwOtherTreatment>true</uwwOtherTreatment>
+         <uwwNRemoval>false</uwwNRemoval>
+         <uwwPRemoval>false</uwwPRemoval>
+         <uwwUV>false</uwwUV>
+         <uwwChlorination>true</uwwChlorination>
+         <uwwOzonation>false</uwwOzonation>
+         <uwwSandFiltration>true</uwwSandFiltration>
+         <uwwMicroFiltration>false</uwwMicroFiltration>
+         <uwwOther>false</uwwOther>
+         <uwwBOD5Perf>P</uwwBOD5Perf>
+         <uwwCODPerf>P</uwwCODPerf>
+         <uwwTSSPerf>NR</uwwTSSPerf>
+         <uwwNTotPerf>NR</uwwNTotPerf>
+         <uwwPTotPerf>NR</uwwPTotPerf>
+         <uwwOtherPerf>NR</uwwOtherPerf>
+         <uwwWasteWaterTreated>182500</uwwWasteWaterTreated>
+         <uwwMethodWasteWaterTreated>C</uwwMethodWasteWaterTreated>
+         <uwwBeginLife>2009-01-01</uwwBeginLife>
+      </Row>
+      <Row>
+         <uwwState>1</uwwState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY11_6_UWWTP</uwwCode>
+         <uwwName>Mia Milia B</uwwName>
+         <uwwCollectingSystem>ISCON</uwwCollectingSystem>
+         <uwwLatitude>35.18999</uwwLatitude>
+         <uwwLongitude>33.42673</uwwLongitude>
+         <uwwNUTS>CY000</uwwNUTS>
+         <uwwLoadEnteringUWWTP>156330</uwwLoadEnteringUWWTP>
+         <uwwCapacity>269117</uwwCapacity>
+         <uwwPrimaryTreatment>true</uwwPrimaryTreatment>
+         <uwwSecondaryTreatment>true</uwwSecondaryTreatment>
+         <uwwOtherTreatment>true</uwwOtherTreatment>
+         <uwwNRemoval>true</uwwNRemoval>
+         <uwwPRemoval>true</uwwPRemoval>
+         <uwwUV>false</uwwUV>
+         <uwwChlorination>false</uwwChlorination>
+         <uwwOzonation>false</uwwOzonation>
+         <uwwSandFiltration>false</uwwSandFiltration>
+         <uwwMicroFiltration>false</uwwMicroFiltration>
+         <uwwOther>true</uwwOther>
+         <uwwSpecification>MBR Technology</uwwSpecification>
+         <uwwBOD5Perf>P</uwwBOD5Perf>
+         <uwwCODPerf>P</uwwCODPerf>
+         <uwwTSSPerf>NR</uwwTSSPerf>
+         <uwwNTotPerf>NR</uwwNTotPerf>
+         <uwwPTotPerf>NR</uwwPTotPerf>
+         <uwwOtherPerf>NR</uwwOtherPerf>
+         <uwwBODIncomingCalculated>3144.04</uwwBODIncomingCalculated>
+         <uwwCODIncomingCalculated>6920.43</uwwCODIncomingCalculated>
+         <uwwNIncomingCalculated>670.05</uwwNIncomingCalculated>
+         <uwwPIncomingCalculated>81.87</uwwPIncomingCalculated>
+         <uwwBODDischargeCalculated>7.21</uwwBODDischargeCalculated>
+         <uwwCODDischargeCalculated>150.84</uwwCODDischargeCalculated>
+         <uwwNDischargeCalculated>61.81</uwwNDischargeCalculated>
+         <uwwPDischargeCalculated>5.16</uwwPDischargeCalculated>
+         <uwwWasteWaterTreated>7462218</uwwWasteWaterTreated>
+         <uwwMethodWasteWaterTreated>C</uwwMethodWasteWaterTreated>
+         <uwwBeginLife>2014-01-01</uwwBeginLife>
+         <uwwRemarks>Mia Milia UWWTP is located in the occupied village of Mia Milia and it is not within the Republic of Cyprus Controlled Area.</uwwRemarks>
+      </Row>
+      <Row>
+         <uwwState>1</uwwState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY102_UWWTP</uwwCode>
+         <uwwName>Astromeritis</uwwName>
+         <uwwCollectingSystem>ISCON</uwwCollectingSystem>
+         <uwwLatitude>35.134556</uwwLatitude>
+         <uwwLongitude>33.01125</uwwLongitude>
+         <uwwNUTS>CY000</uwwNUTS>
+         <uwwLoadEnteringUWWTP>7700</uwwLoadEnteringUWWTP>
+         <uwwCapacity>14767</uwwCapacity>
+         <uwwPrimaryTreatment>true</uwwPrimaryTreatment>
+         <uwwSecondaryTreatment>true</uwwSecondaryTreatment>
+         <uwwOtherTreatment>true</uwwOtherTreatment>
+         <uwwNRemoval>false</uwwNRemoval>
+         <uwwPRemoval>false</uwwPRemoval>
+         <uwwUV>false</uwwUV>
+         <uwwChlorination>true</uwwChlorination>
+         <uwwOzonation>false</uwwOzonation>
+         <uwwSandFiltration>true</uwwSandFiltration>
+         <uwwMicroFiltration>false</uwwMicroFiltration>
+         <uwwOther>false</uwwOther>
+         <uwwBOD5Perf>P</uwwBOD5Perf>
+         <uwwCODPerf>P</uwwCODPerf>
+         <uwwTSSPerf>NR</uwwTSSPerf>
+         <uwwNTotPerf>NR</uwwNTotPerf>
+         <uwwPTotPerf>NR</uwwPTotPerf>
+         <uwwOtherPerf>NR</uwwOtherPerf>
+         <uwwWasteWaterTreated>139382</uwwWasteWaterTreated>
+         <uwwMethodWasteWaterTreated>M</uwwMethodWasteWaterTreated>
+         <uwwBeginLife>2014-01-01</uwwBeginLife>
+      </Row>
+      <Row>
+         <uwwState>0</uwwState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY305_UWWTP</uwwCode>
+         <uwwName>Achna</uwwName>
+         <uwwCollectingSystem>NOTCON</uwwCollectingSystem>
+         <uwwHistorie>not yet operational</uwwHistorie>
+         <uwwLatitude>35.07095</uwwLatitude>
+         <uwwLongitude>33.826569</uwwLongitude>
+         <uwwWasteWaterTreated>0</uwwWasteWaterTreated>
+         <uwwBeginLife>2014-01-01</uwwBeginLife>
+         <uwwRemarks>The uwwtp is not yet operational so no waste water is treated.</uwwRemarks>
+      </Row>
+      <Row>
+         <uwwState>0</uwwState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY402_UWWTP</uwwCode>
+         <uwwName>Aradippou</uwwName>
+         <uwwCollectingSystem>NOTCON</uwwCollectingSystem>
+         <uwwHistorie>not yet operational</uwwHistorie>
+         <uwwLatitude>34.981602</uwwLatitude>
+         <uwwLongitude>33.606992</uwwLongitude>
+         <uwwWasteWaterTreated>0</uwwWasteWaterTreated>
+         <uwwBeginLife>2014-01-01</uwwBeginLife>
+         <uwwRemarks>The uwwtp is not yet operational so no waste water is treated.</uwwRemarks>
+      </Row>
+      <Row>
+         <uwwState>0</uwwState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY407_UWWTP</uwwCode>
+         <uwwName>Athienou</uwwName>
+         <uwwCollectingSystem>NOTCON</uwwCollectingSystem>
+         <uwwHistorie>not yet operational</uwwHistorie>
+         <uwwLatitude>35.077819</uwwLatitude>
+         <uwwLongitude>33.534596</uwwLongitude>
+         <uwwWasteWaterTreated>0</uwwWasteWaterTreated>
+         <uwwBeginLife>2014-01-01</uwwBeginLife>
+         <uwwRemarks>The uwwtp is not yet operational so no waste water is treated.</uwwRemarks>
+      </Row>
+      <Row>
+         <uwwState>0</uwwState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY507_UWWTP</uwwCode>
+         <uwwName>Episkopi</uwwName>
+         <uwwCollectingSystem>NOTCON</uwwCollectingSystem>
+         <uwwHistorie>not yet operational</uwwHistorie>
+         <uwwLatitude>34.65407</uwwLatitude>
+         <uwwLongitude>32.916775</uwwLongitude>
+         <uwwWasteWaterTreated>0</uwwWasteWaterTreated>
+         <uwwBeginLife>2014-01-01</uwwBeginLife>
+         <uwwRemarks>The uwwtp is not yet operational so no waste water is treated.</uwwRemarks>
+      </Row>
+      <Row>
+         <uwwState>0</uwwState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY52_UWWTP</uwwCode>
+         <uwwName>Limassol West</uwwName>
+         <uwwCollectingSystem>NOTCON</uwwCollectingSystem>
+         <uwwHistorie>not yet operational</uwwHistorie>
+         <uwwLatitude>34.650528</uwwLatitude>
+         <uwwLongitude>32.992919</uwwLongitude>
+         <uwwWasteWaterTreated>0</uwwWasteWaterTreated>
+         <uwwBeginLife>2014-01-01</uwwBeginLife>
+         <uwwRemarks>The uwwtp is not yet operational so no waste water is treated.</uwwRemarks>
+      </Row>
+      <Row>
+         <uwwState>0</uwwState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY52_1_UWWTP</uwwCode>
+         <uwwName>Vati</uwwName>
+         <uwwCollectingSystem>NOTCON</uwwCollectingSystem>
+         <uwwHistorie>not yet operational</uwwHistorie>
+         <uwwLatitude>34.755295</uwwLatitude>
+         <uwwLongitude>32.954976</uwwLongitude>
+         <uwwWasteWaterTreated>0</uwwWasteWaterTreated>
+         <uwwBeginLife>2014-01-01</uwwBeginLife>
+         <uwwRemarks>The uwwtp is not yet operational so no waste water is treated.</uwwRemarks>
+      </Row>
+      <Row>
+         <uwwState>0</uwwState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY601_UWWTP</uwwCode>
+         <uwwName>Polis</uwwName>
+         <uwwCollectingSystem>NOTCON</uwwCollectingSystem>
+         <uwwHistorie>not yet operational</uwwHistorie>
+         <uwwLatitude>35.04251</uwwLatitude>
+         <uwwLongitude>32.460281</uwwLongitude>
+         <uwwWasteWaterTreated>0</uwwWasteWaterTreated>
+         <uwwBeginLife>2014-01-01</uwwBeginLife>
+         <uwwRemarks>The uwwtp is not yet operational so no waste water is treated.</uwwRemarks>
+      </Row>
+      <Row>
+         <uwwState>0</uwwState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY110_1_UWWTP</uwwCode>
+         <uwwName>Solea</uwwName>
+         <uwwCollectingSystem>NOTCON</uwwCollectingSystem>
+         <uwwHistorie>not yet operational</uwwHistorie>
+         <uwwLatitude>35.085324</uwwLatitude>
+         <uwwLongitude>32.901611</uwwLongitude>
+         <uwwWasteWaterTreated>0</uwwWasteWaterTreated>
+         <uwwBeginLife>2014-01-01</uwwBeginLife>
+         <uwwRemarks>The uwwtp is not yet operational so no waste water is treated.</uwwRemarks>
+      </Row>
+   </UWWTPs>
+   <UwwtpAgglos xmlns="http://dd.eionet.europa.eu/namespaces/862">
+      <Row>
+         <repCode>CY 2017 Art.15</repCode>
+         <aucUwwCode>CY11_6_UWWTP</aucUwwCode>
+         <aucUwwName>Mia Milia B</aucUwwName>
+         <aucAggCode>CY11-Agglo</aucAggCode>
+         <aucAggName>Nicosia</aucAggName>
+         <aucPercEnteringUWWTP>66.5234</aucPercEnteringUWWTP>
+         <aucMethodPercEnteringUWWTP>E</aucMethodPercEnteringUWWTP>
+      </Row>
+      <Row>
+         <repCode>CY 2017 Art.15</repCode>
+         <aucUwwCode>CY11_3_UWWTP</aucUwwCode>
+         <aucUwwName>Central Vathia Gonia</aucUwwName>
+         <aucAggCode>CY41-Agglo</aucAggCode>
+         <aucAggName>Larnaca</aucAggName>
+         <aucPercEnteringUWWTP>0</aucPercEnteringUWWTP>
+         <aucMethodPercEnteringUWWTP>E</aucMethodPercEnteringUWWTP>
+         <aucPercC2T>11.5</aucPercC2T>
+      </Row>
+      <Row>
+         <repCode>CY 2017 Art.15</repCode>
+         <aucUwwCode>CY11_3_UWWTP</aucUwwCode>
+         <aucUwwName>Central Vathia Gonia</aucUwwName>
+         <aucAggCode>CY107-Agglo</aucAggCode>
+         <aucAggName>Dhali</aucAggName>
+         <aucPercEnteringUWWTP>0</aucPercEnteringUWWTP>
+         <aucMethodPercEnteringUWWTP>E</aucMethodPercEnteringUWWTP>
+         <aucPercC2T>31.88</aucPercC2T>
+      </Row>
+      <Row>
+         <repCode>CY 2017 Art.15</repCode>
+         <aucUwwCode>CY11_3_UWWTP</aucUwwCode>
+         <aucUwwName>Central Vathia Gonia</aucUwwName>
+         <aucAggCode>CY108-Agglo</aucAggCode>
+         <aucAggName>Pera Chorio Nisou</aucAggName>
+         <aucPercEnteringUWWTP>0</aucPercEnteringUWWTP>
+         <aucMethodPercEnteringUWWTP>E</aucMethodPercEnteringUWWTP>
+         <aucPercC2T>44.79</aucPercC2T>
+      </Row>
+      <Row>
+         <repCode>CY 2017 Art.15</repCode>
+         <aucUwwCode>CY11_4_UWWTP</aucUwwCode>
+         <aucUwwName>Anthoupolis-B</aucUwwName>
+         <aucAggCode>CY11-Agglo</aucAggCode>
+         <aucAggName>Nicosia</aucAggName>
+         <aucPercEnteringUWWTP>12.3332</aucPercEnteringUWWTP>
+         <aucMethodPercEnteringUWWTP>E</aucMethodPercEnteringUWWTP>
+      </Row>
+      <Row>
+         <repCode>CY 2017 Art.15</repCode>
+         <aucUwwCode>CY11_4_UWWTP</aucUwwCode>
+         <aucUwwName>Anthoupolis-B</aucUwwName>
+         <aucAggCode>CY111-Agglo</aucAggCode>
+         <aucAggName>Tseri</aucAggName>
+         <aucPercEnteringUWWTP>100</aucPercEnteringUWWTP>
+         <aucMethodPercEnteringUWWTP>E</aucMethodPercEnteringUWWTP>
+      </Row>
+      <Row>
+         <repCode>CY 2017 Art.15</repCode>
+         <aucUwwCode>CY11_5_UWWTP</aucUwwCode>
+         <aucUwwName>Vathia-Gonia-A</aucUwwName>
+         <aucAggCode>CY11-Agglo</aucAggCode>
+         <aucAggName>Nicosia</aucAggName>
+         <aucPercEnteringUWWTP>21.1434</aucPercEnteringUWWTP>
+         <aucMethodPercEnteringUWWTP>E</aucMethodPercEnteringUWWTP>
+      </Row>
+      <Row>
+         <repCode>CY 2017 Art.15</repCode>
+         <aucUwwCode>CY11_5_UWWTP</aucUwwCode>
+         <aucUwwName>Vathia-Gonia-A</aucUwwName>
+         <aucAggCode>CY112-Agglo</aucAggCode>
+         <aucAggName>Yeri</aucAggName>
+         <aucPercEnteringUWWTP>100</aucPercEnteringUWWTP>
+         <aucMethodPercEnteringUWWTP>E</aucMethodPercEnteringUWWTP>
+      </Row>
+      <Row>
+         <repCode>CY 2017 Art.15</repCode>
+         <aucUwwCode>CY11_5_UWWTP</aucUwwCode>
+         <aucUwwName>Vathia-Gonia-A</aucUwwName>
+         <aucAggCode>CY107-Agglo</aucAggCode>
+         <aucAggName>Dhali</aucAggName>
+         <aucPercEnteringUWWTP>21.36</aucPercEnteringUWWTP>
+         <aucMethodPercEnteringUWWTP>E</aucMethodPercEnteringUWWTP>
+      </Row>
+      <Row>
+         <repCode>CY 2017 Art.15</repCode>
+         <aucUwwCode>CY11_5_UWWTP</aucUwwCode>
+         <aucUwwName>Vathia-Gonia-A</aucUwwName>
+         <aucAggCode>CY108-Agglo</aucAggCode>
+         <aucAggName>Pera Chorio Nisou</aucAggName>
+         <aucPercEnteringUWWTP>55.21</aucPercEnteringUWWTP>
+         <aucMethodPercEnteringUWWTP>E</aucMethodPercEnteringUWWTP>
+      </Row>
+      <Row>
+         <repCode>CY 2017 Art.15</repCode>
+         <aucUwwCode>CY110_UWWTP</aucUwwCode>
+         <aucUwwName>Kakopetria</aucUwwName>
+         <aucAggCode>CY110-Agglo</aucAggCode>
+         <aucAggName>Kakopetria</aucAggName>
+         <aucPercEnteringUWWTP>48</aucPercEnteringUWWTP>
+         <aucMethodPercEnteringUWWTP>E</aucMethodPercEnteringUWWTP>
+      </Row>
+      <Row>
+         <repCode>CY 2017 Art.15</repCode>
+         <aucUwwCode>CY31_UWWTPA</aucUwwCode>
+         <aucUwwName>Ayia Napa</aucUwwName>
+         <aucAggCode>CY31-Agglo</aucAggCode>
+         <aucAggName>Ayia Napa</aucAggName>
+         <aucPercEnteringUWWTP>100</aucPercEnteringUWWTP>
+         <aucMethodPercEnteringUWWTP>E</aucMethodPercEnteringUWWTP>
+      </Row>
+      <Row>
+         <repCode>CY 2017 Art.15</repCode>
+         <aucUwwCode>CY31_UWWTPP</aucUwwCode>
+         <aucUwwName>Paralimni</aucUwwName>
+         <aucAggCode>CY32-Agglo</aucAggCode>
+         <aucAggName>Paralimni</aucAggName>
+         <aucPercEnteringUWWTP>100</aucPercEnteringUWWTP>
+         <aucMethodPercEnteringUWWTP>E</aucMethodPercEnteringUWWTP>
+      </Row>
+      <Row>
+         <repCode>CY 2017 Art.15</repCode>
+         <aucUwwCode>CY406_UWWTP</aucUwwCode>
+         <aucUwwName>Livadhia Refugee Camp</aucUwwName>
+         <aucAggCode>CY406-Agglo</aucAggCode>
+         <aucAggName>Livadhia</aucAggName>
+         <aucPercEnteringUWWTP>36.36</aucPercEnteringUWWTP>
+         <aucMethodPercEnteringUWWTP>E</aucMethodPercEnteringUWWTP>
+      </Row>
+      <Row>
+         <repCode>CY 2017 Art.15</repCode>
+         <aucUwwCode>CY41_UWWTP</aucUwwCode>
+         <aucUwwName>Larnaca</aucUwwName>
+         <aucAggCode>CY41-Agglo</aucAggCode>
+         <aucAggName>Larnaca</aucAggName>
+         <aucPercEnteringUWWTP>86.5</aucPercEnteringUWWTP>
+         <aucMethodPercEnteringUWWTP>E</aucMethodPercEnteringUWWTP>
+      </Row>
+      <Row>
+         <repCode>CY 2017 Art.15</repCode>
+         <aucUwwCode>CY41_UWWTP</aucUwwCode>
+         <aucUwwName>Larnaca</aucUwwName>
+         <aucAggCode>CY406-Agglo</aucAggCode>
+         <aucAggName>Livadhia</aucAggName>
+         <aucPercEnteringUWWTP>14.55</aucPercEnteringUWWTP>
+         <aucMethodPercEnteringUWWTP>E</aucMethodPercEnteringUWWTP>
+      </Row>
+      <Row>
+         <repCode>CY 2017 Art.15</repCode>
+         <aucUwwCode>CY501_UWWTP</aucUwwCode>
+         <aucUwwName>Kyperounda</aucUwwName>
+         <aucAggCode>CY501-Agglo</aucAggCode>
+         <aucAggName>Kyperounda</aucAggName>
+         <aucPercEnteringUWWTP>100</aucPercEnteringUWWTP>
+         <aucMethodPercEnteringUWWTP>E</aucMethodPercEnteringUWWTP>
+      </Row>
+      <Row>
+         <repCode>CY 2017 Art.15</repCode>
+         <aucUwwCode>CY502_UWWTP</aucUwwCode>
+         <aucUwwName>Platres</aucUwwName>
+         <aucAggCode>CY502-Agglo</aucAggCode>
+         <aucAggName>Platres</aucAggName>
+         <aucPercEnteringUWWTP>100</aucPercEnteringUWWTP>
+         <aucMethodPercEnteringUWWTP>E</aucMethodPercEnteringUWWTP>
+      </Row>
+      <Row>
+         <repCode>CY 2017 Art.15</repCode>
+         <aucUwwCode>CY503_UWWTP</aucUwwCode>
+         <aucUwwName>Agros</aucUwwName>
+         <aucAggCode>CY503-Agglo</aucAggCode>
+         <aucAggName>Agros</aucAggName>
+         <aucPercEnteringUWWTP>100</aucPercEnteringUWWTP>
+         <aucMethodPercEnteringUWWTP>E</aucMethodPercEnteringUWWTP>
+      </Row>
+      <Row>
+         <repCode>CY 2017 Art.15</repCode>
+         <aucUwwCode>CY51_UWWTP</aucUwwCode>
+         <aucUwwName>Limassol</aucUwwName>
+         <aucAggCode>CY51-Agglo</aucAggCode>
+         <aucAggName>Limassol</aucAggName>
+         <aucPercEnteringUWWTP>100</aucPercEnteringUWWTP>
+         <aucMethodPercEnteringUWWTP>E</aucMethodPercEnteringUWWTP>
+      </Row>
+      <Row>
+         <repCode>CY 2017 Art.15</repCode>
+         <aucUwwCode>CY51_UWWTP</aucUwwCode>
+         <aucUwwName>Limassol</aucUwwName>
+         <aucAggCode>CY52-Agglo</aucAggCode>
+         <aucAggName>Agia Phyla</aucAggName>
+         <aucPercEnteringUWWTP>93.83</aucPercEnteringUWWTP>
+         <aucMethodPercEnteringUWWTP>E</aucMethodPercEnteringUWWTP>
+      </Row>
+      <Row>
+         <repCode>CY 2017 Art.15</repCode>
+         <aucUwwCode>CY61_UWWTP</aucUwwCode>
+         <aucUwwName>Paphos</aucUwwName>
+         <aucAggCode>CY61-Agglo</aucAggCode>
+         <aucAggName>Paphos</aucAggName>
+         <aucPercEnteringUWWTP>100</aucPercEnteringUWWTP>
+         <aucMethodPercEnteringUWWTP>E</aucMethodPercEnteringUWWTP>
+      </Row>
+      <Row>
+         <repCode>CY 2017 Art.15</repCode>
+         <aucUwwCode>CY61_UWWTP</aucUwwCode>
+         <aucUwwName>Paphos</aucUwwName>
+         <aucAggCode>CY603-Agglo</aucAggCode>
+         <aucAggName>Emba</aucAggName>
+         <aucPercEnteringUWWTP>100</aucPercEnteringUWWTP>
+         <aucMethodPercEnteringUWWTP>E</aucMethodPercEnteringUWWTP>
+      </Row>
+      <Row>
+         <repCode>CY 2017 Art.15</repCode>
+         <aucUwwCode>CY61_UWWTP</aucUwwCode>
+         <aucUwwName>Paphos</aucUwwName>
+         <aucAggCode>CY604-Agglo</aucAggCode>
+         <aucAggName>Chlorakas</aucAggName>
+         <aucPercEnteringUWWTP>100</aucPercEnteringUWWTP>
+         <aucMethodPercEnteringUWWTP>E</aucMethodPercEnteringUWWTP>
+      </Row>
+      <Row>
+         <repCode>CY 2017 Art.15</repCode>
+         <aucUwwCode>CY61_UWWTP</aucUwwCode>
+         <aucUwwName>Paphos</aucUwwName>
+         <aucAggCode>CY605-Agglo</aucAggCode>
+         <aucAggName>Kissonerga</aucAggName>
+         <aucPercEnteringUWWTP>100</aucPercEnteringUWWTP>
+         <aucMethodPercEnteringUWWTP>E</aucMethodPercEnteringUWWTP>
+      </Row>
+      <Row>
+         <repCode>CY 2017 Art.15</repCode>
+         <aucUwwCode>CY504_UWWTP</aucUwwCode>
+         <aucUwwName>Pelendri</aucUwwName>
+         <aucAggCode>CY504-Agglo</aucAggCode>
+         <aucAggName>Pelendri</aucAggName>
+         <aucPercEnteringUWWTP>100</aucPercEnteringUWWTP>
+         <aucMethodPercEnteringUWWTP>E</aucMethodPercEnteringUWWTP>
+      </Row>
+      <Row>
+         <repCode>CY 2017 Art.15</repCode>
+         <aucUwwCode>CY104_UWWTP</aucUwwCode>
+         <aucUwwName>Lythrodontas</aucUwwName>
+         <aucAggCode>CY104-Agglo</aucAggCode>
+         <aucAggName>Lythrodontas</aucAggName>
+         <aucPercEnteringUWWTP>100</aucPercEnteringUWWTP>
+         <aucMethodPercEnteringUWWTP>E</aucMethodPercEnteringUWWTP>
+      </Row>
+      <Row>
+         <repCode>CY 2017 Art.15</repCode>
+         <aucUwwCode>CY102_UWWTP</aucUwwCode>
+         <aucUwwName>Astromeritis</aucUwwName>
+         <aucAggCode>CY101-Agglo</aucAggCode>
+         <aucAggName>Peristerona</aucAggName>
+         <aucPercEnteringUWWTP>100</aucPercEnteringUWWTP>
+         <aucMethodPercEnteringUWWTP>E</aucMethodPercEnteringUWWTP>
+      </Row>
+      <Row>
+         <repCode>CY 2017 Art.15</repCode>
+         <aucUwwCode>CY102_UWWTP</aucUwwCode>
+         <aucUwwName>Astromeritis</aucUwwName>
+         <aucAggCode>CY102-Agglo</aucAggCode>
+         <aucAggName>Astromeritis</aucAggName>
+         <aucPercEnteringUWWTP>100</aucPercEnteringUWWTP>
+         <aucMethodPercEnteringUWWTP>E</aucMethodPercEnteringUWWTP>
+      </Row>
+      <Row>
+         <repCode>CY 2017 Art.15</repCode>
+         <aucUwwCode>CY102_UWWTP</aucUwwCode>
+         <aucUwwName>Astromeritis</aucUwwName>
+         <aucAggCode>CY103-Agglo</aucAggCode>
+         <aucAggName>Akaki</aucAggName>
+         <aucPercEnteringUWWTP>100</aucPercEnteringUWWTP>
+         <aucMethodPercEnteringUWWTP>E</aucMethodPercEnteringUWWTP>
+      </Row>
+   </UwwtpAgglos>
+   <DischargePoints xmlns="http://dd.eionet.europa.eu/namespaces/823">
+      <Row>
+         <dcpState>1</dcpState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY503_UWWTP</uwwCode>
+         <dcpCode>CY503-DisPoint</dcpCode>
+         <dcpName>Agros land</dcpName>
+         <dcpNUTS>CY000</dcpNUTS>
+         <dcpLatitude>34.91201</dcpLatitude>
+         <dcpLongitude>33.01887</dcpLongitude>
+         <dcpWaterBodyType>LF</dcpWaterBodyType>
+         <dcpIrrigation>IR</dcpIrrigation>
+         <dcpTypeOfReceivingArea>NA</dcpTypeOfReceivingArea>
+         <dcpSurfaceWaters>false</dcpSurfaceWaters>
+         <dcpGroundWater>CY_19 Troodos Igneous Massif</dcpGroundWater>
+         <dcpWFDSubUnit>CY9-6 Kouris</dcpWFDSubUnit>
+         <dcpWFDRBD>CY001</dcpWFDRBD>
+         <dcpBeginLife>2005-01-01</dcpBeginLife>
+         <dcpRemarks>Discharge is irrigated, there is no discharge into a reveiving water.</dcpRemarks>
+      </Row>
+      <Row>
+         <dcpState>1</dcpState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY51_UWWTP</uwwCode>
+         <dcpCode>CY51-DispointA</dcpCode>
+         <dcpName>Coastal waters</dcpName>
+         <dcpNUTS>CY000</dcpNUTS>
+         <dcpLatitude>34.70675</dcpLatitude>
+         <dcpLongitude>33.21108</dcpLongitude>
+         <dcpWaterBodyType>CW</dcpWaterBodyType>
+         <dcpTypeOfReceivingArea>NA</dcpTypeOfReceivingArea>
+         <dcpSurfaceWaters>true</dcpSurfaceWaters>
+         <dcpWaterbodyID>CY13-C2 Moni</dcpWaterbodyID>
+         <dcpReceivingWater>CY13-C2 Moni</dcpReceivingWater>
+         <dcpWFDSubUnit>CY9-1 Argaki tou Pyrgou</dcpWFDSubUnit>
+         <dcpWFDRBD>CY001</dcpWFDRBD>
+         <dcpBeginLife>2005-01-01</dcpBeginLife>
+         <dcpRemarks>With respect to discharge point CY51-DispointA, it is noted that according to the 2nd RBMP the water body CY_16-C2 has been changed to CY13-C2 (Moni).</dcpRemarks>
+      </Row>
+      <Row>
+         <dcpState>1</dcpState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY51_UWWTP</uwwCode>
+         <dcpCode>CY51-DisPointB</dcpCode>
+         <dcpName>Polemidia Dam</dcpName>
+         <dcpNUTS>CY000</dcpNUTS>
+         <dcpLatitude>34.71876</dcpLatitude>
+         <dcpLongitude>32.98906</dcpLongitude>
+         <dcpWaterBodyType>FW</dcpWaterBodyType>
+         <dcpIrrigation>IR</dcpIrrigation>
+         <dcpTypeOfReceivingArea>CSA</dcpTypeOfReceivingArea>
+         <rcaCode>CY SA_CM1</rcaCode>
+         <dcpSurfaceWaters>true</dcpSurfaceWaters>
+         <dcpWaterbodyID>CY9-4-E_RIH_HM</dcpWaterbodyID>
+         <dcpGroundWater>CY_8 Lemesos Town (Garyllis)</dcpGroundWater>
+         <dcpReceivingWater>CY9-4-E_RIH_HM</dcpReceivingWater>
+         <dcpWFDSubUnit>CY9-4 Garyllis</dcpWFDSubUnit>
+         <dcpWFDRBD>CY001</dcpWFDRBD>
+         <dcpBeginLife>2005-01-01</dcpBeginLife>
+      </Row>
+      <Row>
+         <dcpState>1</dcpState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY51_UWWTP</uwwCode>
+         <dcpCode>CY51-DisPointC1</dcpCode>
+         <dcpName>Green areas at WWTP</dcpName>
+         <dcpNUTS>CY000</dcpNUTS>
+         <dcpLatitude>34.71423</dcpLatitude>
+         <dcpLongitude>33.22656</dcpLongitude>
+         <dcpWaterBodyType>LF</dcpWaterBodyType>
+         <dcpIrrigation>IR</dcpIrrigation>
+         <dcpTypeOfReceivingArea>NA</dcpTypeOfReceivingArea>
+         <dcpSurfaceWaters>false</dcpSurfaceWaters>
+         <dcpGroundWater>CY_18 Lefkara-Pachna</dcpGroundWater>
+         <dcpWFDSubUnit>CY9-1 Argaki tou Pyrgou</dcpWFDSubUnit>
+         <dcpWFDRBD>CY001</dcpWFDRBD>
+         <dcpBeginLife>2005-01-01</dcpBeginLife>
+         <dcpRemarks>Discharge is irrigated, there is no discharge into a reveiving water.</dcpRemarks>
+      </Row>
+      <Row>
+         <dcpState>1</dcpState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY51_UWWTP</uwwCode>
+         <dcpCode>CY51-DisPointC2</dcpCode>
+         <dcpName>Ypsonas area</dcpName>
+         <dcpNUTS>CY000</dcpNUTS>
+         <dcpLatitude>34.68044</dcpLatitude>
+         <dcpLongitude>32.96374</dcpLongitude>
+         <dcpWaterBodyType>LF</dcpWaterBodyType>
+         <dcpIrrigation>IR</dcpIrrigation>
+         <dcpTypeOfReceivingArea>NA</dcpTypeOfReceivingArea>
+         <dcpSurfaceWaters>false</dcpSurfaceWaters>
+         <dcpGroundWater>CY_9 Akrotiri</dcpGroundWater>
+         <dcpWFDSubUnit>CY9-5 Akrotiri</dcpWFDSubUnit>
+         <dcpWFDRBD>CY001</dcpWFDRBD>
+         <dcpBeginLife>2005-01-01</dcpBeginLife>
+         <dcpRemarks>Discharge is irrigated, there is no discharge into a reveiving water.</dcpRemarks>
+      </Row>
+      <Row>
+         <dcpState>1</dcpState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY51_UWWTP</uwwCode>
+         <dcpCode>CY51-DisPointC3</dcpCode>
+         <dcpName>Germasogia area</dcpName>
+         <dcpNUTS>CY000</dcpNUTS>
+         <dcpLatitude>34.69324</dcpLatitude>
+         <dcpLongitude>33.08487</dcpLongitude>
+         <dcpWaterBodyType>LC</dcpWaterBodyType>
+         <dcpIrrigation>IR</dcpIrrigation>
+         <dcpTypeOfReceivingArea>NA</dcpTypeOfReceivingArea>
+         <dcpSurfaceWaters>false</dcpSurfaceWaters>
+         <dcpGroundWater>CY_8 Lemesos Town (Garyllis)</dcpGroundWater>
+         <dcpWFDSubUnit>CY9-2 Germasogeia</dcpWFDSubUnit>
+         <dcpWFDRBD>CY001</dcpWFDRBD>
+         <dcpBeginLife>2005-01-01</dcpBeginLife>
+         <dcpRemarks>Discharge is irrigated, there is no discharge into a reveiving water.</dcpRemarks>
+      </Row>
+      <Row>
+         <dcpState>1</dcpState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY51_UWWTP</uwwCode>
+         <dcpCode>CY51-DisPointC4</dcpCode>
+         <dcpName>Parekklisia area</dcpName>
+         <dcpNUTS>CY000</dcpNUTS>
+         <dcpLatitude>34.75037</dcpLatitude>
+         <dcpLongitude>33.16845</dcpLongitude>
+         <dcpWaterBodyType>LF</dcpWaterBodyType>
+         <dcpIrrigation>IR</dcpIrrigation>
+         <dcpTypeOfReceivingArea>NA</dcpTypeOfReceivingArea>
+         <dcpSurfaceWaters>false</dcpSurfaceWaters>
+         <dcpGroundWater>CY_19 Troodos Igneous Massif</dcpGroundWater>
+         <dcpWFDSubUnit>CY9-1 Argaki tou Pyrgou</dcpWFDSubUnit>
+         <dcpWFDRBD>CY001</dcpWFDRBD>
+         <dcpBeginLife>2005-01-01</dcpBeginLife>
+         <dcpRemarks>Discharge is irrigated, there is no discharge into a reveiving water.</dcpRemarks>
+      </Row>
+      <Row>
+         <dcpState>1</dcpState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY51_UWWTP</uwwCode>
+         <dcpCode>CY51-DisPointC5</dcpCode>
+         <dcpName>Akrotiri Aquifer</dcpName>
+         <dcpNUTS>CY000</dcpNUTS>
+         <dcpLatitude>34.656007</dcpLatitude>
+         <dcpLongitude>32.913785</dcpLongitude>
+         <dcpWaterBodyType>FW</dcpWaterBodyType>
+         <dcpIrrigation>IN</dcpIrrigation>
+         <dcpTypeOfReceivingArea>NA</dcpTypeOfReceivingArea>
+         <dcpSurfaceWaters>true</dcpSurfaceWaters>
+         <dcpGroundWater>CY_9 Akrotiri</dcpGroundWater>
+         <dcpReceivingWater>CY_9</dcpReceivingWater>
+         <dcpWFDSubUnit>CY9-6 Kouris</dcpWFDSubUnit>
+         <dcpWFDRBD>CY001</dcpWFDRBD>
+         <dcpBeginLife>2016-01-01</dcpBeginLife>
+         <dcpRemarks>The discharge is in two clusters of infiltration ponds along Kouris river bed.</dcpRemarks>
+      </Row>
+      <Row>
+         <dcpState>1</dcpState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY61_UWWTP</uwwCode>
+         <dcpCode>CY61-DisPoint</dcpCode>
+         <dcpName>Ezousa Aquifer</dcpName>
+         <dcpNUTS>CY000</dcpNUTS>
+         <dcpLatitude>34.73342</dcpLatitude>
+         <dcpLongitude>32.46398</dcpLongitude>
+         <dcpWaterBodyType>FW</dcpWaterBodyType>
+         <dcpIrrigation>IN</dcpIrrigation>
+         <dcpTypeOfReceivingArea>NA</dcpTypeOfReceivingArea>
+         <dcpSurfaceWaters>true</dcpSurfaceWaters>
+         <dcpGroundWater>CY_11B Ezousas Riverbed</dcpGroundWater>
+         <dcpReceivingWater>CY_11</dcpReceivingWater>
+         <dcpWFDSubUnit>CY1-4 Ezousa</dcpWFDSubUnit>
+         <dcpWFDRBD>CY001</dcpWFDRBD>
+         <dcpBeginLife>2005-01-01</dcpBeginLife>
+         <dcpRemarks>The discharge is in a series of infiltration ponds along Ezousa river bed.</dcpRemarks>
+      </Row>
+      <Row>
+         <dcpState>1</dcpState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY11_6_UWWTP</uwwCode>
+         <dcpCode>CY11_6-DisPoint</dcpCode>
+         <dcpName>Pediaios River</dcpName>
+         <dcpNUTS>CY000</dcpNUTS>
+         <dcpLatitude>35.19276</dcpLatitude>
+         <dcpLongitude>33.43703</dcpLongitude>
+         <dcpWaterBodyType>FW</dcpWaterBodyType>
+         <dcpIrrigation>IN</dcpIrrigation>
+         <dcpTypeOfReceivingArea>NA</dcpTypeOfReceivingArea>
+         <dcpSurfaceWaters>true</dcpSurfaceWaters>
+         <dcpGroundWater>CY_17 Central and Western Mesaoria</dcpGroundWater>
+         <dcpWFDSubUnit>CY6-1 pediaios</dcpWFDSubUnit>
+         <dcpWFDRBD>CY001</dcpWFDRBD>
+         <dcpBeginLife>2014-01-01</dcpBeginLife>
+         <dcpRemarks>With respect to discharge point CY11_6-DisPoint, Pediaios River, it is noted that the water body CY_6_1_4_R3 was removed from the WFD river water body network for the 2nd RBMP because it has an ephemeral/episodic flow regime (river type: ephemeral/episodic flow). Discharge is into a river that is NOT a WFD water body.</dcpRemarks>
+      </Row>
+      <Row>
+         <dcpState>1</dcpState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY11_3_UWWTP</uwwCode>
+         <dcpCode>CY11_3-DisPoint</dcpCode>
+         <dcpName>Potamia land</dcpName>
+         <dcpNUTS>CY000</dcpNUTS>
+         <dcpLatitude>35.04906</dcpLatitude>
+         <dcpLongitude>33.45763</dcpLongitude>
+         <dcpWaterBodyType>LF</dcpWaterBodyType>
+         <dcpIrrigation>IR</dcpIrrigation>
+         <dcpTypeOfReceivingArea>NA</dcpTypeOfReceivingArea>
+         <dcpSurfaceWaters>false</dcpSurfaceWaters>
+         <dcpGroundWater>CY_17 Central and Western Mesaoria</dcpGroundWater>
+         <dcpWFDSubUnit>CY6-5 Gialias</dcpWFDSubUnit>
+         <dcpWFDRBD>CY001</dcpWFDRBD>
+         <dcpBeginLife>2005-01-01</dcpBeginLife>
+         <dcpRemarks>Discharge is irrigated, there is no discharge into a reveiving water.</dcpRemarks>
+      </Row>
+      <Row>
+         <dcpState>1</dcpState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY11_3_UWWTP</uwwCode>
+         <dcpCode>CY11_3-DisPoint2</dcpCode>
+         <dcpName>Yeri land</dcpName>
+         <dcpNUTS>CY000</dcpNUTS>
+         <dcpLatitude>35.10103</dcpLatitude>
+         <dcpLongitude>33.43599</dcpLongitude>
+         <dcpWaterBodyType>LF</dcpWaterBodyType>
+         <dcpIrrigation>IR</dcpIrrigation>
+         <dcpTypeOfReceivingArea>NA</dcpTypeOfReceivingArea>
+         <dcpSurfaceWaters>false</dcpSurfaceWaters>
+         <dcpGroundWater>CY_17 Central and Western Mesaoria</dcpGroundWater>
+         <dcpWFDSubUnit>CY6-1 pediaios</dcpWFDSubUnit>
+         <dcpWFDRBD>CY001</dcpWFDRBD>
+         <dcpBeginLife>2005-01-01</dcpBeginLife>
+         <dcpRemarks>Discharge is irrigated, there is no discharge into a reveiving water.</dcpRemarks>
+      </Row>
+      <Row>
+         <dcpState>1</dcpState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY11_4_UWWTP</uwwCode>
+         <dcpCode>CY11_4-DisPoint</dcpCode>
+         <dcpName>Agrokipia land</dcpName>
+         <dcpNUTS>CY000</dcpNUTS>
+         <dcpLatitude>35.06544</dcpLatitude>
+         <dcpLongitude>33.15560</dcpLongitude>
+         <dcpWaterBodyType>LF</dcpWaterBodyType>
+         <dcpIrrigation>IR</dcpIrrigation>
+         <dcpTypeOfReceivingArea>NA</dcpTypeOfReceivingArea>
+         <dcpSurfaceWaters>false</dcpSurfaceWaters>
+         <dcpGroundWater>CY_17 Central and Western Mesaoria</dcpGroundWater>
+         <dcpWFDSubUnit>CY3-7 Serrachis</dcpWFDSubUnit>
+         <dcpWFDRBD>CY001</dcpWFDRBD>
+         <dcpBeginLife>2009-01-01</dcpBeginLife>
+         <dcpRemarks>Discharge is irrigated, there is no discharge into a reveiving water.</dcpRemarks>
+      </Row>
+      <Row>
+         <dcpState>1</dcpState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY11_4_UWWTP</uwwCode>
+         <dcpCode>CY11_4-DisPoint2</dcpCode>
+         <dcpName>Serrachis River</dcpName>
+         <dcpNUTS>CY000</dcpNUTS>
+         <dcpLatitude>35.140253</dcpLatitude>
+         <dcpLongitude>33.24901</dcpLongitude>
+         <dcpWaterBodyType>FW</dcpWaterBodyType>
+         <dcpIrrigation>IN</dcpIrrigation>
+         <dcpTypeOfReceivingArea>NA</dcpTypeOfReceivingArea>
+         <dcpSurfaceWaters>true</dcpSurfaceWaters>
+         <dcpGroundWater>CY_17 Central and Western Mesaoria</dcpGroundWater>
+         <dcpWFDSubUnit>CY3-7 Serrachis</dcpWFDSubUnit>
+         <dcpWFDRBD>CY001</dcpWFDRBD>
+         <dcpBeginLife>2011-01-01</dcpBeginLife>
+         <dcpRemarks>With respect to discharge point CY11_4-DisPoint2, Serrachis River, it is noted that the water body CY_3-7-6_R3 was removed from the WFD river water body network for the 2nd RBMP because it has an ephemeral/episodic flow regime (river type: ephemeral/episodic flow). Discharge is into a river that is NOT a WFD water body.</dcpRemarks>
+      </Row>
+      <Row>
+         <dcpState>1</dcpState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY11_5_UWWTP</uwwCode>
+         <dcpCode>CY11_5-DisPoint</dcpCode>
+         <dcpName>Potamia land</dcpName>
+         <dcpNUTS>CY000</dcpNUTS>
+         <dcpLatitude>35.04906</dcpLatitude>
+         <dcpLongitude>33.45763</dcpLongitude>
+         <dcpWaterBodyType>LF</dcpWaterBodyType>
+         <dcpIrrigation>IR</dcpIrrigation>
+         <dcpTypeOfReceivingArea>NA</dcpTypeOfReceivingArea>
+         <dcpSurfaceWaters>false</dcpSurfaceWaters>
+         <dcpGroundWater>CY_17 Central and Western Mesaoria</dcpGroundWater>
+         <dcpWFDSubUnit>CY6-5 Gialias</dcpWFDSubUnit>
+         <dcpWFDRBD>CY001</dcpWFDRBD>
+         <dcpBeginLife>2011-01-01</dcpBeginLife>
+         <dcpRemarks>Discharge is irrigated, there is no discharge into a reveiving water</dcpRemarks>
+      </Row>
+      <Row>
+         <dcpState>1</dcpState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY11_5_UWWTP</uwwCode>
+         <dcpCode>CY11_5-DisPoint2</dcpCode>
+         <dcpName>Yeri land</dcpName>
+         <dcpNUTS>CY000</dcpNUTS>
+         <dcpLatitude>35.101027</dcpLatitude>
+         <dcpLongitude>33.435994</dcpLongitude>
+         <dcpWaterBodyType>LF</dcpWaterBodyType>
+         <dcpIrrigation>IR</dcpIrrigation>
+         <dcpTypeOfReceivingArea>NA</dcpTypeOfReceivingArea>
+         <dcpSurfaceWaters>false</dcpSurfaceWaters>
+         <dcpGroundWater>CY_17 Central and Western Mesaoria</dcpGroundWater>
+         <dcpWFDSubUnit>CY6-1 pediaios</dcpWFDSubUnit>
+         <dcpWFDRBD>CY001</dcpWFDRBD>
+         <dcpBeginLife>2011-01-01</dcpBeginLife>
+         <dcpRemarks>Discharge is irrigated, there is no discharge into a reveiving water.</dcpRemarks>
+      </Row>
+      <Row>
+         <dcpState>1</dcpState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY11_5_UWWTP</uwwCode>
+         <dcpCode>CY11_5-DisPoint3</dcpCode>
+         <dcpName>Athiainou land</dcpName>
+         <dcpNUTS>CY000</dcpNUTS>
+         <dcpLatitude>35.058327</dcpLatitude>
+         <dcpLongitude>33.490837</dcpLongitude>
+         <dcpWaterBodyType>LF</dcpWaterBodyType>
+         <dcpIrrigation>IR</dcpIrrigation>
+         <dcpTypeOfReceivingArea>NA</dcpTypeOfReceivingArea>
+         <dcpSurfaceWaters>false</dcpSurfaceWaters>
+         <dcpWFDSubUnit>CY6-5 Gialias</dcpWFDSubUnit>
+         <dcpWFDRBD>CY001</dcpWFDRBD>
+         <dcpBeginLife>2011-01-01</dcpBeginLife>
+         <dcpRemarks>There is no Ground Water Body in the area. Discharge is irrigated, there is no discharge into a reveiving water.</dcpRemarks>
+      </Row>
+      <Row>
+         <dcpState>1</dcpState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY11_5_UWWTP</uwwCode>
+         <dcpCode>CY11_5-DisPoint4</dcpCode>
+         <dcpName>Kaloyeros River</dcpName>
+         <dcpNUTS>CY000</dcpNUTS>
+         <dcpLatitude>35.139108</dcpLatitude>
+         <dcpLongitude>33.40457</dcpLongitude>
+         <dcpWaterBodyType>FW</dcpWaterBodyType>
+         <dcpTypeOfReceivingArea>NA</dcpTypeOfReceivingArea>
+         <dcpSurfaceWaters>true</dcpSurfaceWaters>
+         <dcpGroundWater>CY_17 Central and Western Mesaoria</dcpGroundWater>
+         <dcpWFDSubUnit>CY6-1 pediaios</dcpWFDSubUnit>
+         <dcpWFDRBD>CY001</dcpWFDRBD>
+         <dcpBeginLife>2014-01-01</dcpBeginLife>
+         <dcpRemarks>With respect to discharge point CY11_5-DisPoint4, Kaloyeros River, it is noted that the water body CY_6-1-5_R3-HM was removed from the WFD river water body network for the 2nd RBMP because it has an ephemeral/episodic flow regime (river type: ephemeral/episodic flow). Discharge is into a river that is NOT a WFD water body.</dcpRemarks>
+      </Row>
+      <Row>
+         <dcpState>1</dcpState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY11_5_UWWTP</uwwCode>
+         <dcpCode>CY11_5-DisPoint5</dcpCode>
+         <dcpName>Athalassa Reservoir</dcpName>
+         <dcpNUTS>CY000</dcpNUTS>
+         <dcpLatitude>35.122909</dcpLatitude>
+         <dcpLongitude>33.381824</dcpLongitude>
+         <dcpWaterBodyType>FW</dcpWaterBodyType>
+         <dcpTypeOfReceivingArea>NA</dcpTypeOfReceivingArea>
+         <dcpSurfaceWaters>true</dcpSurfaceWaters>
+         <dcpGroundWater>CY_17 Central and Western Mesaoria</dcpGroundWater>
+         <dcpWFDSubUnit>CY6-1 pediaios</dcpWFDSubUnit>
+         <dcpWFDRBD>CY001</dcpWFDRBD>
+         <dcpBeginLife>2014-01-01</dcpBeginLife>
+         <dcpRemarks>With respect to discharge point CY11_5-DisPoint5, Athalassa Reservoir, it is noted that the water body CY_6-1-51_R3 was removed from the WFD river water body network for the 2nd RBMP because it has an ephemeral/episodic flow regime (river type: ephemeral/episodic flow). Discharge is into a water reservoir that is NOT a WFD water body.</dcpRemarks>
+      </Row>
+      <Row>
+         <dcpState>1</dcpState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY110_UWWTP</uwwCode>
+         <dcpCode>CY110-DisPoint</dcpCode>
+         <dcpName>Kakopetria land</dcpName>
+         <dcpNUTS>CY000</dcpNUTS>
+         <dcpLatitude>35.07186</dcpLatitude>
+         <dcpLongitude>32.91627</dcpLongitude>
+         <dcpWaterBodyType>LF</dcpWaterBodyType>
+         <dcpIrrigation>IR</dcpIrrigation>
+         <dcpTypeOfReceivingArea>NA</dcpTypeOfReceivingArea>
+         <dcpSurfaceWaters>false</dcpSurfaceWaters>
+         <dcpGroundWater>CY_19 Troodos Igneous Massif</dcpGroundWater>
+         <dcpWFDSubUnit>CY3-4 Atsas</dcpWFDSubUnit>
+         <dcpWFDRBD>CY001</dcpWFDRBD>
+         <dcpBeginLife>2005-01-01</dcpBeginLife>
+         <dcpRemarks>Discharge is irrigated, there is no discharge into a reveiving water.</dcpRemarks>
+      </Row>
+      <Row>
+         <dcpState>1</dcpState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY31_UWWTPA</uwwCode>
+         <dcpCode>CY31-DisPointA1</dcpCode>
+         <dcpName>Ayia Napa green areas</dcpName>
+         <dcpNUTS>CY000</dcpNUTS>
+         <dcpLatitude>34.97628</dcpLatitude>
+         <dcpLongitude>34.03742</dcpLongitude>
+         <dcpWaterBodyType>LC</dcpWaterBodyType>
+         <dcpIrrigation>IR</dcpIrrigation>
+         <dcpTypeOfReceivingArea>NA</dcpTypeOfReceivingArea>
+         <dcpSurfaceWaters>false</dcpSurfaceWaters>
+         <dcpGroundWater>CY_1 Kokkinochoria</dcpGroundWater>
+         <dcpWFDSubUnit>CY7-2 Liopetri</dcpWFDSubUnit>
+         <dcpWFDRBD>CY001</dcpWFDRBD>
+         <dcpBeginLife>2011-01-01</dcpBeginLife>
+         <dcpRemarks>Discharge is irrigated, there is no discharge into a reveiving water.</dcpRemarks>
+      </Row>
+      <Row>
+         <dcpState>1</dcpState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY31_UWWTPA</uwwCode>
+         <dcpCode>CY31-DisPointA2</dcpCode>
+         <dcpName>Ayia Napa area</dcpName>
+         <dcpNUTS>CY000</dcpNUTS>
+         <dcpLatitude>34.98438</dcpLatitude>
+         <dcpLongitude>33.9542</dcpLongitude>
+         <dcpWaterBodyType>LC</dcpWaterBodyType>
+         <dcpIrrigation>IR</dcpIrrigation>
+         <dcpTypeOfReceivingArea>NA</dcpTypeOfReceivingArea>
+         <dcpSurfaceWaters>false</dcpSurfaceWaters>
+         <dcpGroundWater>CY_1 Kokkinochoria</dcpGroundWater>
+         <dcpWFDSubUnit>CY7-2 Liopetri</dcpWFDSubUnit>
+         <dcpWFDRBD>CY001</dcpWFDRBD>
+         <dcpBeginLife>2011-01-01</dcpBeginLife>
+         <dcpRemarks>Discharge is irrigated, there is no discharge into a reveiving water.</dcpRemarks>
+      </Row>
+      <Row>
+         <dcpState>1</dcpState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY31_UWWTPP</uwwCode>
+         <dcpCode>CY31-DisPointP1</dcpCode>
+         <dcpName>Paralimni green areas</dcpName>
+         <dcpNUTS>CY000</dcpNUTS>
+         <dcpLatitude>35.05782</dcpLatitude>
+         <dcpLongitude>34.00384</dcpLongitude>
+         <dcpWaterBodyType>LC</dcpWaterBodyType>
+         <dcpIrrigation>IR</dcpIrrigation>
+         <dcpTypeOfReceivingArea>NA</dcpTypeOfReceivingArea>
+         <dcpSurfaceWaters>false</dcpSurfaceWaters>
+         <dcpGroundWater>CY_1 Kokkinochoria</dcpGroundWater>
+         <dcpWFDSubUnit>CY7-2 Liopetri</dcpWFDSubUnit>
+         <dcpWFDRBD>CY001</dcpWFDRBD>
+         <dcpBeginLife>2011-01-01</dcpBeginLife>
+         <dcpRemarks>Discharge is irrigated, there is no discharge into a reveiving water.</dcpRemarks>
+      </Row>
+      <Row>
+         <dcpState>1</dcpState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY31_UWWTPP</uwwCode>
+         <dcpCode>CY31-DisPointP2</dcpCode>
+         <dcpName>Paralimni area</dcpName>
+         <dcpNUTS>CY000</dcpNUTS>
+         <dcpLatitude>35.02845</dcpLatitude>
+         <dcpLongitude>33.97317</dcpLongitude>
+         <dcpWaterBodyType>LF</dcpWaterBodyType>
+         <dcpIrrigation>IR</dcpIrrigation>
+         <dcpTypeOfReceivingArea>NA</dcpTypeOfReceivingArea>
+         <dcpSurfaceWaters>false</dcpSurfaceWaters>
+         <dcpGroundWater>CY_1 Kokkinochoria</dcpGroundWater>
+         <dcpWFDSubUnit>CY7-2 Liopetri</dcpWFDSubUnit>
+         <dcpWFDRBD>CY001</dcpWFDRBD>
+         <dcpBeginLife>2011-01-01</dcpBeginLife>
+         <dcpRemarks>Discharge is irrigated, there is no discharge into a reveiving water.</dcpRemarks>
+      </Row>
+      <Row>
+         <dcpState>1</dcpState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY406_UWWTP</uwwCode>
+         <dcpCode>CY406-DisPoint</dcpCode>
+         <dcpName>Livadhia land</dcpName>
+         <dcpNUTS>CY000</dcpNUTS>
+         <dcpLatitude>34.96012</dcpLatitude>
+         <dcpLongitude>33.61366</dcpLongitude>
+         <dcpWaterBodyType>LF</dcpWaterBodyType>
+         <dcpIrrigation>IR</dcpIrrigation>
+         <dcpTypeOfReceivingArea>NA</dcpTypeOfReceivingArea>
+         <dcpSurfaceWaters>false</dcpSurfaceWaters>
+         <dcpGroundWater>CY2 Aradippou</dcpGroundWater>
+         <dcpWFDSubUnit>CY8-2 Aradippou</dcpWFDSubUnit>
+         <dcpWFDRBD>CY001</dcpWFDRBD>
+         <dcpBeginLife>2005-01-01</dcpBeginLife>
+         <dcpRemarks>Discharge is irrigated, there is no discharge into a reveiving water.</dcpRemarks>
+      </Row>
+      <Row>
+         <dcpState>1</dcpState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY41_UWWTP</uwwCode>
+         <dcpCode>CY41-DisPoint</dcpCode>
+         <dcpName>Dromolaxia land</dcpName>
+         <dcpNUTS>CY000</dcpNUTS>
+         <dcpLatitude>34.89451</dcpLatitude>
+         <dcpLongitude>33.57966</dcpLongitude>
+         <dcpWaterBodyType>LF</dcpWaterBodyType>
+         <dcpIrrigation>IR</dcpIrrigation>
+         <dcpTypeOfReceivingArea>NA</dcpTypeOfReceivingArea>
+         <dcpSurfaceWaters>false</dcpSurfaceWaters>
+         <dcpGroundWater>CY_3B Kiti-Pervolia</dcpGroundWater>
+         <dcpWFDSubUnit>CY8-3 Larnaka salt lakes</dcpWFDSubUnit>
+         <dcpWFDRBD>CY001</dcpWFDRBD>
+         <dcpBeginLife>2005-01-01</dcpBeginLife>
+         <dcpRemarks>Discharge is irrigated, there is no discharge into a reveiving water.</dcpRemarks>
+      </Row>
+      <Row>
+         <dcpState>1</dcpState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY41_UWWTP</uwwCode>
+         <dcpCode>CY41-DisPoint2</dcpCode>
+         <dcpName>Larnaca greater area</dcpName>
+         <dcpNUTS>CY000</dcpNUTS>
+         <dcpLatitude>34.98003</dcpLatitude>
+         <dcpLongitude>33.69971</dcpLongitude>
+         <dcpWaterBodyType>LC</dcpWaterBodyType>
+         <dcpIrrigation>IR</dcpIrrigation>
+         <dcpTypeOfReceivingArea>NA</dcpTypeOfReceivingArea>
+         <dcpSurfaceWaters>false</dcpSurfaceWaters>
+         <dcpWFDSubUnit>CY7-2 Liopetri</dcpWFDSubUnit>
+         <dcpWFDRBD>CY001</dcpWFDRBD>
+         <dcpBeginLife>2005-01-01</dcpBeginLife>
+         <dcpRemarks>There is no Ground Water Body in the area. Discharge is irrigated, there is no discharge into a reveiving water.</dcpRemarks>
+      </Row>
+      <Row>
+         <dcpState>1</dcpState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY41_UWWTP</uwwCode>
+         <dcpCode>CY41-DisPoint3</dcpCode>
+         <dcpName>Coastal waters</dcpName>
+         <dcpNUTS>CY000</dcpNUTS>
+         <dcpLatitude>34.93842</dcpLatitude>
+         <dcpLongitude>33.64378</dcpLongitude>
+         <dcpWaterBodyType>CW</dcpWaterBodyType>
+         <dcpTypeOfReceivingArea>NA</dcpTypeOfReceivingArea>
+         <dcpSurfaceWaters>true</dcpSurfaceWaters>
+         <dcpWaterbodyID>CY17-C2-HM Larnaka city</dcpWaterbodyID>
+         <dcpReceivingWater>CY17-C2-HM Larnaka city</dcpReceivingWater>
+         <dcpWFDSubUnit>CY8-2 Aradippou</dcpWFDSubUnit>
+         <dcpWFDRBD>CY001</dcpWFDRBD>
+         <dcpBeginLife>2005-01-01</dcpBeginLife>
+         <dcpRemarks>With respect to discharge point CY41-DisPoint3, it is noted that according to the 2nd RBMP the water body CY_20-C2 has been changed to CY17-C2-HM (Larnaka city).</dcpRemarks>
+      </Row>
+      <Row>
+         <dcpState>1</dcpState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY501_UWWTP</uwwCode>
+         <dcpCode>CY501-DisPoint</dcpCode>
+         <dcpName>Kyperounda land</dcpName>
+         <dcpNUTS>CY000</dcpNUTS>
+         <dcpLatitude>34.93376</dcpLatitude>
+         <dcpLongitude>32.98102</dcpLongitude>
+         <dcpWaterBodyType>LF</dcpWaterBodyType>
+         <dcpIrrigation>IR</dcpIrrigation>
+         <dcpTypeOfReceivingArea>NA</dcpTypeOfReceivingArea>
+         <dcpSurfaceWaters>false</dcpSurfaceWaters>
+         <dcpGroundWater>CY_19 Troodos Igneous Massif</dcpGroundWater>
+         <dcpWFDSubUnit>CY9-6 Kouris</dcpWFDSubUnit>
+         <dcpWFDRBD>CY001</dcpWFDRBD>
+         <dcpBeginLife>2005-01-01</dcpBeginLife>
+         <dcpRemarks>Discharge is irrigated, there is no discharge into a reveiving water.</dcpRemarks>
+      </Row>
+      <Row>
+         <dcpState>1</dcpState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY502_UWWTP</uwwCode>
+         <dcpCode>CY502-DisPoint</dcpCode>
+         <dcpName>Platres land</dcpName>
+         <dcpNUTS>CY000</dcpNUTS>
+         <dcpLatitude>34.87734</dcpLatitude>
+         <dcpLongitude>32.86128</dcpLongitude>
+         <dcpWaterBodyType>LF</dcpWaterBodyType>
+         <dcpIrrigation>IR</dcpIrrigation>
+         <dcpTypeOfReceivingArea>NA</dcpTypeOfReceivingArea>
+         <dcpSurfaceWaters>false</dcpSurfaceWaters>
+         <dcpGroundWater>CY_19 Troodos Igneous Massif</dcpGroundWater>
+         <dcpWFDSubUnit>CY9-6 Kouris</dcpWFDSubUnit>
+         <dcpWFDRBD>CY001</dcpWFDRBD>
+         <dcpBeginLife>2005-01-01</dcpBeginLife>
+         <dcpRemarks>Discharge is irrigated, there is no discharge into a reveiving water.</dcpRemarks>
+      </Row>
+      <Row>
+         <dcpState>1</dcpState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY504_UWWTP</uwwCode>
+         <dcpCode>CY504-DisPoint</dcpCode>
+         <dcpName>Pelendri land</dcpName>
+         <dcpNUTS>CY000</dcpNUTS>
+         <dcpLatitude>34.88984</dcpLatitude>
+         <dcpLongitude>32.96921</dcpLongitude>
+         <dcpWaterBodyType>LF</dcpWaterBodyType>
+         <dcpIrrigation>IR</dcpIrrigation>
+         <dcpTypeOfReceivingArea>NA</dcpTypeOfReceivingArea>
+         <dcpSurfaceWaters>false</dcpSurfaceWaters>
+         <dcpGroundWater>CY_19 Troodos Igneous Massif</dcpGroundWater>
+         <dcpWFDSubUnit>CY9-6 Kouris</dcpWFDSubUnit>
+         <dcpWFDRBD>CY001</dcpWFDRBD>
+         <dcpBeginLife>2009-01-01</dcpBeginLife>
+         <dcpRemarks>Discharge is irrigated, there is no discharge into a reveiving water.</dcpRemarks>
+      </Row>
+      <Row>
+         <dcpState>1</dcpState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY104_UWWTP</uwwCode>
+         <dcpCode>CY104-DisPoint</dcpCode>
+         <dcpName>Lythrodontas land</dcpName>
+         <dcpNUTS>CY000</dcpNUTS>
+         <dcpLatitude>34.95070</dcpLatitude>
+         <dcpLongitude>33.30510</dcpLongitude>
+         <dcpWaterBodyType>LF</dcpWaterBodyType>
+         <dcpIrrigation>IR</dcpIrrigation>
+         <dcpTypeOfReceivingArea>NA</dcpTypeOfReceivingArea>
+         <dcpSurfaceWaters>false</dcpSurfaceWaters>
+         <dcpGroundWater>CY_19 Troodos Igneous Massif</dcpGroundWater>
+         <dcpWFDSubUnit>CY6-5 Gialias</dcpWFDSubUnit>
+         <dcpWFDRBD>CY001</dcpWFDRBD>
+         <dcpBeginLife>2009-01-01</dcpBeginLife>
+         <dcpRemarks>Discharge is irrigated, there is no discharge into a reveiving water.</dcpRemarks>
+      </Row>
+      <Row>
+         <dcpState>1</dcpState>
+         <repCode>CY 2017 Art.15</repCode>
+         <uwwCode>CY102_UWWTP</uwwCode>
+         <dcpCode>CY102-DisPoint</dcpCode>
+         <dcpName>Astromeritis land</dcpName>
+         <dcpNUTS>CY000</dcpNUTS>
+         <dcpLatitude>35.135322</dcpLatitude>
+         <dcpLongitude>33.015642</dcpLongitude>
+         <dcpWaterBodyType>LF</dcpWaterBodyType>
+         <dcpIrrigation>IR</dcpIrrigation>
+         <dcpTypeOfReceivingArea>NA</dcpTypeOfReceivingArea>
+         <dcpSurfaceWaters>false</dcpSurfaceWaters>
+         <dcpGroundWater>CY_17 Central and Western Mesaoria</dcpGroundWater>
+         <dcpWFDSubUnit>CY3-6 Xeros</dcpWFDSubUnit>
+         <dcpWFDRBD>CY001</dcpWFDRBD>
+         <dcpBeginLife>2016-01-01</dcpBeginLife>
+         <dcpRemarks>Discharge is irrigated, there is no discharge into a reveiving water.</dcpRemarks>
+      </Row>
+   </DischargePoints>
+   <MSLevel xmlns="http://dd.eionet.europa.eu/namespaces/826">
+      <Row>
+         <repCode>CY 2017 Art.15</repCode>
+         <mslSludgeProduction>7408</mslSludgeProduction>
+         <mslDischargePipelines>0</mslDischargePipelines>
+         <mslDischargeShips>0</mslDischargeShips>
+         <mslDischargeOthers>0</mslDischargeOthers>
+         <mslReuseSoilAgriculture>1613</mslReuseSoilAgriculture>
+         <mslReuseOthers>5187</mslReuseOthers>
+         <mslDisposalLandfill>0</mslDisposalLandfill>
+         <mslDisposalIncineration>608</mslDisposalIncineration>
+         <mslDisposalOthers>0</mslDisposalOthers>
+         <mslWWReusePerc>96.6</mslWWReusePerc>
+         <mslWWReuseAgri>1</mslWWReuseAgri>
+         <mslWWReuseInd>0</mslWWReuseInd>
+         <mslWWReuseOther>1</mslWWReuseOther>
+         <mslWWReuseExplain>51,4% irrigation, 27,6% into the dry bed of Pediaios  and Serrachis River for infiltration, 16,1% in Ezousa &amp; Akrotiri aquifers, 1,5% in Polemidia Dam for irrigation</mslWWReuseExplain>
+         <mslRemarks>The 5187 t DS/y mentioned in others refers to 4505 t DS/y of sludge tranported for anaerobic treatment for biogas production and to 682 t DS/y of sludge storaged at the plants to be  reused.</mslRemarks>
+      </Row>
+   </MSLevel>
+   <Industries xmlns="http://dd.eionet.europa.eu/namespaces/825"/>
+</UWWTDArt15>

@@ -1,0 +1,77 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:datasets="http://dd.eionet.europa.eu/namespaces/1" xmlns:dd802="http://dd.eionet.europa.eu/namespaces/802" xmlns:dd816="http://dd.eionet.europa.eu/namespaces/816" xmlns:dd817="http://dd.eionet.europa.eu/namespaces/817" xmlns:dd818="http://dd.eionet.europa.eu/namespaces/818" xmlns:dd820="http://dd.eionet.europa.eu/namespaces/820" xmlns:dd821="http://dd.eionet.europa.eu/namespaces/821" xmlns:dd823="http://dd.eionet.europa.eu/namespaces/823" xmlns:dd825="http://dd.eionet.europa.eu/namespaces/825" xmlns:dd826="http://dd.eionet.europa.eu/namespaces/826" xmlns:dd843="http://dd.eionet.europa.eu/namespaces/843" xmlns:dd844="http://dd.eionet.europa.eu/namespaces/844" xmlns:dd845="http://dd.eionet.europa.eu/namespaces/845" xmlns:dd846="http://dd.eionet.europa.eu/namespaces/846" xmlns:dd862="http://dd.eionet.europa.eu/namespaces/862" xmlns:dd864="http://dd.eionet.europa.eu/namespaces/864" xmlns:dd865="http://dd.eionet.europa.eu/namespaces/865" xmlns:ddattrs="http://dd.eionet.europa.eu/namespaces/3" xmlns:isoattrs="http://dd.eionet.europa.eu/namespaces/2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://dd.eionet.europa.eu/namespaces/802" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema http://www.w3.org/2001/XMLSchema.xsd">
+    <xs:import namespace="http://dd.eionet.europa.eu/namespaces/816" schemaLocation="schema-dst-3381.xsd"/>
+    <xs:import namespace="http://dd.eionet.europa.eu/namespaces/817" schemaLocation="schema-tbl-11184.xsd"/>
+    <xs:import namespace="http://dd.eionet.europa.eu/namespaces/818" schemaLocation="schema-tbl-11187.xsd"/>
+    <xs:import namespace="http://dd.eionet.europa.eu/namespaces/843" schemaLocation="schema-tbl-11182.xsd"/>
+    <xs:import namespace="http://dd.eionet.europa.eu/namespaces/844" schemaLocation="schema-tbl-11185.xsd"/>
+    <xs:import namespace="http://dd.eionet.europa.eu/namespaces/845" schemaLocation="schema-tbl-11183.xsd"/>
+    <xs:import namespace="http://dd.eionet.europa.eu/namespaces/846" schemaLocation="schema-tbl-11178.xsd"/>
+    <xs:import namespace="http://dd.eionet.europa.eu/namespaces/865" schemaLocation="schema-tbl-11186.xsd"/>
+    <xs:import namespace="http://dd.eionet.europa.eu/namespaces/864" schemaLocation="schema-tbl-11188.xsd"/>
+    <xs:import namespace="http://dd.eionet.europa.eu/namespaces/820" schemaLocation="schema-tbl-11176.xsd"/>
+    <xs:import namespace="http://dd.eionet.europa.eu/namespaces/821" schemaLocation="schema-tbl-11180.xsd"/>
+    <xs:import namespace="http://dd.eionet.europa.eu/namespaces/862" schemaLocation="schema-tbl-11175.xsd"/>
+    <xs:import namespace="http://dd.eionet.europa.eu/namespaces/823" schemaLocation="schema-tbl-11177.xsd"/>
+    <xs:import namespace="http://dd.eionet.europa.eu/namespaces/826" schemaLocation="schema-tbl-11174.xsd"/>
+    <xs:import namespace="http://dd.eionet.europa.eu/namespaces/825" schemaLocation="schema-tbl-11179.xsd"/>
+    <xs:element name="UWWTDArt15">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>Urban Waste Water Treatment Directive reporting under Article 15 - review</isoattrs:Name>
+                <isoattrs:Definition>Data reported by countries under the  UWWT Directive - Article 15 reporting obligation.&#13;
+Urban Waste Water Treatment Directive concerns the collection, treatment and discharge of urban waste water and the treatment and discharge of waste water from certain industrial sectors. The objective of the Directive is to protect the environment from the adverse effects of the above mentioned waste water discharges. </isoattrs:Definition>
+                <ddattrs:ShortDescription>Definition of data reported by countries under the Urban Waste Water Treatment Directive, Article 15 reporting obligation (UWWTD Implementation).</ddattrs:ShortDescription>
+                <ddattrs:Methodology>The data requested through the Reportnet process should be derived from existing national and/or regional information systems within each Member State.&#13;
+&#13;
+Member States are asked  to provide the information inventory on the core elements of the Directive, in particular:&#13;
+&#13;
+   1.   Information  and geo-referenced information on designated sensitive areas and their catchments (and also less sensitive areas in the case they have been designated)&#13;
+   2.   Information on agglomerations, including&#13;
+      (a)   Master data (agglomerations/treatment plants/discharging points/receiving areas/receiving water bodies) and &#13;
+      (b)   Complete information per each agglomeration: part (a) plus information on waste water collection, conduction, treatment performance, etc.&#13;
+   3.   Aggregated information at Member State level on sewage sludge and waste water reuse&#13;
+&#13;
+The reference year to report is 2016; status as on 31/12/2016; monitoring results for the year 2016: from 01/01/2016 to 31/12/2016.&#13;
+The information for the entire Member State has to be consistent and refer to a unique, clearly indicated, reporting year. &#13;
+&#13;
+Member States being part of the EU before 2004 (Austria, Belgium, Denmark, Finland, France, Germany, Greece, Ireland, Italy, Luxembourg, Netherlands, Portugal, Spain, Sweden and United Kingdom) are requested to report information for all three parts mentioned above (1, 2 and 3)  including :&#13;
+   •   all information about agglomerations related to 1998, 2000, 2005 deadlines and deadlines pursuant to Articles 5(6) and (7)&#13;
+&#13;
+Member States having acceded to  the EU since 2004 (Bulgaria, Croatia , Cyprus, Czech Republic, Estonia, Hungary, Latvia, Lithuania, Malta, Poland, Romania, Slovakia and Slovenia)  are requested to report information for all three parts mentioned above (1, 2 and 3) including:&#13;
+   •   all information about agglomerations for which transitional periods have already expired and&#13;
+   •   master data for agglomerations for which transitional periods have not expired yet.&#13;
+Master data includes the parameters presented in the document "DESCRIPTION OF THE DATA BLOCKS", Data Block 2, in particular, Master data of agglomeration, Master data of treatment plant, Master data of discharge point and receiving area.&#13;
+&#13;
+Reporting under the UWWTD will be carried out by uploading data into WISE via ReportNet (the European Environment Agency's electronic infrastructure for data collection). Member States are asked to upload their UWWTD Art. 15 data in XML files following the reporting templates into a Central Data Repository (CDR). Additional documents and reports can be uploaded next to data files as well. For this reporting exercise, the European Environment Agency (EEA) provided the access rights to the reporters nominated by the Member States to upload the report in WISE.&#13;
+&#13;
+Instructions on “How to use ReportNet for reporting under the Urban Waste Water treatment Directive” for the submission of the reports from the Member States in pursuance of UWWTD are available at http://cdr.eionet.europa.eu/help/UWWTD  (under “Dataflow specific instructions, sub-section Urban Waste Water Treatment Directive – Implementation-2017 Reporting“). All technical supporting documents are also available via this link. &#13;
+&#13;
+A technical help desk on the reporting exercise will be provided by the European Topic Centre on Inland, Coastal and Marine Waters (ETC/ICM), and will be available for six months after the launch of the reporting exercise. The helpdesk can be contacted via e-mail on uwwtd.helpdesk@eionet.europa.eu.&#13;
+</ddattrs:Methodology>
+                <ddattrs:PlannedUpdFreq>2 years</ddattrs:PlannedUpdFreq>
+                <ddattrs:Version>July 2017</ddattrs:Version>
+                <ddattrs:Owner>Anita Künitzer</ddattrs:Owner>
+                <ddattrs:Responsible>Miroslav Fanta</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="1" minOccurs="1" ref="dd816:Reporter"/>
+                <xs:element maxOccurs="1" minOccurs="1" ref="dd817:ReportPeriod"/>
+                <xs:element maxOccurs="1" minOccurs="1" ref="dd818:Contacts"/>
+                <xs:element maxOccurs="1" minOccurs="1" ref="dd843:ReceivingAreasSAMain"/>
+                <xs:element maxOccurs="1" minOccurs="1" ref="dd844:ReceivingAreasSAParameter"/>
+                <xs:element maxOccurs="1" minOccurs="1" ref="dd845:ReceivingAreasSA54"/>
+                <xs:element maxOccurs="1" minOccurs="1" ref="dd846:ReceivingAreasLSA"/>
+                <xs:element maxOccurs="1" minOccurs="1" ref="dd865:ReceivingAreasSASA"/>
+                <xs:element maxOccurs="1" minOccurs="1" ref="dd864:ReceivingAreasSALSAPredecessor"/>
+                <xs:element maxOccurs="1" minOccurs="1" ref="dd820:Agglomerations"/>
+                <xs:element maxOccurs="1" minOccurs="1" ref="dd821:UWWTPs"/>
+                <xs:element maxOccurs="1" minOccurs="1" ref="dd862:UwwtpAgglos"/>
+                <xs:element maxOccurs="1" minOccurs="1" ref="dd823:DischargePoints"/>
+                <xs:element maxOccurs="1" minOccurs="1" ref="dd826:MSLevel"/>
+                <xs:element maxOccurs="1" minOccurs="1" ref="dd825:Industries"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

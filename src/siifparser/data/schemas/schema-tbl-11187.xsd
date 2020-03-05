@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://dd.eionet.europa.eu/namespaces/818" xmlns:ddattrs="http://dd.eionet.europa.eu/namespaces/3" xmlns:isoattrs="http://dd.eionet.europa.eu/namespaces/2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://dd.eionet.europa.eu/namespaces/818" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema  http://www.w3.org/2001/XMLSchema.xsd">
+    <xs:element name="Contacts">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Definition>Table includes name, institution, address and other contact information of the contact person responsible for data provision.</isoattrs:Definition>
+                <isoattrs:Name>Contacts</isoattrs:Name>
+                <ddattrs:ShortDescription>Contact information.</ddattrs:ShortDescription>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" minOccurs="0" name="Row">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="repCode"/>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="conName"/>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="conInstitution"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="conStreet"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="conZIP"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="conCity"/>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="conPhone"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="conFax"/>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="conEmail"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="conRemarks"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="repCode">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+                <ddattrs:Owner>4037322</ddattrs:Owner>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Methodology>This value is required.&#13;
+First 2 characters must be the 2-alpha character ISO country code (use 'EL' for Greece and 'UK' for the United Kingdom).</ddattrs:Methodology>
+                <isoattrs:Definition>Report ID, as specified by country</isoattrs:Definition>
+                <isoattrs:Name>repCode</isoattrs:Name>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="1"/>
+                <xs:maxLength value="16"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="conName">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>conName</isoattrs:Name>
+                <isoattrs:Definition>Name of the Contact Person</isoattrs:Definition>
+                <ddattrs:Methodology>This value is required.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="0"/>
+                <xs:maxLength value="64"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="conInstitution">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>conInstitution</isoattrs:Name>
+                <isoattrs:Definition>Name of the institution to which the data provider is affiliated.</isoattrs:Definition>
+                <ddattrs:Methodology>This value is required.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="0"/>
+                <xs:maxLength value="128"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="conStreet">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>conStreet</isoattrs:Name>
+                <isoattrs:Definition>Street</isoattrs:Definition>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="0"/>
+                <xs:maxLength value="128"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="conZIP">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>conZIP</isoattrs:Name>
+                <isoattrs:Definition>Post Code</isoattrs:Definition>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="0"/>
+                <xs:maxLength value="8"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="conCity">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>conCity</isoattrs:Name>
+                <isoattrs:Definition>City</isoattrs:Definition>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="0"/>
+                <xs:maxLength value="64"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="conPhone">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>conPhone</isoattrs:Name>
+                <isoattrs:Definition>Phone</isoattrs:Definition>
+                <ddattrs:Methodology>This value is required.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="0"/>
+                <xs:maxLength value="64"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="conFax">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>conFax</isoattrs:Name>
+                <isoattrs:Definition>Fax</isoattrs:Definition>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="0"/>
+                <xs:maxLength value="50"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="conEmail">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>conEmail</isoattrs:Name>
+                <isoattrs:Definition>Contact person e-mail address.</isoattrs:Definition>
+                <ddattrs:Methodology>This value is required.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="0"/>
+                <xs:maxLength value="128"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="conRemarks">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>conRemarks</isoattrs:Name>
+                <isoattrs:Definition>Remarks</isoattrs:Definition>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="0"/>
+                <xs:maxLength value="255"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+</xs:schema>

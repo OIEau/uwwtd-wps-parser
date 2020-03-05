@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://dd.eionet.europa.eu/namespaces/862" xmlns:ddattrs="http://dd.eionet.europa.eu/namespaces/3" xmlns:isoattrs="http://dd.eionet.europa.eu/namespaces/2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://dd.eionet.europa.eu/namespaces/862" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema  http://www.w3.org/2001/XMLSchema.xsd">
+    <xs:element name="UwwtpAgglos">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Definition>The table links treatment plant/collecting system to individual agglomerations and enables reporting situation where the relation agglomeration:UWWTP is 1:n, m:1 or n:m</isoattrs:Definition>
+                <isoattrs:Name>UwwtpAgglos</isoattrs:Name>
+                <ddattrs:ShortDescription>Connection table combining data on agglomerations and urban waste water treatment plants. </ddattrs:ShortDescription>
+                <ddattrs:Methodology>Fields aucAggCode and aucAggName are related to the fields aggCode and aggName in the table Agglomerations. Fields aucUwwCode and aucUwwName are related to the fields uwwCode and uwwName in the table UWWTPs. All active agglomerations reported with non-zero share of total generated load collected in collecting systems must be listed in the table UWWTPAgglo.</ddattrs:Methodology>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" minOccurs="0" name="Row">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="repCode"/>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="aucUwwCode"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="aucUwwName"/>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="aucAggCode"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="aucAggName"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="aucPercEnteringUWWTP"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="aucMethodPercEnteringUWWTP"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="aucPercC2T"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="repCode">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+                <ddattrs:Owner>4037322</ddattrs:Owner>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Methodology>This value is required.&#13;
+First 2 characters must be the 2-alpha character ISO country code (use 'EL' for Greece and 'UK' for the United Kingdom).</ddattrs:Methodology>
+                <isoattrs:Definition>Report ID, as specified by country</isoattrs:Definition>
+                <isoattrs:Name>repCode</isoattrs:Name>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="1"/>
+                <xs:maxLength value="16"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="aucUwwCode">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>aucUwwCode</isoattrs:Name>
+                <isoattrs:Definition>ID of the UWWTP / collecting system without treatment</isoattrs:Definition>
+                <ddattrs:Methodology>This value is required.&#13;
+&#13;
+ID of the treatment plant filled in this field has to be available in the table UWWTPs, field uwwCode.&#13;
+&#13;
+First 2 characters must be the 2-alpha character ISO country code (use 'EL' for Greece and 'UK' for the United Kingdom).&#13;
+&#13;
+Do not use characters with accents and other diacritical marks (national characters). Do not use spaces or other spatial characters. The hyphen '-' and the underscore '_' characters are allowed.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="1"/>
+                <xs:maxLength value="32"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="aucUwwName">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>aucUwwName</isoattrs:Name>
+                <isoattrs:Definition>Name of the UWWTP</isoattrs:Definition>
+                <ddattrs:Methodology>Name of the treatment plant filled in this field has to be identical with the uwwName reported under the same uwwCode in the table UWWTPs (and aucUwwCode in the table UWWTPAgglo).</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="1"/>
+                <xs:maxLength value="255"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="aucAggCode">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>aucAggCode</isoattrs:Name>
+                <isoattrs:Definition>ID of the agglomeration that is served by the treatment plant / collecting system.</isoattrs:Definition>
+                <ddattrs:Methodology>This value is required.&#13;
+&#13;
+ID of the agglomeration filled in this field has to be available in the table Agglomerations, field aggCode.&#13;
+&#13;
+First 2 characters must be the 2-alpha character ISO country code (use 'EL' for Greece and 'UK' for the United Kingdom).&#13;
+&#13;
+Do not use characters with accents and other diacritical marks (national characters). Do not use spaces or other spatial characters. The hyphen '-' and the underscore '_' characters are allowed.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="1"/>
+                <xs:maxLength value="32"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="aucAggName">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>aucAggName</isoattrs:Name>
+                <isoattrs:Definition>Name of the agglomeration served by the treatment plant / collecting system.</isoattrs:Definition>
+                <ddattrs:Methodology>Name of the agglomeration filled in this field has to be identical with the aggName reported under the same aggCode in the table Agglomerations (and aucAggCode in the table UWWTPAgglo).</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="1"/>
+                <xs:maxLength value="255"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="aucPercEnteringUWWTP">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>aucPercEnteringUWWTP</isoattrs:Name>
+                <isoattrs:Definition>Share (%) of generated load of agglomeration collected in collecting system and entering particular plant.</isoattrs:Definition>
+                <ddattrs:Methodology>This value is required for all active agglomerations with a non-zero share of total generated load collected in collecting systems (aggC1 &gt; 0). The sum of percEntering UWWTP / collecting system serving agglomeration X must be equal to its share of generated load collected in collecting system (aggC1).</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+                <xs:totalDigits value="18"/>
+                <xs:minInclusive value="0"/>
+                <xs:maxInclusive value="100"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="aucMethodPercEnteringUWWTP">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>aucMethodPercEnteringUWWTP</isoattrs:Name>
+                <isoattrs:Definition>Method used to obtain the % value</isoattrs:Definition>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="C"/>
+                <xs:enumeration value="E"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="aucPercC2T">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>aucPercC2T</isoattrs:Name>
+                <isoattrs:Definition>Rate of generated load of agglomeration transported to this UWWTP by trucks (%).</isoattrs:Definition>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+                <xs:totalDigits value="18"/>
+                <xs:minInclusive value="0"/>
+                <xs:maxInclusive value="100"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+</xs:schema>

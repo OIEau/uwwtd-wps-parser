@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://dd.eionet.europa.eu/namespaces/845" xmlns:ddattrs="http://dd.eionet.europa.eu/namespaces/3" xmlns:isoattrs="http://dd.eionet.europa.eu/namespaces/2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://dd.eionet.europa.eu/namespaces/845" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema  http://www.w3.org/2001/XMLSchema.xsd">
+    <xs:element name="ReceivingAreasSA54">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <ddattrs:Methodology>The table shoukld be filled only if Article 5.4 is applied. For all receiving areas designated under the Article 5.4 of the Directive, all parameters in this table are mandatory.</ddattrs:Methodology>
+                <isoattrs:Name>ReceivingAreasSA54</isoattrs:Name>
+                <ddattrs:ShortDescription>Specific attributes of the Article 5.4 areas</ddattrs:ShortDescription>
+                <isoattrs:Definition>Table lists the parameters describing Article 5.4 receiving areas, number of waste water treatment plants, their aggregated capacity, incoming and discharged load aggregated for each individual sensitive area or catchment.</isoattrs:Definition>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" minOccurs="0" name="Row">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="repCode"/>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="rcaCode"/>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="rcaMethod54"/>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="rcaPlants54"/>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="rcaPlantsCapacity54"/>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="rcaNIncoming54"/>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="rcaNDischarged54"/>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="rcaPIncoming54"/>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="rcaPDischarged54"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="repCode">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+                <ddattrs:Owner>4037322</ddattrs:Owner>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Methodology>This value is required.&#13;
+First 2 characters must be the 2-alpha character ISO country code (use 'EL' for Greece and 'UK' for the United Kingdom).</ddattrs:Methodology>
+                <isoattrs:Definition>Report ID, as specified by country</isoattrs:Definition>
+                <isoattrs:Name>repCode</isoattrs:Name>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="1"/>
+                <xs:maxLength value="16"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="rcaCode">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>rcaCode</isoattrs:Name>
+                <isoattrs:Definition>ID of the sensitive  area</isoattrs:Definition>
+                <ddattrs:Methodology>This value is required.&#13;
+&#13;
+ID of the sensitive area filled in this field has to be listed in the table ReceivingAreasSAMain, field rcaCode.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="1"/>
+                <xs:maxLength value="32"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="rcaMethod54">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>rcaMethod54</isoattrs:Name>
+                <isoattrs:Definition>Information on  the methodology of the load calculation.</isoattrs:Definition>
+                <ddattrs:Methodology>This value is required for each rcaCode filled in this table.&#13;
+&#13;
+Specify whether the load was determined based on measurement, calculation or an estimate.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="C"/>
+                <xs:enumeration value="E"/>
+                <xs:enumeration value="M"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="rcaPlants54">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>rcaPlants54</isoattrs:Name>
+                <isoattrs:Definition>Number of UWWTPs located and discharging within the Article 5.4 area</isoattrs:Definition>
+                <ddattrs:Methodology>This value is required for each rcaCode filled in this table.&#13;
+&#13;
+UWWTPs serving agglomeration below 2000 p.e. should also be included into the overall number of plants per Art. 5.4 receiving area.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:integer">
+                <xs:totalDigits value="9"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="rcaPlantsCapacity54">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>rcaPlantsCapacity54</isoattrs:Name>
+                <isoattrs:Definition>Total organic design capacity of the UWWTPs (p.e.) located and discharging within the article 5.4 area.</isoattrs:Definition>
+                <ddattrs:Methodology>This value is required for each rcaCode.&#13;
+&#13;
+The aggregated capacity value includes also the organic design capacity of UWWTPs serving agglomeration below 2000 p.e.&#13;
+&#13;
+</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:integer">
+                <xs:totalDigits value="9"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="rcaNIncoming54">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>rcaNIncoming54</isoattrs:Name>
+                <isoattrs:Definition>Aggregated incoming loads (tons/year) N-tot of the UWWTPs (p.e.) located and discharging within the article 5.4 area.</isoattrs:Definition>
+                <ddattrs:Methodology>This value is required for each rcaCode filled in this table.&#13;
+&#13;
+The aggregated load value should also include the loads agglomeration below 2000 p.e.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+                <xs:totalDigits value="18"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="rcaNDischarged54">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>rcaNDischarged54</isoattrs:Name>
+                <isoattrs:Definition>Aggregated discharged loads (tons/year) N-tot of the UWWTPs (p.e.) located and discharging within the article 5.4 area.</isoattrs:Definition>
+                <ddattrs:Methodology>This value is required for each rcaCode filled in this table.&#13;
+&#13;
+The aggregated load value should also include the loads agglomeration below 2000 p.e.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+                <xs:totalDigits value="18"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="rcaPIncoming54">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>rcaPIncoming54</isoattrs:Name>
+                <isoattrs:Definition>Aggregated incoming loads (tons/year) P-tot of the UWWTPs (p.e.) located and discharging within the article 5.4 area.</isoattrs:Definition>
+                <ddattrs:Methodology>This value is required for each rcaCode filled in this table.&#13;
+&#13;
+The aggregated load value should also include the loads agglomeration below 2000 p.e.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+                <xs:totalDigits value="18"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="rcaPDischarged54">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>rcaPDischarged54</isoattrs:Name>
+                <isoattrs:Definition>Aggregated discharged loads (tons/year) P-tot of the UWWTPs (p.e.) located and discharging within the article 5.4 area.</isoattrs:Definition>
+                <ddattrs:Methodology>This value is required for each rcaCode filled in this table.&#13;
+&#13;
+The aggregated load value should include also the loads agglomeration below 2000 p.e.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+                <xs:totalDigits value="18"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+</xs:schema>

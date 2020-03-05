@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://dd.eionet.europa.eu/namespaces/816" xmlns:ddattrs="http://dd.eionet.europa.eu/namespaces/3" xmlns:isoattrs="http://dd.eionet.europa.eu/namespaces/2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://dd.eionet.europa.eu/namespaces/816" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema  http://www.w3.org/2001/XMLSchema.xsd">
+    <xs:element name="Reporter">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Definition>Table provides information on reporting state and on language of the report.&#13;
+</isoattrs:Definition>
+                <ddattrs:ShortDescription>Information on reporting state.</ddattrs:ShortDescription>
+                <isoattrs:Name>Reporter</isoattrs:Name>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" minOccurs="0" name="Row">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="rptMStateKey"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="rptMStateValue"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="rptCulture"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="rptMStateKey">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>rptMStateKey</isoattrs:Name>
+                <isoattrs:Definition>Abbreviation of EEA Member state or Collaborating Country, as defined in the codelist.</isoattrs:Definition>
+                <ddattrs:Methodology>This value is required.&#13;
+&#13;
+ISO 3166-alpha-2 code elements (exception for Greece and United Kingdom - use 'EL' for Greece and 'UK' for the United Kingdom).</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="AL"/>
+                <xs:enumeration value="AT"/>
+                <xs:enumeration value="BA"/>
+                <xs:enumeration value="BE"/>
+                <xs:enumeration value="BG"/>
+                <xs:enumeration value="CH"/>
+                <xs:enumeration value="CY"/>
+                <xs:enumeration value="CZ"/>
+                <xs:enumeration value="DE"/>
+                <xs:enumeration value="DK"/>
+                <xs:enumeration value="EE"/>
+                <xs:enumeration value="EL"/>
+                <xs:enumeration value="ES"/>
+                <xs:enumeration value="FI"/>
+                <xs:enumeration value="FR"/>
+                <xs:enumeration value="HR"/>
+                <xs:enumeration value="HU"/>
+                <xs:enumeration value="IE"/>
+                <xs:enumeration value="IS"/>
+                <xs:enumeration value="IT"/>
+                <xs:enumeration value="LI"/>
+                <xs:enumeration value="LT"/>
+                <xs:enumeration value="LU"/>
+                <xs:enumeration value="LV"/>
+                <xs:enumeration value="ME"/>
+                <xs:enumeration value="MK"/>
+                <xs:enumeration value="MT"/>
+                <xs:enumeration value="NL"/>
+                <xs:enumeration value="NO"/>
+                <xs:enumeration value="PL"/>
+                <xs:enumeration value="PT"/>
+                <xs:enumeration value="RO"/>
+                <xs:enumeration value="RS"/>
+                <xs:enumeration value="SE"/>
+                <xs:enumeration value="SI"/>
+                <xs:enumeration value="SK"/>
+                <xs:enumeration value="TR"/>
+                <xs:enumeration value="UK"/>
+                <xs:enumeration value="XK"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="rptMStateValue">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>rptMStateValue</isoattrs:Name>
+                <isoattrs:Definition>Member State or Collaborating Country name, as defined in the codelist.</isoattrs:Definition>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="Albania"/>
+                <xs:enumeration value="Austria"/>
+                <xs:enumeration value="Belgium"/>
+                <xs:enumeration value="Bosnia and Herzegovina"/>
+                <xs:enumeration value="Bulgaria"/>
+                <xs:enumeration value="Croatia"/>
+                <xs:enumeration value="Cyprus"/>
+                <xs:enumeration value="Czech Republic"/>
+                <xs:enumeration value="Denmark"/>
+                <xs:enumeration value="Estonia"/>
+                <xs:enumeration value="Finland"/>
+                <xs:enumeration value="France"/>
+                <xs:enumeration value="Germany"/>
+                <xs:enumeration value="Greece"/>
+                <xs:enumeration value="Hungary"/>
+                <xs:enumeration value="Iceland"/>
+                <xs:enumeration value="Ireland"/>
+                <xs:enumeration value="Italy"/>
+                <xs:enumeration value="Kosovo (UNSCR 1244/99)"/>
+                <xs:enumeration value="Latvia"/>
+                <xs:enumeration value="Liechtenstein"/>
+                <xs:enumeration value="Lithuania"/>
+                <xs:enumeration value="Luxembourg"/>
+                <xs:enumeration value="Macedonia, the Former Yugoslav Republic of"/>
+                <xs:enumeration value="Malta"/>
+                <xs:enumeration value="Montenegro"/>
+                <xs:enumeration value="Netherlands"/>
+                <xs:enumeration value="Norway"/>
+                <xs:enumeration value="Poland"/>
+                <xs:enumeration value="Portugal"/>
+                <xs:enumeration value="Romania"/>
+                <xs:enumeration value="Serbia"/>
+                <xs:enumeration value="Slovakia"/>
+                <xs:enumeration value="Slovenia"/>
+                <xs:enumeration value="Spain"/>
+                <xs:enumeration value="Sweden"/>
+                <xs:enumeration value="Switzerland"/>
+                <xs:enumeration value="Turkey"/>
+                <xs:enumeration value="United Kingdom"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="rptCulture">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>rptCulture</isoattrs:Name>
+                <isoattrs:Definition>Culture code and language of the report.</isoattrs:Definition>
+                <ddattrs:Methodology>If the national (non-ASCII) characters are used in the report or data, please use UTF-8 coding.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="0"/>
+                <xs:maxLength value="32"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://dd.eionet.europa.eu/namespaces/846" xmlns:ddattrs="http://dd.eionet.europa.eu/namespaces/3" xmlns:isoattrs="http://dd.eionet.europa.eu/namespaces/2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://dd.eionet.europa.eu/namespaces/846" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema  http://www.w3.org/2001/XMLSchema.xsd">
+    <xs:element name="ReceivingAreasLSA">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <ddattrs:ShortDescription>Attributes of the Less sensitive areas</ddattrs:ShortDescription>
+                <ddattrs:Methodology>In case there are not any Art. 5(4) areas designated, the table is left empty.</ddattrs:Methodology>
+                <isoattrs:Definition>Table lists designation criteria and designation dates of the Less sensitive areas.</isoattrs:Definition>
+                <isoattrs:Name>ReceivingAreasLSA</isoattrs:Name>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" minOccurs="0" name="Row">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="repCode"/>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="rcaCode"/>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="rcaName"/>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="rcaEnvDom"/>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="rcaZtype"/>
+                            <xs:element maxOccurs="1" minOccurs="1" ref="rca61DateDesignation"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="rcaMorphology"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="rcaHydrology"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="rcaHydraulic"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="rcaAbsenceRisk"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="rcaHyperlink"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="rcaBeginLife"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="rcaEndLife"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="rcalsaRemarks"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="repCode">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+                <ddattrs:Owner>4037322</ddattrs:Owner>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Methodology>This value is required.&#13;
+First 2 characters must be the 2-alpha character ISO country code (use 'EL' for Greece and 'UK' for the United Kingdom).</ddattrs:Methodology>
+                <isoattrs:Definition>Report ID, as specified by country</isoattrs:Definition>
+                <isoattrs:Name>repCode</isoattrs:Name>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="1"/>
+                <xs:maxLength value="16"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="rcaCode">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>rcaCode</isoattrs:Name>
+                <isoattrs:Definition>ID of the less sensitive area</isoattrs:Definition>
+                <ddattrs:Methodology>This value is required.&#13;
+&#13;
+Identifier of the spatial object.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="1"/>
+                <xs:maxLength value="32"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="rcaName">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>rcaName</isoattrs:Name>
+                <isoattrs:Definition>Name of the less sensitive area</isoattrs:Definition>
+                <ddattrs:Methodology>This value is required for each rcaCode filled in this table.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="1"/>
+                <xs:maxLength value="255"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="rcaEnvDom">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>rcaEnvDom</isoattrs:Name>
+                <isoattrs:Definition>Environmental Domain</isoattrs:Definition>
+                <ddattrs:Methodology>This value is required for each rcaCode filled in this table.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="WATER"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="rcaZtype">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>rcaZtype</isoattrs:Name>
+                <isoattrs:Definition>Zone Type Code</isoattrs:Definition>
+                <ddattrs:Methodology>This value is required for each rcaCode filled in this table.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="UWWTDLSA"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="rca61DateDesignation">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>rca61DateDesignation</isoattrs:Name>
+                <isoattrs:Definition>Date of designation of the less sensitive area under the Directive Art. 6(1)</isoattrs:Definition>
+                <ddattrs:Methodology>This value is required for each rcaCode filled in this table.&#13;
+&#13;
+Date defining when the less sensitive area was legally designated or became effective in the real world.&#13;
+This parameter is relevant in case Art. 6(1) is applied.&#13;
+&#13;
+Use the format YYYY-MM-DD.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:date"/>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="rcaMorphology">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>rcaMorphology</isoattrs:Name>
+                <isoattrs:Definition>Designation criteria for less sensitive areas as specified in the Directive (Annex II B): Morphology</isoattrs:Definition>
+                <ddattrs:Methodology>This parameter is relevant in case  Art. 6(1) is applied.&#13;
+At least one of the LSA designation criteria must be reported as “true”. &#13;
+A valid alternative to the default boolean values 'false' and 'true' are values '0' and '1', respectively.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:boolean"/>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="rcaHydrology">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>rcaHydrology</isoattrs:Name>
+                <isoattrs:Definition>Designation criteria for less sensitive areas as specified in the Directive (Annex II B): Hydrology&#13;
+</isoattrs:Definition>
+                <ddattrs:Methodology>This parameter is relevant in the case that Art. 6(1) is applied.&#13;
+At least one of the LSA designation criteria must be reported as “true”.&#13;
+A valid alternative to the default boolean values 'false' and 'true' are values '0' and '1', respectively.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:boolean"/>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="rcaHydraulic">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>rcaHydraulic</isoattrs:Name>
+                <isoattrs:Definition>Designation criteria for less sensitive areas as specified in the Directive (Annex II B): Specific hydraulic conditions&#13;
+</isoattrs:Definition>
+                <ddattrs:Methodology>This parameter is relevant in the case that Art. 6(1) is applied.&#13;
+At least one of the LSA designation criteria must be reported as “true”. &#13;
+A valid alternative to the default Boolean values 'false' and 'true' are values '0' and'1', respectively.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:boolean"/>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="rcaAbsenceRisk">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>rcaAbsenceRisk</isoattrs:Name>
+                <isoattrs:Definition>Designation criteria for less sensitive areas as specified in the Directive (Annex II B): Absence of risk of transfer of discharged load to adjacent areas&#13;
+</isoattrs:Definition>
+                <ddattrs:Methodology>This parameter is relevant in the case that Art. 6(1) is applied.&#13;
+At least one of the LSA designation criteria must be reported as “true”. &#13;
+A valid alternative to the default boolean values 'false' and 'true' are values '0' and '1', respectively.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:boolean"/>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="rcaHyperlink">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>rcaHyperlink</isoattrs:Name>
+                <isoattrs:Definition>Hyperlink to a national webpage</isoattrs:Definition>
+                <ddattrs:Methodology>Hyperlink given to give access to detailed information on this area if such a webpage exists at national level.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="0"/>
+                <xs:maxLength value="255"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="rcaBeginLife">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>rcaBeginLife</isoattrs:Name>
+                <isoattrs:Definition>begin Lifespan Version</isoattrs:Definition>
+                <ddattrs:Methodology>Date and time at which this version of the spatial object was inserted or changed in the spatial data set.&#13;
+&#13;
+rcaBeginLife can't be higher than rcaEndLife.&#13;
+&#13;
+Use the format YYYY-MM-DD.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:date"/>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="rcaEndLife">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>rcaEndLife</isoattrs:Name>
+                <isoattrs:Definition>end Lifespan Version</isoattrs:Definition>
+                <ddattrs:Methodology>Date and time at which this version of the spatial object was superseded or retired in the spatial data set.&#13;
+&#13;
+Should be filled in only in case the reported object is no longer active.&#13;
+rcaEndLife can't be lower than rcaBeginLife&#13;
+&#13;
+Use the format YYYY-MM-DD.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:date"/>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="rcalsaRemarks">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                <isoattrs:Name>rcalsaRemarks</isoattrs:Name>
+                <isoattrs:Definition>Remarks</isoattrs:Definition>
+                <ddattrs:Methodology>Explanation of the reason of the designation of less sensitive area.</ddattrs:Methodology>
+                <ddattrs:PublicOrInternal>undefined</ddattrs:PublicOrInternal>
+                <ddattrs:Responsible>4035025</ddattrs:Responsible>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="0"/>
+                <xs:maxLength value="4096"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+</xs:schema>
